@@ -12,6 +12,7 @@ export default function Navbar() {
     { to: "/", labelId: "Beranda", labelEn: "Home" },
     { to: "/about", labelId: "Tentang", labelEn: "About" },
     { to: "/products", labelId: "Produk", labelEn: "Products" },
+    { to: "/portofolio", labelId: "Portofolio", labelEn: "Portfolio" },
   ];
 
   return (
@@ -92,18 +93,17 @@ export default function Navbar() {
             className="md:hidden flex flex-col gap-1"
             onClick={() => setOpenMobile(true)}
           >
-            <span className="w-6 h-[2px] bg-white"></span>
-            <span className="w-6 h-[2px] bg-white"></span>
-            <span className="w-6 h-[2px] bg-white"></span>
+            <span className="w-6 h-[2px] bg-slate-800"></span>
+            <span className="w-6 h-[2px] bg-slate-800"></span>
+            <span className="w-6 h-[2px] bg-slate-800"></span>
           </button>
         </div>
       </nav>
 
       {/* Fullscreen Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 h-screen w-full bg-gray-900 text-white z-50 transform transition-transform duration-300 ease-in-out ${
-          openMobile ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed top-0 left-0 h-screen w-full bg-gray-900 text-white z-50 transform transition-transform duration-300 ease-in-out ${openMobile ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         <div className="p-6 flex justify-between items-center">
           <div className="font-semibold text-xl">Menu</div>

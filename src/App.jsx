@@ -13,6 +13,7 @@ import ScrollTop from "./components/ScrollTop";
 import ScrollToTopOnRoute from "./components/ScrollToTopOnRoute";
 import Footer from "./components/Footer";
 import ProductDetail from "./pages/ProductDetail";
+import Portofolio from "./pages/Portofolio";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/partner/maxvision" element={<PartnerMaxvision />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/success-story" element={<SuccessStory />} />
+            <Route path="/portofolio" element={<Portofolio />} />
             <Route path="/products/:slug" element={<ProductDetail />} />
           </Routes>
         </div>

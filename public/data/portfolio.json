@@ -1,0 +1,94 @@
+{
+    "portfolios": [
+        {
+            "id": "apk-perlintasan",
+            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&fit=crop&q=80",
+            "title": {
+                "id": "APK Perlintasan",
+                "en": "Border Crossing Application"
+            },
+            "description": {
+                "id": "Sistem aplikasi terintegrasi untuk pengelolaan dan pemantauan perlintasan secara digital. Platform ini dirancang untuk meningkatkan efisiensi operasional, akurasi data, dan keamanan di titik-titik perlintasan dengan memanfaatkan teknologi pengenalan wajah berbasis AI dan otomatisasi proses.",
+                "en": "An integrated application system for digital border crossing management and monitoring. This platform is designed to enhance operational efficiency, data accuracy, and security at crossing points by leveraging AI-based facial recognition technology and process automation."
+            },
+            "features": {
+                "id": [
+                    "Pengenalan wajah berbasis AI untuk verifikasi identitas",
+                    "Pemantauan arus lalu lintas secara real-time",
+                    "Dashboard analitik dan pelaporan komprehensif",
+                    "Integrasi dengan database keimigrasian nasional",
+                    "Sistem antrian otomatis untuk efisiensi waktu",
+                    "Notifikasi dan alert keamanan instan"
+                ],
+                "en": [
+                    "AI-based facial recognition for identity verification",
+                    "Real-time traffic flow monitoring",
+                    "Comprehensive analytics dashboard and reporting",
+                    "Integration with national immigration database",
+                    "Automatic queuing system for time efficiency",
+                    "Instant security notifications and alerts"
+                ]
+            }
+        },
+        {
+            "id": "voa",
+            "image": "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&fit=crop&q=80",
+            "title": {
+                "id": "VOA (Visa on Arrival)",
+                "en": "VOA (Visa on Arrival)"
+            },
+            "description": {
+                "id": "Platform digital yang aman dan mudah digunakan untuk memperlancar proses Visa on Arrival bagi pelancong internasional. Memungkinkan pengajuan informasi, pengunggahan dokumen, dan penyelesaian pembayaran di muka, sehingga pemrosesan imigrasi menjadi lebih cepat dan mengurangi antrean.",
+                "en": "A secure and user-friendly digital platform that streamlines the Visa on Arrival process for international travelers. Allows information submission, document uploading, and advance payment completion, enabling faster immigration processing and reducing queues."
+            },
+            "features": {
+                "id": [
+                    "Pengajuan visa online sebelum kedatangan",
+                    "Pengunggahan dan verifikasi dokumen otomatis",
+                    "Pembayaran digital terintegrasi multi-metode",
+                    "Pelacakan status visa secara real-time",
+                    "Antarmuka multibahasa untuk wisatawan global",
+                    "Enkripsi data tingkat tinggi untuk keamanan"
+                ],
+                "en": [
+                    "Online visa application before arrival",
+                    "Automated document upload and verification",
+                    "Integrated multi-method digital payment",
+                    "Real-time visa status tracking",
+                    "Multilingual interface for global travelers",
+                    "High-level data encryption for security"
+                ]
+            }
+        },
+        {
+            "id": "sigap-dpr",
+            "image": "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=800&fit=crop&q=80",
+            "title": {
+                "id": "SIGAP DPR",
+                "en": "SIGAP DPR"
+            },
+            "description": {
+                "id": "Aplikasi manajemen SDM terpadu untuk Dewan Perwakilan Rakyat (DPR) yang memusatkan administrasi kepegawaian, mengotomatiskan kehadiran menggunakan pengenalan wajah berbasis AI dan autentikasi urat telapak tangan, serta meningkatkan keamanan melalui kontrol akses gerbang pintar.",
+                "en": "An integrated HR management application for the House of Representatives (DPR) that centralizes personnel administration, automates attendance using AI-based face recognition and palm vein authentication, and enhances security through smart gate access control."
+            },
+            "features": {
+                "id": [
+                    "Pengenalan wajah dan palm vein untuk absensi",
+                    "Manajemen data kepegawaian terpusat",
+                    "Kontrol akses gerbang pintar terintegrasi",
+                    "Dashboard kehadiran dan performa real-time",
+                    "Laporan dan analitik SDM otomatis",
+                    "Sistem keamanan multi-layer berbasis biometrik"
+                ],
+                "en": [
+                    "Face recognition and palm vein for attendance",
+                    "Centralized personnel data management",
+                    "Integrated smart gate access control",
+                    "Real-time attendance and performance dashboard",
+                    "Automated HR reports and analytics",
+                    "Multi-layer biometric-based security system"
+                ]
+            }
+        }
+    ]
+}

@@ -1,17 +1,62 @@
 import { useLang } from "../context/LanguageContext";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowRight, Target, Globe, Zap } from "lucide-react";
 import bg from "../assets/maps_background.png";
 import Solution from "./Solution";
-
-import { FiCpu, FiWifi, FiPlay } from "react-icons/fi";
 import PartnersSection from "./section-home/Partner";
 import SuccessStoriesSection from "./section-home/SuccessStoriesSection";
 
+/* ─── animation ─── */
+const fadeUp = {
+  hidden: { opacity: 0, y: 28 },
+  visible: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.12, duration: 0.6, ease: "easeOut" },
+  }),
+};
+
+/* ─── bilingual content ─── */
+const CONTENT = {
+  about: {
+    id: {
+      subtitle: "Tentang Kami",
+      title: "Penyedia Solusi IT Terdepan",
+      description:
+        "PT Transforme Indonesia adalah penyedia solusi teknologi informasi end-to-end terdepan untuk korporasi bisnis di Indonesia. Solusi kreatif kami menggabungkan teknologi mutakhir dan keahlian rekayasa proses bisnis untuk memaksimalkan keuntungan klien kami.",
+    },
+    en: {
+      subtitle: "About Us",
+      title: "Leading IT Solutions Provider",
+      description:
+        "PT Transforme Indonesia is the leading provider of end-to-end information technology solutions to business corporations in Indonesia. Our creative solution combines the leverage of cutting-edge technology and business process reengineering expertise to maximize the profit of our clients.",
+    },
+  },
+  vision: {
+    id: {
+      subtitle: "Visi & Misi",
+      title: "Apa yang Kami Percaya",
+      quote:
+        "Menciptakan, mengeksploitasi, dan memberikan nilai maksimum kepada klien kami dengan memanfaatkan solusi teknologi mutakhir melalui passion, dedikasi, dan keunggulan.",
+    },
+    en: {
+      subtitle: "Vision & Mission",
+      title: "What We Believe",
+      quote:
+        "To create, exploit, and deliver maximum values to our clients by leveraging cutting-edge technology solutions through passion, dedication, and excellence.",
+    },
+  },
+};
+
 export default function Home() {
   const { lang } = useLang();
+  const about = CONTENT.about[lang];
+  const vision = CONTENT.vision[lang];
 
   return (
     <>
-      {/* HERO */}
+      {/* ══════════ HERO — FULL MAP ══════════ */}
       <section className="relative w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-white px-4">
         <img
           src={bg}
@@ -20,109 +65,104 @@ export default function Home() {
         />
       </section>
 
-      {/* SOLUTION */}
-      {/* <h2 className="text-2xl md:text-5xl font-bold text-center mb-6">
-        {lang === "id" ? "Solusi Kami" : "Our Solutions"}
-      </h2>
-      <Solution /> */}
-
-      {/* ABOUT + VISION */}
-      <section className="px-6 md:px-16 lg:px-28 py-16">
-        <div className="max-w-5xl mx-auto space-y-8">
-          {/* About Card */}
-          <div className="bg-white rounded-2xl shadow-md p-8 text-center">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4">
-              {lang === "id" ? "Tentang Kami" : "About Us"}
+      {/* ══════════ ABOUT + VISION ══════════ */}
+      <section className="py-20 md:py-28 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          {/* About card */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 md:p-10 hover:shadow-lg transition-shadow"
+          >
+            <span className="inline-block text-primary font-semibold tracking-widest uppercase text-xs mb-3">
+              {about.subtitle}
+            </span>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4">
+              {about.title}
             </h2>
-            <p className="text-sm md:text-lg text-secondary leading-relaxed">
-              PT Transforme Indonesia is the leading provider of end-to-end
-              information technology solutions to business corporations in
-              Indonesia. Our creative solution combines the leverage of
-              cutting-edge technology and business process reengineering
-              expertise to maximize the profit of our clients.
+            <p className="text-slate-500 text-sm md:text-base leading-relaxed mb-6">
+              {about.description}
             </p>
-          </div>
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
+            >
+              {lang === "id" ? "Selengkapnya" : "Learn More"}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
 
-          {/* Vision Card */}
-          <div className="bg-white rounded-2xl shadow-md p-8 text-center">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4">
-              Vision & Mission
-            </h2>
-            <p className="text-sm md:text-lg text-secondary leading-relaxed italic">
-              “To create, exploit, and deliver maximum values to our clients by
-              leveraging cutting-edge technology solutions through passion,
-              dedication, and excellence.”
-            </p>
-          </div>
+          {/* Vision card */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={1}
+            className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-8 md:p-10 text-white relative overflow-hidden hover:shadow-lg transition-shadow"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="relative">
+              <span className="inline-block text-primary font-semibold tracking-widest uppercase text-xs mb-3">
+                {vision.subtitle}
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                {vision.title}
+              </h2>
+              <div className="flex gap-4">
+                <div className="w-1 bg-primary rounded-full shrink-0" />
+                <p className="text-gray-300 text-sm md:text-base leading-relaxed italic">
+                  &ldquo;{vision.quote}&rdquo;
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-4 mt-8">
+                <div className="flex items-center gap-2 text-sm text-gray-400">
+                  <Target className="w-4 h-4 text-primary" />
+                  <span>Passion</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-400">
+                  <Globe className="w-4 h-4 text-primary" />
+                  <span>{lang === "id" ? "Dedikasi" : "Dedication"}</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-400">
+                  <Zap className="w-4 h-4 text-primary" />
+                  <span>{lang === "id" ? "Keunggulan" : "Excellence"}</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* PRODUCTS */}
-      <section className="px-6 md:px-16 lg:px-28 pb-20">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-10">
-          Products
-        </h2>
+      {/* ══════════ SOLUTIONS ══════════ */}
+      <section className="pb-20 md:pb-28 px-6">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <span className="inline-block text-primary font-semibold tracking-widest uppercase text-xs mb-3">
+              {lang === "id" ? "Layanan Kami" : "Our Services"}
+            </span>
+            <h2 className="text-2xl md:text-4xl font-bold text-slate-800">
+              {lang === "id" ? "Solusi Teknologi" : "Technology Solutions"}
+            </h2>
+          </motion.div>
 
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col justify-between">
-            <div>
-              <h3 className="font-semibold text-lg mb-2">
-                Artificial Intelligence (AI)
-              </h3>
-              <p className="text-sm text-secondary mb-4">
-                Face Recognition, Thermal Detection
-              </p>
-            </div>
-            <div className="flex items-center justify-between">
-              <button className="px-4 py-2 bg-blue-500 text-white rounded-lg text-sm">
-                More
-              </button>
-              <FiCpu className="text-blue-500 text-3xl" />
-            </div>
-          </div>
-
-    
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col justify-between">
-            <div>
-              <h3 className="font-semibold text-lg mb-2">
-                Internet of Things (IoT)
-              </h3>
-              <p className="text-sm text-secondary mb-4">
-                Smart Connectivity, Smart Sensor & Devices
-              </p>
-            </div>
-            <div className="flex items-center justify-between">
-              <button className="px-4 py-2 bg-blue-500 text-white rounded-lg text-sm">
-                More
-              </button>
-              <FiWifi className="text-blue-500 text-3xl" />
-            </div>
-          </div>
-        </div> */}
-        <Solution />
+          <Solution />
+        </div>
       </section>
 
-      {/* SUCCESS STORIES */}
-      <section className="bg-sky-600 px-6 md:px-16 lg:px-28 py-16 text-white">
-        {/* <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-4xl font-bold mb-6">
-            {lang === "id" ? "Cerita Sukses" : "Success Stories"}
-          </h2>
+      {/* ══════════ SUCCESS STORIES ══════════ */}
+      <SuccessStoriesSection />
 
-          <div className="bg-black rounded-xl overflow-hidden relative aspect-video">
-            <button className="absolute inset-0 flex items-center justify-center">
-              <FiPlay className="text-white text-5xl opacity-80" />
-            </button>
-          </div>
-        </div> */}
-        <SuccessStoriesSection />
-      </section>
-
-      {/* PARTNERS */}
-      <section className="px-6 md:px-16 lg:px-28 py-20">
-        <PartnersSection />
-      </section>
+      {/* ══════════ PARTNERS ══════════ */}
+      <PartnersSection />
     </>
   );
 }

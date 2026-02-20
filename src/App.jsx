@@ -10,6 +10,7 @@ import SuccessStory from "./pages/SuccessStory";
 import PartnerJovision from "./pages/PartnerJovision";
 import PartnerMaxvision from "./pages/PartnerMaxvision";
 import ScrollTop from "./components/ScrollTop";
+import ScrollToTopOnRoute from "./components/ScrollToTopOnRoute";
 import Footer from "./components/Footer";
 import ProductDetail from "./pages/ProductDetail";
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <LanguageProvider>
       <Router>
+        <ScrollToTopOnRoute />
         <Navbar />
         <div className="pt-24">
           {" "}

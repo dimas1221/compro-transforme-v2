@@ -1,0 +1,154 @@
+{
+  "features": [
+    {
+      "title_id": "Internet of Things (IoT)",
+      "header_learn_more": [
+        {
+          "image": "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=60",
+          "title_en": "Device Connectivity",
+          "title_id": "Konektivitas Perangkat",
+          "desc_en": "Real-time communication among multiple devices.",
+          "desc_id": "Komunikasi real-time antar perangkat."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1581092339767-847e0d972fdb?auto=format&fit=crop&w=900&q=60",
+          "title_en": "IoT Automation",
+          "title_id": "Automasi IoT",
+          "desc_en": "Automate business workflows using smart sensors.",
+          "desc_id": "Otomatisasi proses bisnis menggunakan sensor pintar."
+        }
+      ],
+      "img": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=60",
+      "learn_more_desc_en": "IoT connects devices, enabling automation, monitoring, and remote intelligence.",
+      "desc_id": "Hubungkan dan kontrol perangkat melalui jaringan IoT untuk menciptakan lingkungan yang lebih cerdas.",
+      "learn_more_image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=60",
+      "title_en": "Internet of Things (IoT)",
+      "learn_more_title_id": "Membangun Masa Depan dengan IoT",
+      "team_learn_more": [
+        {
+          "image": "https://randomuser.me/api/portraits/women/22.jpg",
+          "name": "Sarah Levine",
+          "message_en": "IoT provides a new dimension of efficiency.",
+          "message_id": "IoT memberi dimensi baru bagi efisiensi."
+        }
+      ],
+      "portofolio_learn_more": [
+        {
+          "image": "https://images.unsplash.com/photo-1581093632344-d4a1b6b40f01?auto=format&fit=crop&w=900&q=60",
+          "title_en": "Smart Factory Monitoring",
+          "title_id": "Pemantauan Pabrik Pintar",
+          "desc_en": "IoT sensors for production line monitoring.",
+          "desc_id": "Sensor IoT untuk memantau lini produksi."
+        }
+      ],
+      "desc_en": "Connect and control devices through IoT networks to enable smarter environments.",
+      "icon": "Wifi",
+      "learn_more_desc_id": "IoT menghubungkan perangkat sehingga dapat melakukan otomatisasi, pemantauan, dan pengendalian jarak jauh.",
+      "id": 2,
+      "learn_more_title_en": "Powering the Future with IoT"
+    },
+    {
+      "title_id": "Manajemen Perangkat Lunak",
+      "header_learn_more": [
+        {
+          "image": "/images/uploads/ai-dual-mode-intelligent-ptz-camera.png",
+          "title_en": "WEB DEVELOPMENT",
+          "title_id": "WEB DEVELOPMENT",
+          "desc_en": "We create custom technologies as simple as websites to complex internet applications to power your business.",
+          "desc_id": "Kami menciptakan teknologi khusus, mulai dari yang sederhana seperti situs web hingga aplikasi internet yang kompleks untuk mendukung bisnis Anda."
+        },
+        {
+          "image": "/images/uploads/software-maintenance.png",
+          "title_en": "SOFTWARE MAINTENANCE",
+          "title_id": "PEMELIHARAAN PERANGKAT LUNAK",
+          "desc_en": "We have vast development team than can maintain your current softwares and applications. Let us handle your software while you handle your business.",
+          "desc_id": "Kami memiliki tim pengembangan yang luas yang dapat mengelola perangkat lunak dan aplikasi Anda saat ini. Percayakan perangkat lunak Anda kepada kami sementara Anda mengelola bisnis Anda."
+        },
+        {
+          "title_en": "MOBILE DEVELOPMENT",
+          "title_id": "PENGEMBANGAN MOBILE",
+          "desc_en": "Currently there are huge markets that are served in a mobile app-ecosystem.",
+          "desc_id": "Saat ini ada pasar besar yang dilayani dalam ekosistem aplikasi seluler.",
+          "image": "/images/uploads/mobile_development.png"
+        }
+      ],
+      "img": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=60",
+      "learn_more_desc_en": "We believe a mobile where there will be more smartphones than computers. In the near future, there will huge markets that will become served in a mobile app-ecosystem.\n\nOur bread and butter, we create custom technologies as simple as websites to complex internet applications to power your business.\n\nWe have vast development team than can maintain your current softwares and applications. Let us handle your software while you handle your business.",
+      "desc_id": "Kelola siklus hidup, pembaruan, dan distribusi perangkat lunak agar sistem tetap stabil dan efisien.",
+      "learn_more_image": "/images/uploads/software_server.jpg",
+      "title_en": "Software Management",
+      "learn_more_title_id": "Apa Yang Kami Lakukan Layanan Perangkat Lunak",
+      "team_learn_more": [
+        {
+          "image": "https://randomuser.me/api/portraits/women/66.jpg",
+          "name": "Laura Kim",
+          "message_en": "We ensure software stays fast, reliable, and scalable.",
+          "message_id": "Kami memastikan software tetap cepat, stabil, dan mudah diskalakan."
+        }
+      ],
+      "portofolio_learn_more": [
+        {
+          "image": "/images/uploads/zoom_portfolio.png",
+          "title_en": "ZOOM",
+          "title_id": "ZOOM",
+          "desc_en": "Providing on-demand, same-day delivery to businesses and retailers, both online and offline, prioritizing fast and seamless delivery. Zoom ensures ease of use with its platform and acts as a trusted partner for various businesses throughout Indonesia.",
+          "desc_id": "Menyediakan layanan kirim on-demand same day kepada pebisnis dan retailer, baik online maupun offline, dengan mengutamakan pengiriman yang cepat dan lancar. Zoom memastikan kemudahan penggunaan dengan platformnya dan juga bertindak sebagai mitra terpercaya bagi berbagai entitas bisnis di seluruh Indonesia"
+        },
+        {
+          "image": "/images/uploads/kosmo_portfolio_v2.png",
+          "title_en": "KOSMO",
+          "title_id": "KOSMO",
+          "desc_en": "Kosmo is a modern application that helps users easily search, rent, or buy residential units, offering location-based filtering, detailed property information, high-quality photos, and a faster, more transparent process to help users find their ideal home with ease.",
+          "desc_id": "Kosmo adalah aplikasi modern yang membantu pengguna mencari, menyewa, atau membeli unit hunian dengan mudah, menawarkan penyaringan berdasarkan lokasi, informasi properti terperinci, foto berkualitas tinggi, dan proses yang lebih cepat dan transparan untuk membantu pengguna menemukan rumah idaman mereka dengan mudah."
+        },
+        {
+          "image": "/images/uploads/portfolio_sipam_v3.png",
+          "title_en": "SIPAM",
+          "title_id": "SIPAM",
+          "desc_en": "SIPAM Prabin is a digital application designed to efficiently manage and monitor military detainees by centralizing detainee data, tracking their status, documenting case details, and supporting secure administrative processes to streamline operations, improve accuracy, ensure transparency, and enhance coordination among authorized military personnel.",
+          "desc_id": "SIPAM Prabin adalah aplikasi digital yang dirancang untuk mengelola dan memantau tahanan militer secara efisien dengan memusatkan data tahanan, melacak status mereka, mendokumentasikan rincian kasus, dan mendukung proses administrasi yang aman untuk menyederhanakan operasi, meningkatkan akurasi, memastikan transparansi, dan meningkatkan koordinasi di antara personel militer yang berwenang."
+        },
+        {
+          "image": "/images/uploads/sigap_portpolio.png",
+          "title_en": "SIGAP",
+          "title_id": "SIGAP",
+          "desc_en": "SIGAP is an integrated HR management application for the House of Representatives (DPR) that centralizes personnel administration, automates attendance using AI-based face recognition and palm vein authentication, and enhances security through smart gate access control to ensure efficient, accurate, and transparent workforce operations.",
+          "desc_id": "SIGAP merupakan aplikasi manajemen SDM terpadu untuk Dewan Perwakilan Rakyat (DPR) yang memusatkan administrasi kepegawaian, mengotomatiskan kehadiran menggunakan pengenalan wajah berbasis AI dan autentikasi urat telapak tangan, serta meningkatkan keamanan melalui kontrol akses gerbang pintar untuk memastikan operasional tenaga kerja yang efisien, akurat, dan transparan."
+        },
+        {
+          "title_en": "VOA",
+          "title_id": "VOA",
+          "desc_en": "The Visa on Arrival (VoA) application is a secure and user-friendly digital platform that streamlines the entry process for international travelers by allowing them to submit information, upload documents, and complete payment in advance, enabling faster immigration processing, reducing queues, and enhancing overall travel convenience.",
+          "desc_id": "Aplikasi Visa on Arrival (VoA) adalah platform digital yang aman dan mudah digunakan yang memperlancar proses masuk bagi pelancong internasional dengan memungkinkan mereka menyerahkan informasi, mengunggah dokumen, dan menyelesaikan pembayaran di muka, sehingga pemrosesan imigrasi menjadi lebih cepat, mengurangi antrean, dan meningkatkan kenyamanan perjalanan secara keseluruhan.",
+          "image": "/images/uploads/portfolio_voa.png"
+        },
+        {
+          "image": "/images/uploads/bsd_portfolio.png",
+          "title_en": "ResOne",
+          "title_id": "ResOne",
+          "desc_en": "Residence One is an AI- and IoT-powered residential access management system designed for BSD housing complexes, enabling secure, efficient, and fully automated entry and exit processes through smart sensors, real-time monitoring, intelligent gate control, and advanced identity verification to enhance safety, reduce manual intervention, and provide residents with a seamless modern living experience.",
+          "desc_id": "Residence One adalah sistem manajemen akses hunian bertenaga AI dan IoT yang dirancang untuk kompleks perumahan BSD, memungkinkan proses masuk dan keluar yang aman, efisien, dan sepenuhnya otomatis melalui sensor pintar, pemantauan waktu nyata, kontrol gerbang cerdas, dan verifikasi identitas tingkat lanjut untuk meningkatkan keselamatan, mengurangi intervensi manual, dan memberi penghuni pengalaman tinggal modern yang lancar."
+        },
+        {
+          "title_en": "EZ Service",
+          "title_id": "EZ Service",
+          "desc_en": "Ez-Service is an HR management application designed to streamline and centralize all aspects of human resource operations, enabling organizations to efficiently manage employee data, attendance, performance, payroll processes, and internal workflows through an intuitive, secure, and AI-supported digital platform.",
+          "desc_id": "Ez-Service adalah aplikasi manajemen SDM yang dirancang untuk menyederhanakan dan memusatkan semua aspek operasi sumber daya manusia, memungkinkan organisasi untuk mengelola data karyawan, kehadiran, kinerja, proses penggajian, dan alur kerja internal secara efisien melalui platform digital yang intuitif, aman, dan didukung AI.",
+          "image": "/images/uploads/hrd_portfolio.png"
+        },
+        {
+          "image": "/images/uploads/vehicle_portfolio.png",
+          "title_en": "Vehicle Management System",
+          "title_id": "Sistem Manajemen Kendaraan",
+          "desc_en": "The Vehicle Management System is a digital platform designed to streamline the monitoring, tracking, and administration of vehicles by providing real-time data on usage, maintenance schedules, fuel consumption, and driver activity, enabling organizations to enhance operational efficiency, reduce costs, improve safety, and ensure better decision-making through centralized and automated vehicle management.",
+          "desc_id": "Sistem Manajemen Kendaraan adalah platform digital yang dirancang untuk menyederhanakan pemantauan, pelacakan, dan administrasi kendaraan dengan menyediakan data waktu nyata tentang penggunaan, jadwal perawatan, konsumsi bahan bakar, dan aktivitas pengemudi, yang memungkinkan organisasi untuk meningkatkan efisiensi operasional, mengurangi biaya, meningkatkan keselamatan, dan memastikan pengambilan keputusan yang lebih baik melalui manajemen kendaraan yang terpusat dan otomatis."
+        }
+      ],
+      "desc_en": "Manage software lifecycles, updates, and deployments to ensure stability and scalability.",
+      "icon": "Server",
+      "learn_more_desc_id": "Kami percaya akan ada lebih banyak ponsel pintar daripada komputer di dunia seluler. Dalam waktu dekat, akan ada pasar besar yang akan dilayani oleh ekosistem aplikasi seluler.\n\nTujuan utama kami adalah menciptakan teknologi khusus, mulai dari yang sederhana seperti situs web hingga aplikasi internet yang kompleks, untuk mendukung bisnis Anda.\n\nKami memiliki tim pengembangan yang luas yang dapat mengelola perangkat lunak dan aplikasi Anda saat ini. Percayakan perangkat lunak Anda kepada kami sementara Anda mengelola bisnis Anda.",
+      "id": 4,
+      "learn_more_title_en": "What We Do Software Service"
+    }
+  ]
+}

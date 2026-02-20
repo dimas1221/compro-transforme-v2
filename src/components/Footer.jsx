@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <span>Jln. Jenderal Sudirman No.Kav.2, Jakarta 10150</span>
+                <span>Jl. Cideng Barat No.87C</span>
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Phone className="w-4 h-4 text-primary shrink-0" />

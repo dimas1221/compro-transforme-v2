@@ -14,6 +14,7 @@ import ScrollToTopOnRoute from "./components/ScrollToTopOnRoute";
 import Footer from "./components/Footer";
 import ProductDetail from "./pages/ProductDetail";
 import Portofolio from "./pages/Portofolio";
+import SolutionDetail from "./pages/SolutionDetail";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/success-story" element={<SuccessStory />} />
             <Route path="/portofolio" element={<Portofolio />} />
             <Route path="/products/:slug" element={<ProductDetail />} />
+            <Route path="/solution/:id" element={<SolutionDetail />} />
           </Routes>
         </div>
         <Footer />

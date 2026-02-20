@@ -1,154 +1,170 @@
 {
   "features": [
     {
+      "id": 2,
       "title_id": "Internet of Things (IoT)",
-      "header_learn_more": [
-        {
-          "image": "https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=60",
-          "title_en": "Device Connectivity",
-          "title_id": "Konektivitas Perangkat",
-          "desc_en": "Real-time communication among multiple devices.",
-          "desc_id": "Komunikasi real-time antar perangkat."
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1581092339767-847e0d972fdb?auto=format&fit=crop&w=900&q=60",
-          "title_en": "IoT Automation",
-          "title_id": "Automasi IoT",
-          "desc_en": "Automate business workflows using smart sensors.",
-          "desc_id": "Otomatisasi proses bisnis menggunakan sensor pintar."
-        }
-      ],
-      "img": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=60",
-      "learn_more_desc_en": "IoT connects devices, enabling automation, monitoring, and remote intelligence.",
-      "desc_id": "Hubungkan dan kontrol perangkat melalui jaringan IoT untuk menciptakan lingkungan yang lebih cerdas.",
-      "learn_more_image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=60",
       "title_en": "Internet of Things (IoT)",
-      "learn_more_title_id": "Membangun Masa Depan dengan IoT",
-      "team_learn_more": [
-        {
-          "image": "https://randomuser.me/api/portraits/women/22.jpg",
-          "name": "Sarah Levine",
-          "message_en": "IoT provides a new dimension of efficiency.",
-          "message_id": "IoT memberi dimensi baru bagi efisiensi."
-        }
-      ],
-      "portofolio_learn_more": [
-        {
-          "image": "https://images.unsplash.com/photo-1581093632344-d4a1b6b40f01?auto=format&fit=crop&w=900&q=60",
-          "title_en": "Smart Factory Monitoring",
-          "title_id": "Pemantauan Pabrik Pintar",
-          "desc_en": "IoT sensors for production line monitoring.",
-          "desc_id": "Sensor IoT untuk memantau lini produksi."
-        }
-      ],
+      "desc_id": "Hubungkan dan kontrol perangkat melalui jaringan IoT untuk menciptakan lingkungan yang lebih cerdas.",
       "desc_en": "Connect and control devices through IoT networks to enable smarter environments.",
       "icon": "Wifi",
+      "img": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=60",
+      "learn_more_image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=60",
+      "learn_more_title_id": "Membangun Masa Depan dengan IoT",
+      "learn_more_title_en": "Powering the Future with IoT",
       "learn_more_desc_id": "IoT menghubungkan perangkat sehingga dapat melakukan otomatisasi, pemantauan, dan pengendalian jarak jauh.",
-      "id": 2,
-      "learn_more_title_en": "Powering the Future with IoT"
-    },
-    {
-      "title_id": "Manajemen Perangkat Lunak",
+      "learn_more_desc_en": "IoT connects devices, enabling automation, monitoring, and remote intelligence.",
       "header_learn_more": [
         {
-          "image": "/images/uploads/ai-dual-mode-intelligent-ptz-camera.png",
-          "title_en": "WEB DEVELOPMENT",
-          "title_id": "WEB DEVELOPMENT",
-          "desc_en": "We create custom technologies as simple as websites to complex internet applications to power your business.",
-          "desc_id": "Kami menciptakan teknologi khusus, mulai dari yang sederhana seperti situs web hingga aplikasi internet yang kompleks untuk mendukung bisnis Anda."
+          "image": "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=900&q=60",
+          "title_en": "Smart Home & Building",
+          "title_id": "Smart Home & Building",
+          "desc_en": "Intelligent automation systems for residential and commercial buildings. Control lighting, HVAC, security, and energy usage from a single unified platform.",
+          "desc_id": "Sistem otomasi cerdas untuk gedung residensial dan komersial. Kontrol pencahayaan, HVAC, keamanan, dan penggunaan energi dari satu platform terpadu."
         },
         {
-          "image": "/images/uploads/software-maintenance.png",
-          "title_en": "SOFTWARE MAINTENANCE",
-          "title_id": "PEMELIHARAAN PERANGKAT LUNAK",
-          "desc_en": "We have vast development team than can maintain your current softwares and applications. Let us handle your software while you handle your business.",
-          "desc_id": "Kami memiliki tim pengembangan yang luas yang dapat mengelola perangkat lunak dan aplikasi Anda saat ini. Percayakan perangkat lunak Anda kepada kami sementara Anda mengelola bisnis Anda."
+          "image": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=60",
+          "title_en": "Industrial IoT (IIoT)",
+          "title_id": "Industrial IoT (IIoT)",
+          "desc_en": "End-to-end sensor networks for factories and warehouses. Real-time monitoring of production lines, predictive maintenance, and automated quality control.",
+          "desc_id": "Jaringan sensor end-to-end untuk pabrik dan gudang. Pemantauan lini produksi secara real-time, perawatan prediktif, dan kontrol kualitas otomatis."
         },
         {
-          "title_en": "MOBILE DEVELOPMENT",
-          "title_id": "PENGEMBANGAN MOBILE",
-          "desc_en": "Currently there are huge markets that are served in a mobile app-ecosystem.",
-          "desc_id": "Saat ini ada pasar besar yang dilayani dalam ekosistem aplikasi seluler.",
-          "image": "/images/uploads/mobile_development.png"
+          "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=900&q=60",
+          "title_en": "IoT Gateway & Edge Computing",
+          "title_id": "IoT Gateway & Edge Computing",
+          "desc_en": "Custom-built edge gateways that process data locally before sending to the cloud. Reduce latency, save bandwidth, and enable offline operation for mission-critical applications.",
+          "desc_id": "Gateway edge yang dibangun khusus untuk memproses data secara lokal sebelum dikirim ke cloud. Kurangi latensi, hemat bandwidth, dan aktifkan operasi offline untuk aplikasi mission-critical."
         }
       ],
-      "img": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=60",
-      "learn_more_desc_en": "We believe a mobile where there will be more smartphones than computers. In the near future, there will huge markets that will become served in a mobile app-ecosystem.\n\nOur bread and butter, we create custom technologies as simple as websites to complex internet applications to power your business.\n\nWe have vast development team than can maintain your current softwares and applications. Let us handle your software while you handle your business.",
-      "desc_id": "Kelola siklus hidup, pembaruan, dan distribusi perangkat lunak agar sistem tetap stabil dan efisien.",
-      "learn_more_image": "/images/uploads/software_server.jpg",
+      "benefits": [
+        {
+          "title_id": "Pemantauan Real-Time",
+          "title_en": "Real-Time Monitoring",
+          "desc_id": "Pantau seluruh perangkat dan sensor secara langsung dari satu dashboard terpusat, kapan saja dan di mana saja.",
+          "desc_en": "Monitor all devices and sensors live from a centralized dashboard, anytime and anywhere."
+        },
+        {
+          "title_id": "Efisiensi Operasional",
+          "title_en": "Operational Efficiency",
+          "desc_id": "Otomatisasi proses manual mengurangi biaya operasional hingga 40% dan meminimalkan human error.",
+          "desc_en": "Automating manual processes reduces operational costs by up to 40% and minimizes human error."
+        },
+        {
+          "title_id": "Skalabilitas Tinggi",
+          "title_en": "High Scalability",
+          "desc_id": "Arsitektur modular memungkinkan penambahan ratusan perangkat baru tanpa mengganggu sistem yang sudah berjalan.",
+          "desc_en": "Modular architecture allows adding hundreds of new devices without disrupting existing systems."
+        },
+        {
+          "title_id": "Keamanan Data Terjamin",
+          "title_en": "Guaranteed Data Security",
+          "desc_id": "Enkripsi end-to-end dan protokol keamanan IoT terkini memastikan setiap data terlindungi.",
+          "desc_en": "End-to-end encryption and the latest IoT security protocols ensure every piece of data is protected."
+        },
+        {
+          "title_id": "Analitik Prediktif",
+          "title_en": "Predictive Analytics",
+          "desc_id": "Data dari sensor diolah menggunakan AI untuk memprediksi kebutuhan perawatan sebelum terjadi kerusakan.",
+          "desc_en": "Sensor data is processed using AI to predict maintenance needs before failures occur."
+        },
+        {
+          "title_id": "Integrasi Mudah",
+          "title_en": "Easy Integration",
+          "desc_id": "API terbuka dan protokol standar (MQTT, HTTP) memudahkan integrasi dengan sistem yang sudah ada.",
+          "desc_en": "Open APIs and standard protocols (MQTT, HTTP) make it easy to integrate with existing systems."
+        }
+      ],
+      "tech_stack": [
+        "MQTT",
+        "Node.js",
+        "Python",
+        "AWS IoT",
+        "Grafana",
+        "InfluxDB"
+      ]
+    },
+    {
+      "id": 4,
+      "title_id": "Manajemen Perangkat Lunak",
       "title_en": "Software Management",
-      "learn_more_title_id": "Apa Yang Kami Lakukan Layanan Perangkat Lunak",
-      "team_learn_more": [
-        {
-          "image": "https://randomuser.me/api/portraits/women/66.jpg",
-          "name": "Laura Kim",
-          "message_en": "We ensure software stays fast, reliable, and scalable.",
-          "message_id": "Kami memastikan software tetap cepat, stabil, dan mudah diskalakan."
-        }
-      ],
-      "portofolio_learn_more": [
-        {
-          "image": "/images/uploads/zoom_portfolio.png",
-          "title_en": "ZOOM",
-          "title_id": "ZOOM",
-          "desc_en": "Providing on-demand, same-day delivery to businesses and retailers, both online and offline, prioritizing fast and seamless delivery. Zoom ensures ease of use with its platform and acts as a trusted partner for various businesses throughout Indonesia.",
-          "desc_id": "Menyediakan layanan kirim on-demand same day kepada pebisnis dan retailer, baik online maupun offline, dengan mengutamakan pengiriman yang cepat dan lancar. Zoom memastikan kemudahan penggunaan dengan platformnya dan juga bertindak sebagai mitra terpercaya bagi berbagai entitas bisnis di seluruh Indonesia"
-        },
-        {
-          "image": "/images/uploads/kosmo_portfolio_v2.png",
-          "title_en": "KOSMO",
-          "title_id": "KOSMO",
-          "desc_en": "Kosmo is a modern application that helps users easily search, rent, or buy residential units, offering location-based filtering, detailed property information, high-quality photos, and a faster, more transparent process to help users find their ideal home with ease.",
-          "desc_id": "Kosmo adalah aplikasi modern yang membantu pengguna mencari, menyewa, atau membeli unit hunian dengan mudah, menawarkan penyaringan berdasarkan lokasi, informasi properti terperinci, foto berkualitas tinggi, dan proses yang lebih cepat dan transparan untuk membantu pengguna menemukan rumah idaman mereka dengan mudah."
-        },
-        {
-          "image": "/images/uploads/portfolio_sipam_v3.png",
-          "title_en": "SIPAM",
-          "title_id": "SIPAM",
-          "desc_en": "SIPAM Prabin is a digital application designed to efficiently manage and monitor military detainees by centralizing detainee data, tracking their status, documenting case details, and supporting secure administrative processes to streamline operations, improve accuracy, ensure transparency, and enhance coordination among authorized military personnel.",
-          "desc_id": "SIPAM Prabin adalah aplikasi digital yang dirancang untuk mengelola dan memantau tahanan militer secara efisien dengan memusatkan data tahanan, melacak status mereka, mendokumentasikan rincian kasus, dan mendukung proses administrasi yang aman untuk menyederhanakan operasi, meningkatkan akurasi, memastikan transparansi, dan meningkatkan koordinasi di antara personel militer yang berwenang."
-        },
-        {
-          "image": "/images/uploads/sigap_portpolio.png",
-          "title_en": "SIGAP",
-          "title_id": "SIGAP",
-          "desc_en": "SIGAP is an integrated HR management application for the House of Representatives (DPR) that centralizes personnel administration, automates attendance using AI-based face recognition and palm vein authentication, and enhances security through smart gate access control to ensure efficient, accurate, and transparent workforce operations.",
-          "desc_id": "SIGAP merupakan aplikasi manajemen SDM terpadu untuk Dewan Perwakilan Rakyat (DPR) yang memusatkan administrasi kepegawaian, mengotomatiskan kehadiran menggunakan pengenalan wajah berbasis AI dan autentikasi urat telapak tangan, serta meningkatkan keamanan melalui kontrol akses gerbang pintar untuk memastikan operasional tenaga kerja yang efisien, akurat, dan transparan."
-        },
-        {
-          "title_en": "VOA",
-          "title_id": "VOA",
-          "desc_en": "The Visa on Arrival (VoA) application is a secure and user-friendly digital platform that streamlines the entry process for international travelers by allowing them to submit information, upload documents, and complete payment in advance, enabling faster immigration processing, reducing queues, and enhancing overall travel convenience.",
-          "desc_id": "Aplikasi Visa on Arrival (VoA) adalah platform digital yang aman dan mudah digunakan yang memperlancar proses masuk bagi pelancong internasional dengan memungkinkan mereka menyerahkan informasi, mengunggah dokumen, dan menyelesaikan pembayaran di muka, sehingga pemrosesan imigrasi menjadi lebih cepat, mengurangi antrean, dan meningkatkan kenyamanan perjalanan secara keseluruhan.",
-          "image": "/images/uploads/portfolio_voa.png"
-        },
-        {
-          "image": "/images/uploads/bsd_portfolio.png",
-          "title_en": "ResOne",
-          "title_id": "ResOne",
-          "desc_en": "Residence One is an AI- and IoT-powered residential access management system designed for BSD housing complexes, enabling secure, efficient, and fully automated entry and exit processes through smart sensors, real-time monitoring, intelligent gate control, and advanced identity verification to enhance safety, reduce manual intervention, and provide residents with a seamless modern living experience.",
-          "desc_id": "Residence One adalah sistem manajemen akses hunian bertenaga AI dan IoT yang dirancang untuk kompleks perumahan BSD, memungkinkan proses masuk dan keluar yang aman, efisien, dan sepenuhnya otomatis melalui sensor pintar, pemantauan waktu nyata, kontrol gerbang cerdas, dan verifikasi identitas tingkat lanjut untuk meningkatkan keselamatan, mengurangi intervensi manual, dan memberi penghuni pengalaman tinggal modern yang lancar."
-        },
-        {
-          "title_en": "EZ Service",
-          "title_id": "EZ Service",
-          "desc_en": "Ez-Service is an HR management application designed to streamline and centralize all aspects of human resource operations, enabling organizations to efficiently manage employee data, attendance, performance, payroll processes, and internal workflows through an intuitive, secure, and AI-supported digital platform.",
-          "desc_id": "Ez-Service adalah aplikasi manajemen SDM yang dirancang untuk menyederhanakan dan memusatkan semua aspek operasi sumber daya manusia, memungkinkan organisasi untuk mengelola data karyawan, kehadiran, kinerja, proses penggajian, dan alur kerja internal secara efisien melalui platform digital yang intuitif, aman, dan didukung AI.",
-          "image": "/images/uploads/hrd_portfolio.png"
-        },
-        {
-          "image": "/images/uploads/vehicle_portfolio.png",
-          "title_en": "Vehicle Management System",
-          "title_id": "Sistem Manajemen Kendaraan",
-          "desc_en": "The Vehicle Management System is a digital platform designed to streamline the monitoring, tracking, and administration of vehicles by providing real-time data on usage, maintenance schedules, fuel consumption, and driver activity, enabling organizations to enhance operational efficiency, reduce costs, improve safety, and ensure better decision-making through centralized and automated vehicle management.",
-          "desc_id": "Sistem Manajemen Kendaraan adalah platform digital yang dirancang untuk menyederhanakan pemantauan, pelacakan, dan administrasi kendaraan dengan menyediakan data waktu nyata tentang penggunaan, jadwal perawatan, konsumsi bahan bakar, dan aktivitas pengemudi, yang memungkinkan organisasi untuk meningkatkan efisiensi operasional, mengurangi biaya, meningkatkan keselamatan, dan memastikan pengambilan keputusan yang lebih baik melalui manajemen kendaraan yang terpusat dan otomatis."
-        }
-      ],
+      "desc_id": "Kelola siklus hidup, pembaruan, dan distribusi perangkat lunak agar sistem tetap stabil dan efisien.",
       "desc_en": "Manage software lifecycles, updates, and deployments to ensure stability and scalability.",
       "icon": "Server",
+      "img": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=60",
+      "learn_more_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=60",
+      "learn_more_title_id": "Layanan Pengembangan Perangkat Lunak",
+      "learn_more_title_en": "Software Development Services",
       "learn_more_desc_id": "Kami percaya akan ada lebih banyak ponsel pintar daripada komputer di dunia seluler. Dalam waktu dekat, akan ada pasar besar yang akan dilayani oleh ekosistem aplikasi seluler.\n\nTujuan utama kami adalah menciptakan teknologi khusus, mulai dari yang sederhana seperti situs web hingga aplikasi internet yang kompleks, untuk mendukung bisnis Anda.\n\nKami memiliki tim pengembangan yang luas yang dapat mengelola perangkat lunak dan aplikasi Anda saat ini. Percayakan perangkat lunak Anda kepada kami sementara Anda mengelola bisnis Anda.",
-      "id": 4,
-      "learn_more_title_en": "What We Do Software Service"
+      "learn_more_desc_en": "We believe in a mobile-first world where smartphones surpass computers. In the near future, massive markets will be served through mobile app ecosystems.\n\nOur core strength is creating custom technologies — from simple websites to complex internet applications — to power your business.\n\nWe have a vast development team that can maintain your current software and applications. Let us handle your software while you handle your business.",
+      "header_learn_more": [
+        {
+          "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=60",
+          "title_en": "Web Development",
+          "title_id": "Pengembangan Web",
+          "desc_en": "Full-stack web applications built with modern frameworks. From corporate portals and e-commerce platforms to complex SaaS dashboards — we deliver responsive, high-performance solutions.",
+          "desc_id": "Aplikasi web full-stack yang dibangun dengan framework modern. Dari portal korporat dan platform e-commerce hingga dashboard SaaS yang kompleks — kami menghadirkan solusi responsif dan berperforma tinggi."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=60",
+          "title_en": "Mobile Development",
+          "title_id": "Pengembangan Mobile",
+          "desc_en": "Cross-platform and native mobile applications for iOS and Android. We build apps with seamless UX, push notifications, offline capability, and deep platform integration.",
+          "desc_id": "Aplikasi mobile cross-platform dan native untuk iOS dan Android. Kami membangun aplikasi dengan UX yang mulus, push notifications, kemampuan offline, dan integrasi platform yang mendalam."
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=60",
+          "title_en": "Software Maintenance",
+          "title_id": "Pemeliharaan Perangkat Lunak",
+          "desc_en": "Comprehensive maintenance and support for your existing systems. Bug fixes, performance optimization, security patches, and feature enhancements — we keep your software running at peak.",
+          "desc_id": "Pemeliharaan dan dukungan komprehensif untuk sistem Anda yang sudah berjalan. Perbaikan bug, optimasi performa, patch keamanan, dan penambahan fitur — kami menjaga software Anda tetap optimal."
+        }
+      ],
+      "benefits": [
+        {
+          "title_id": "Tim Berpengalaman",
+          "title_en": "Experienced Team",
+          "desc_id": "Didukung oleh tim developer senior dengan pengalaman lebih dari 5 tahun di berbagai industri.",
+          "desc_en": "Backed by senior developers with over 5 years of experience across diverse industries."
+        },
+        {
+          "title_id": "Kualitas Kode Terjamin",
+          "title_en": "Guaranteed Code Quality",
+          "desc_id": "Standar code review, automated testing, dan CI/CD pipeline memastikan kualitas setiap rilis.",
+          "desc_en": "Code review standards, automated testing, and CI/CD pipelines ensure quality in every release."
+        },
+        {
+          "title_id": "Delivery Tepat Waktu",
+          "title_en": "On-Time Delivery",
+          "desc_id": "Metodologi Agile dan sprint planning memastikan setiap milestone tercapai sesuai jadwal.",
+          "desc_en": "Agile methodology and sprint planning ensure every milestone is achieved on schedule."
+        },
+        {
+          "title_id": "Dukungan Pasca-Rilis",
+          "title_en": "Post-Release Support",
+          "desc_id": "Layanan maintenance dan support berkelanjutan untuk memastikan aplikasi Anda selalu optimal.",
+          "desc_en": "Ongoing maintenance and support services to ensure your application always runs optimally."
+        },
+        {
+          "title_id": "Arsitektur Modern",
+          "title_en": "Modern Architecture",
+          "desc_id": "Microservices, cloud-native, dan clean architecture untuk performa dan skalabilitas terbaik.",
+          "desc_en": "Microservices, cloud-native, and clean architecture for the best performance and scalability."
+        },
+        {
+          "title_id": "Keamanan Berlapis",
+          "title_en": "Multi-Layer Security",
+          "desc_id": "Implementasi best practice keamanan termasuk OWASP, enkripsi data, dan penetration testing.",
+          "desc_en": "Implementation of security best practices including OWASP, data encryption, and penetration testing."
+        }
+      ],
+      "tech_stack": [
+        "React",
+        "Node.js",
+        "Flutter",
+        ".NET",
+        "PostgreSQL",
+        "Docker"
+      ]
     }
   ]
 }

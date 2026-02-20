@@ -386,7 +386,7 @@ export default function Contact() {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 flex-1 min-h-[320px]">
               <iframe
                 title="Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.320124209121!2d106.78870051040857!3d-6.221451393740578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1006ca693a7%3A0xb200b1d028ba734d!2sRukan%20Permata%20Senayan!5e0!3m2!1sid!2sid!4v1771573142708!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.642558781818!2d106.8097774104081!3d-6.178577893783022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f67de3b31dbb%3A0x44ae6edefc6448c5!2sJl.%20Cideng%20Barat%20No.87C%2C%20RT.1%2FRW.1%2C%20Cideng%2C%20Kecamatan%20Gambir%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010150!5e0!3m2!1sid!2sid!4v1771583700372!5m2!1sid!2sid"
                 className="w-full h-full min-h-[320px]"
                 style={{ border: 0 }}
                 allowFullScreen=""
@@ -412,7 +412,7 @@ export default function Contact() {
                     : "Our office is open for visits during working hours. Please contact us first to schedule a meeting."}
                 </p>
                 <a
-                  href="https://maps.google.com/?q=Jl.+Jend.+Sudirman,+Jakarta"
+                  href="https://maps.app.goo.gl/HeT4q7v3aVohRGMT9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur text-sm font-medium px-5 py-2.5 rounded-xl transition-colors"

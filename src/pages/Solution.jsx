@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Cpu, Wifi, Home, Server, Code } from "lucide-react";
 import { useLang } from "../context/LanguageContext";
+import { useNavigate } from "react-router-dom";
 
 const iconMap = {
   Cpu: <Cpu className="w-7 h-7" />,
@@ -15,6 +16,7 @@ export default function Solution() {
   const [features, setFeatures] = useState([]);
   const [active, setActive] = useState(1);
   const { lang } = useLang();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("/data/features.json")
@@ -74,7 +76,9 @@ export default function Solution() {
                 >
                   {title}
                 </h3>
-
+                <p className="text-sm text-gray-200 leading-relaxed max-w-md">
+                  {desc}
+                </p>
                 <AnimatePresence>
                   {isActive && (
                     <motion.div
@@ -84,13 +88,11 @@ export default function Solution() {
                       transition={{ duration: 0.4 }}
                       className="mt-3"
                     >
-                      <p className="text-sm text-gray-200 leading-relaxed max-w-md">
-                        {desc}
-                      </p>
-                      <button className="mt-4 px-5 py-2 border border-white/30 rounded-full text-sm font-medium text-white hover:bg-white hover:text-slate-900 transition-colors cursor-pointer">
-                        {lang === "id"
-                          ? "Pelajari lebih lanjut"
-                          : "Learn more"}
+                      <button
+                        onClick={() => navigate(`/solution/${f.id}`)}
+                        className="mt-4 px-5 py-2 border border-white/30 rounded-full text-sm font-medium text-white hover:bg-white hover:text-slate-900 transition-colors cursor-pointer"
+                      >
+                        {lang === "id" ? "Pelajari lebih lanjut" : "Learn more"}
                       </button>
                     </motion.div>
                   )}
@@ -161,7 +163,10 @@ export default function Solution() {
                       <p className="text-xs text-gray-200 leading-relaxed">
                         {desc}
                       </p>
-                      <button className="mt-3 text-sm font-medium text-primary hover:underline cursor-pointer">
+                      <button
+                        onClick={() => navigate(`/solution/${f.id}`)}
+                        className="mt-3 text-sm font-medium text-primary hover:underline cursor-pointer"
+                      >
                         {lang === "id" ? "Pelajari" : "Learn more"}
                       </button>
                     </motion.div>

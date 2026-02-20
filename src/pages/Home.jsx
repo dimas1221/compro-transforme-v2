@@ -137,7 +137,9 @@ export default function Home() {
       </section>
 
       {/* ══════════ SOLUTIONS ══════════ */}
-      <section className="pb-20 md:pb-28 px-6">
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 md:py-28 px-6">
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
         <div className="max-w-6xl mx-auto">
           <motion.div
             variants={fadeUp}
@@ -149,7 +151,7 @@ export default function Home() {
             <span className="inline-block text-primary font-semibold tracking-widest uppercase text-xs mb-3">
               {lang === "id" ? "Layanan Kami" : "Our Services"}
             </span>
-            <h2 className="text-2xl md:text-4xl font-bold text-slate-800">
+            <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
               {lang === "id" ? "Solusi Teknologi" : "Technology Solutions"}
             </h2>
           </motion.div>
@@ -159,7 +161,7 @@ export default function Home() {
       </section>
 
       {/* ══════════ SUCCESS STORIES ══════════ */}
-      <SuccessStoriesSection />
+      {/* <SuccessStoriesSection /> */}
 
       {/* ══════════ PARTNERS ══════════ */}
       <PartnersSection />

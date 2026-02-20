@@ -1,94 +1,244 @@
 {
-    "portfolios": [
-        {
-            "id": "apk-perlintasan",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&fit=crop&q=80",
-            "title": {
-                "id": "APK Perlintasan",
-                "en": "Border Crossing Application"
-            },
-            "description": {
-                "id": "Sistem aplikasi terintegrasi untuk pengelolaan dan pemantauan perlintasan secara digital. Platform ini dirancang untuk meningkatkan efisiensi operasional, akurasi data, dan keamanan di titik-titik perlintasan dengan memanfaatkan teknologi pengenalan wajah berbasis AI dan otomatisasi proses.",
-                "en": "An integrated application system for digital border crossing management and monitoring. This platform is designed to enhance operational efficiency, data accuracy, and security at crossing points by leveraging AI-based facial recognition technology and process automation."
-            },
-            "features": {
-                "id": [
-                    "Pengenalan wajah berbasis AI untuk verifikasi identitas",
-                    "Pemantauan arus lalu lintas secara real-time",
-                    "Dashboard analitik dan pelaporan komprehensif",
-                    "Integrasi dengan database keimigrasian nasional",
-                    "Sistem antrian otomatis untuk efisiensi waktu",
-                    "Notifikasi dan alert keamanan instan"
-                ],
-                "en": [
-                    "AI-based facial recognition for identity verification",
-                    "Real-time traffic flow monitoring",
-                    "Comprehensive analytics dashboard and reporting",
-                    "Integration with national immigration database",
-                    "Automatic queuing system for time efficiency",
-                    "Instant security notifications and alerts"
-                ]
-            }
-        },
-        {
-            "id": "voa",
-            "image": "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&fit=crop&q=80",
-            "title": {
-                "id": "VOA (Visa on Arrival)",
-                "en": "VOA (Visa on Arrival)"
-            },
-            "description": {
-                "id": "Platform digital yang aman dan mudah digunakan untuk memperlancar proses Visa on Arrival bagi pelancong internasional. Memungkinkan pengajuan informasi, pengunggahan dokumen, dan penyelesaian pembayaran di muka, sehingga pemrosesan imigrasi menjadi lebih cepat dan mengurangi antrean.",
-                "en": "A secure and user-friendly digital platform that streamlines the Visa on Arrival process for international travelers. Allows information submission, document uploading, and advance payment completion, enabling faster immigration processing and reducing queues."
-            },
-            "features": {
-                "id": [
-                    "Pengajuan visa online sebelum kedatangan",
-                    "Pengunggahan dan verifikasi dokumen otomatis",
-                    "Pembayaran digital terintegrasi multi-metode",
-                    "Pelacakan status visa secara real-time",
-                    "Antarmuka multibahasa untuk wisatawan global",
-                    "Enkripsi data tingkat tinggi untuk keamanan"
-                ],
-                "en": [
-                    "Online visa application before arrival",
-                    "Automated document upload and verification",
-                    "Integrated multi-method digital payment",
-                    "Real-time visa status tracking",
-                    "Multilingual interface for global travelers",
-                    "High-level data encryption for security"
-                ]
-            }
-        },
-        {
-            "id": "sigap-dpr",
-            "image": "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=800&fit=crop&q=80",
-            "title": {
-                "id": "SIGAP DPR",
-                "en": "SIGAP DPR"
-            },
-            "description": {
-                "id": "Aplikasi manajemen SDM terpadu untuk Dewan Perwakilan Rakyat (DPR) yang memusatkan administrasi kepegawaian, mengotomatiskan kehadiran menggunakan pengenalan wajah berbasis AI dan autentikasi urat telapak tangan, serta meningkatkan keamanan melalui kontrol akses gerbang pintar.",
-                "en": "An integrated HR management application for the House of Representatives (DPR) that centralizes personnel administration, automates attendance using AI-based face recognition and palm vein authentication, and enhances security through smart gate access control."
-            },
-            "features": {
-                "id": [
-                    "Pengenalan wajah dan palm vein untuk absensi",
-                    "Manajemen data kepegawaian terpusat",
-                    "Kontrol akses gerbang pintar terintegrasi",
-                    "Dashboard kehadiran dan performa real-time",
-                    "Laporan dan analitik SDM otomatis",
-                    "Sistem keamanan multi-layer berbasis biometrik"
-                ],
-                "en": [
-                    "Face recognition and palm vein for attendance",
-                    "Centralized personnel data management",
-                    "Integrated smart gate access control",
-                    "Real-time attendance and performance dashboard",
-                    "Automated HR reports and analytics",
-                    "Multi-layer biometric-based security system"
-                ]
-            }
-        }
-    ]
+  "portfolios": [
+    {
+      "id": "apk-perlintasan",
+      "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&fit=crop&q=80",
+      "title": {
+        "id": "APK Perlintasan",
+        "en": "Border Crossing Application"
+      },
+      "description": {
+        "id": "Sistem aplikasi terintegrasi untuk pengelolaan dan pemantauan perlintasan secara digital. Platform ini dirancang untuk meningkatkan efisiensi operasional, akurasi data, dan keamanan di titik-titik perlintasan dengan memanfaatkan teknologi pengenalan wajah berbasis AI dan otomatisasi proses.",
+        "en": "An integrated application system for digital border crossing management and monitoring. This platform is designed to enhance operational efficiency, data accuracy, and security at crossing points by leveraging AI-based facial recognition technology and process automation."
+      },
+      "features": {
+        "id": [
+          "Pengenalan wajah berbasis AI untuk verifikasi identitas",
+          "Pemantauan arus lalu lintas secara real-time",
+          "Dashboard analitik dan pelaporan komprehensif",
+          "Integrasi dengan database keimigrasian nasional",
+          "Sistem antrian otomatis untuk efisiensi waktu",
+          "Notifikasi dan alert keamanan instan"
+        ],
+        "en": [
+          "AI-based facial recognition for identity verification",
+          "Real-time traffic flow monitoring",
+          "Comprehensive analytics dashboard and reporting",
+          "Integration with national immigration database",
+          "Automatic queuing system for time efficiency",
+          "Instant security notifications and alerts"
+        ]
+      }
+    },
+    {
+      "id": "voa",
+      "image": "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&fit=crop&q=80",
+      "title": {
+        "id": "VOA (Visa on Arrival)",
+        "en": "VOA (Visa on Arrival)"
+      },
+      "description": {
+        "id": "Platform digital yang aman dan mudah digunakan untuk memperlancar proses Visa on Arrival bagi pelancong internasional. Memungkinkan pengajuan informasi, pengunggahan dokumen, dan penyelesaian pembayaran di muka, sehingga pemrosesan imigrasi menjadi lebih cepat dan mengurangi antrean.",
+        "en": "A secure and user-friendly digital platform that streamlines the Visa on Arrival process for international travelers. Allows information submission, document uploading, and advance payment completion, enabling faster immigration processing and reducing queues."
+      },
+      "features": {
+        "id": [
+          "Pengajuan visa online sebelum kedatangan",
+          "Pengunggahan dan verifikasi dokumen otomatis",
+          "Pembayaran digital terintegrasi multi-metode",
+          "Pelacakan status visa secara real-time",
+          "Antarmuka multibahasa untuk wisatawan global",
+          "Enkripsi data tingkat tinggi untuk keamanan"
+        ],
+        "en": [
+          "Online visa application before arrival",
+          "Automated document upload and verification",
+          "Integrated multi-method digital payment",
+          "Real-time visa status tracking",
+          "Multilingual interface for global travelers",
+          "High-level data encryption for security"
+        ]
+      }
+    },
+    {
+      "id": "simka",
+      "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&fit=crop&q=80",
+      "title": {
+        "id": "SIMKA (Sistem Informasi Manajemen Kabinet)",
+        "en": "SIMKA (Cabinet Management Information System)"
+      },
+      "description": {
+        "id": "Sistem informasi manajemen kabinet yang dirancang untuk mendigitalisasi dan menyederhanakan pengelolaan data kabinet pemerintahan. Platform ini mengintegrasikan informasi kementerian, pejabat, dan kebijakan dalam satu dashboard terpusat untuk pengambilan keputusan yang lebih efisien.",
+        "en": "A cabinet management information system designed to digitize and streamline government cabinet data management. This platform integrates ministry, official, and policy information into a centralized dashboard for more efficient decision-making."
+      },
+      "features": {
+        "id": [
+          "Dashboard kabinet terpusat dan interaktif",
+          "Manajemen data kementerian dan pejabat",
+          "Pelacakan kebijakan dan keputusan kabinet",
+          "Sistem pelaporan otomatis dan komprehensif",
+          "Kontrol akses berbasis peran (role-based)",
+          "Integrasi dengan sistem pemerintahan lainnya"
+        ],
+        "en": [
+          "Centralized and interactive cabinet dashboard",
+          "Ministry and official data management",
+          "Cabinet policy and decision tracking",
+          "Automated and comprehensive reporting system",
+          "Role-based access control",
+          "Integration with other government systems"
+        ]
+      }
+    },
+    {
+      "id": "smart-induction-cooker",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&fit=crop&q=80",
+      "title": {
+        "id": "Smart Induction Cooker",
+        "en": "Smart Induction Cooker"
+      },
+      "description": {
+        "id": "Kompor induksi pintar yang terintegrasi dengan teknologi IoT untuk kontrol memasak yang presisi dan efisien. Dilengkapi dengan sensor suhu otomatis, kontrol jarak jauh melalui aplikasi, dan fitur keamanan canggih untuk pengalaman memasak modern yang aman.",
+        "en": "A smart induction cooker integrated with IoT technology for precise and efficient cooking control. Equipped with automatic temperature sensors, remote control via app, and advanced safety features for a safe modern cooking experience."
+      },
+      "features": {
+        "id": [
+          "Kontrol suhu presisi berbasis sensor IoT",
+          "Kendali jarak jauh melalui aplikasi mobile",
+          "Auto-shutdown dan deteksi keamanan",
+          "Monitoring konsumsi energi real-time",
+          "Mode memasak otomatis dengan preset resep",
+          "Notifikasi dan alert status memasak"
+        ],
+        "en": [
+          "Precision temperature control via IoT sensors",
+          "Remote control through mobile application",
+          "Auto-shutdown and safety detection",
+          "Real-time energy consumption monitoring",
+          "Automatic cooking modes with recipe presets",
+          "Cooking status notifications and alerts"
+        ]
+      }
+    },
+    {
+      "id": "smart-scale",
+      "image": "https://images.unsplash.com/photo-1612358405627-3013a1ced63e?w=800&fit=crop&q=80",
+      "title": {
+        "id": "Smart Scale",
+        "en": "Smart Scale"
+      },
+      "description": {
+        "id": "Timbangan digital pintar yang terhubung dengan platform IoT untuk pencatatan dan analisis berat secara otomatis. Digunakan untuk berbagai keperluan industri dan komersial, dengan akurasi tinggi dan kemampuan integrasi data ke sistem manajemen terpusat.",
+        "en": "A smart digital scale connected to an IoT platform for automatic weight recording and analysis. Used for various industrial and commercial purposes, with high accuracy and data integration capabilities to centralized management systems."
+      },
+      "features": {
+        "id": [
+          "Pengukuran berat presisi tinggi",
+          "Pencatatan data otomatis ke cloud",
+          "Dashboard analitik dan tren berat",
+          "Integrasi dengan sistem inventaris",
+          "Kalibrasi otomatis dan self-diagnostic",
+          "Dukungan multi-unit pengukuran"
+        ],
+        "en": [
+          "High-precision weight measurement",
+          "Automatic data recording to cloud",
+          "Analytics dashboard and weight trends",
+          "Integration with inventory systems",
+          "Auto-calibration and self-diagnostic",
+          "Multi-unit measurement support"
+        ]
+      }
+    },
+    {
+      "id": "cosmo-modernland",
+      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&fit=crop&q=80",
+      "title": {
+        "id": "Cosmo Modernland (Resident Platform)",
+        "en": "Cosmo Modernland (Resident Platform)"
+      },
+      "description": {
+        "id": "Platform digital penghuni untuk kompleks perumahan Modernland yang menghubungkan warga dengan manajemen properti. Menyediakan fitur pengajuan tiket, pembayaran tagihan, booking fasilitas, dan informasi komunitas dalam satu aplikasi terintegrasi.",
+        "en": "A digital resident platform for Modernland housing complexes connecting residents with property management. Provides ticket submission, bill payment, facility booking, and community information features in one integrated application."
+      },
+      "features": {
+        "id": [
+          "Portal penghuni dengan login aman",
+          "Pengajuan dan pelacakan tiket keluhan",
+          "Pembayaran tagihan online terintegrasi",
+          "Booking fasilitas dan area komunal",
+          "Notifikasi pengumuman dan event komunitas",
+          "Dashboard manajemen properti real-time"
+        ],
+        "en": [
+          "Secure resident portal with login",
+          "Complaint ticket submission and tracking",
+          "Integrated online bill payment",
+          "Facility and communal area booking",
+          "Community announcement and event notifications",
+          "Real-time property management dashboard"
+        ]
+      }
+    },
+    {
+      "id": "kci-led-advertise",
+      "image": "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&fit=crop&q=80",
+      "title": {
+        "id": "KCI LED Advertise",
+        "en": "KCI LED Advertise"
+      },
+      "description": {
+        "id": "Sistem periklanan LED digital untuk jaringan Kereta Commuter Indonesia (KCI). Platform ini mengelola konten iklan secara terpusat di seluruh stasiun dan gerbong kereta, dengan penjadwalan otomatis, analitik tayangan, dan kemampuan update konten secara real-time.",
+        "en": "A digital LED advertising system for the Indonesian Commuter Train (KCI) network. This platform centrally manages ad content across all stations and train cars, with automatic scheduling, impression analytics, and real-time content update capabilities."
+      },
+      "features": {
+        "id": [
+          "Manajemen konten LED terpusat multi-lokasi",
+          "Penjadwalan iklan otomatis dan fleksibel",
+          "Analitik tayangan dan jangkauan audiens",
+          "Update konten real-time jarak jauh",
+          "Dukungan format video, gambar, dan teks",
+          "Monitoring status perangkat LED secara live"
+        ],
+        "en": [
+          "Centralized multi-location LED content management",
+          "Automatic and flexible ad scheduling",
+          "Impression and audience reach analytics",
+          "Remote real-time content updates",
+          "Support for video, image, and text formats",
+          "Live LED device status monitoring"
+        ]
+      }
+    },
+    {
+      "id": "smart-tv",
+      "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=800&fit=crop&q=80",
+      "title": {
+        "id": "Smart TV",
+        "en": "Smart TV"
+      },
+      "description": {
+        "id": "Solusi Smart TV berbasis IoT yang mentransformasi televisi konvensional menjadi perangkat pintar terintegrasi. Mendukung kontrol melalui aplikasi, penjadwalan konten otomatis, dan integrasi dengan ekosistem smart home untuk pengalaman hiburan yang lebih cerdas.",
+        "en": "An IoT-based Smart TV solution that transforms conventional televisions into integrated smart devices. Supports app-based control, automatic content scheduling, and integration with the smart home ecosystem for a smarter entertainment experience."
+      },
+      "features": {
+        "id": [
+          "Kontrol penuh melalui aplikasi mobile",
+          "Penjadwalan dan rotasi konten otomatis",
+          "Integrasi dengan ekosistem smart home",
+          "Streaming media dari berbagai sumber",
+          "Monitoring penggunaan dan analitik",
+          "Update firmware OTA (Over-The-Air)"
+        ],
+        "en": [
+          "Full control through mobile application",
+          "Automatic content scheduling and rotation",
+          "Integration with smart home ecosystem",
+          "Media streaming from various sources",
+          "Usage monitoring and analytics",
+          "OTA (Over-The-Air) firmware updates"
+        ]
+      }
+    }
+  ]
 }

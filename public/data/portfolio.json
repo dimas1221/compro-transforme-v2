@@ -13,16 +13,12 @@
       },
       "features": {
         "id": [
-          "Pengenalan wajah berbasis AI untuk verifikasi identitas",
-          "Pemantauan arus lalu lintas secara real-time",
           "Dashboard analitik dan pelaporan komprehensif",
           "Integrasi dengan database keimigrasian nasional",
           "Sistem antrian otomatis untuk efisiensi waktu",
           "Notifikasi dan alert keamanan instan"
         ],
         "en": [
-          "AI-based facial recognition for identity verification",
-          "Real-time traffic flow monitoring",
           "Comprehensive analytics dashboard and reporting",
           "Integration with national immigration database",
           "Automatic queuing system for time efficiency",
@@ -32,7 +28,7 @@
     },
     {
       "id": "voa",
-      "image": "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&fit=crop&q=80",
+      "image": "/images/porto/voa.png",
       "title": {
         "id": "VOA (Visa on Arrival)",
         "en": "VOA (Visa on Arrival)"
@@ -122,7 +118,7 @@
     },
     {
       "id": "smart-scale",
-      "image": "https://images.unsplash.com/photo-1612358405627-3013a1ced63e?w=800&fit=crop&q=80",
+      "image": "/images/porto/scale.png",
       "title": {
         "id": "Smart Scale",
         "en": "Smart Scale"
@@ -152,7 +148,7 @@
     },
     {
       "id": "cosmo-modernland",
-      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&fit=crop&q=80",
+      "image": "/images/porto/kosmo.png",
       "title": {
         "id": "Cosmo Modernland (Resident Platform)",
         "en": "Cosmo Modernland (Resident Platform)"

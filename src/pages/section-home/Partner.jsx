@@ -16,7 +16,6 @@ const PARTNERS = [
     full: "Multi Prima Indonesia",
     logo: "/images/logo/mpi.png",
     color: "#2563EB",
-    useInitials: true,
   },
   {
     title: "Syncro",

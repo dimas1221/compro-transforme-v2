@@ -1,16 +1,5 @@
 import { motion } from "framer-motion";
 import { useLang } from "../../context/LanguageContext";
-import {
-  Building2,
-  RefreshCcw,
-  Landmark,
-  Banknote,
-  TrainFront,
-  HeartPulse,
-  Home,
-  Lightbulb,
-  BarChart3,
-} from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -25,52 +14,60 @@ const PARTNERS = [
   {
     title: "MPI",
     full: "Multi Prima Indonesia",
-    icon: Building2,
+    logo: "/images/logo/mpi.png",
     color: "#2563EB",
+    useInitials: true,
   },
   {
     title: "Syncro",
     full: "Syncro Technology",
-    icon: RefreshCcw,
+    logo: "/images/logo/syncro.png",
     color: "#0EA5E9",
   },
   {
     title: "DJP",
     full: "Direktorat Jenderal Pajak",
-    icon: Landmark,
+    logo: "/images/logo/djp.png",
     color: "#D97706",
   },
   {
     title: "BNI",
     full: "Bank Negara Indonesia",
-    icon: Banknote,
+    logo: "/images/logo/bni.png",
     color: "#F97316",
   },
   {
     title: "KCI",
     full: "Kereta Commuter Indonesia",
-    icon: TrainFront,
+    logo: "/images/logo/kci.png",
     color: "#DC2626",
+    useInitials: true,
   },
   {
     title: "Imedin",
     full: "Imedin Healthcare",
-    icon: HeartPulse,
+    logo: "/images/logo/imedin.png",
     color: "#059669",
+    useInitials: true,
   },
   {
     title: "Modernland",
     full: "Modernland Realty",
-    icon: Home,
+    logo: "/images/logo/modernland.png",
     color: "#7C3AED",
   },
   {
     title: "Paradigma",
     full: "Paradigma Teknologi",
-    icon: Lightbulb,
+    logo: "/images/logo/paradigma.png",
     color: "#0284C7",
   },
-  { title: "Suma", full: "Suma Analitika", icon: BarChart3, color: "#1D4ED8" },
+  {
+    title: "Suma",
+    full: "Suma Analitika",
+    logo: "/images/logo/suma.png",
+    color: "#1D4ED8",
+  },
 ];
 
 export default function PartnersSection() {
@@ -106,7 +103,6 @@ export default function PartnersSection() {
         {/* Partner grid */}
         <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-5">
           {PARTNERS.map((partner, i) => {
-            const Icon = partner.icon;
             return (
               <motion.div
                 key={partner.title}
@@ -124,26 +120,39 @@ export default function PartnersSection() {
                   style={{ backgroundColor: partner.color }}
                 />
 
-                {/* Icon container */}
-                <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-                  style={{
-                    backgroundColor: `${partner.color}08`,
-                    boxShadow: "none",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = `${partner.color}15`;
-                    e.currentTarget.style.boxShadow = `0 8px 24px ${partner.color}20`;
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = `${partner.color}08`;
-                    e.currentTarget.style.boxShadow = "none";
-                  }}
-                >
-                  <Icon
-                    className="w-6 h-6 transition-transform duration-300"
-                    style={{ color: partner.color }}
-                  />
+                {/* Logo container */}
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center p-2 transition-all duration-300 group-hover:scale-110">
+                  {partner.useInitials ? (
+                    <div
+                      className="w-full h-full rounded-xl flex items-center justify-center text-white font-bold text-sm"
+                      style={{ backgroundColor: partner.color }}
+                    >
+                      {partner.title.slice(0, 2)}
+                    </div>
+                  ) : (
+                    <>
+                      <img
+                        src={partner.logo}
+                        alt={partner.full}
+                        className="w-full h-full object-contain"
+                        loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.style.display = "none";
+                          e.currentTarget.nextSibling.style.display = "flex";
+                        }}
+                      />
+                      {/* Fallback: initials */}
+                      <div
+                        className="w-full h-full rounded-xl items-center justify-center text-white font-bold text-sm hidden"
+                        style={{
+                          backgroundColor: partner.color,
+                          display: "none",
+                        }}
+                      >
+                        {partner.title.slice(0, 2)}
+                      </div>
+                    </>
+                  )}
                 </div>
 
                 {/* Title */}
@@ -168,31 +177,6 @@ export default function PartnersSection() {
             );
           })}
         </div>
-
-        {/* Bottom stat line */}
-        {/* <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={10}
-          className="mt-14 flex items-center justify-center gap-8 md:gap-12"
-        >
-          {[
-            { value: "9+", label: lang === "id" ? "Mitra Aktif" : "Active Partners" },
-            { value: "50+", label: lang === "id" ? "Proyek Selesai" : "Projects Completed" },
-            { value: "5+", label: lang === "id" ? "Tahun Pengalaman" : "Years Experience" },
-          ].map((stat, i) => (
-            <div key={i} className="text-center">
-              <div className="text-xl md:text-2xl font-bold text-primary">
-                {stat.value}
-              </div>
-              <div className="text-[10px] md:text-xs text-slate-400 mt-0.5">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </motion.div> */}
       </div>
     </section>
   );

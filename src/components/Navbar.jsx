@@ -70,15 +70,17 @@ export default function Navbar() {
   const isPartnerActive = location.pathname.startsWith("/partner");
 
   const linkClass = (path) =>
-    `relative text-sm font-medium transition-colors py-1 ${isActive(path) ? "text-primary" : "text-slate-600 hover:text-primary"
+    `relative text-sm font-medium transition-colors py-1 ${
+      isActive(path) ? "text-primary" : "text-slate-600 hover:text-primary"
     }`;
 
   return (
     <>
       {/* ══════════ DESKTOP NAVBAR ══════════ */}
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-white"
-          }`}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+          scrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-white"
+        }`}
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 h-16">
           {/* Logo */}
@@ -169,18 +171,21 @@ export default function Navbar() {
               className="hidden md:flex items-center bg-slate-100 rounded-full p-0.5 cursor-pointer select-none w-[88px] h-8 relative"
             >
               <div
-                className={`absolute top-0.5 h-7 w-[42px] bg-primary rounded-full shadow-sm transition-all duration-300 ${lang === "id" ? "left-0.5" : "left-[44px]"
-                  }`}
+                className={`absolute top-0.5 h-7 w-[42px] bg-primary rounded-full shadow-sm transition-all duration-300 ${
+                  lang === "id" ? "left-0.5" : "left-[44px]"
+                }`}
               />
               <span
-                className={`relative z-10 flex-1 text-center text-xs font-semibold transition-colors duration-300 ${lang === "id" ? "text-white" : "text-slate-500"
-                  }`}
+                className={`relative z-10 flex-1 text-center text-xs font-semibold transition-colors duration-300 ${
+                  lang === "id" ? "text-white" : "text-slate-500"
+                }`}
               >
                 ID
               </span>
               <span
-                className={`relative z-10 flex-1 text-center text-xs font-semibold transition-colors duration-300 ${lang === "en" ? "text-white" : "text-slate-500"
-                  }`}
+                className={`relative z-10 flex-1 text-center text-xs font-semibold transition-colors duration-300 ${
+                  lang === "en" ? "text-white" : "text-slate-500"
+                }`}
               >
                 EN
               </span>
@@ -236,10 +241,11 @@ export default function Navbar() {
                     <li key={item.to}>
                       <Link
                         to={item.to}
-                        className={`block px-4 py-3 rounded-xl text-sm font-medium transition-colors ${isActive(item.to)
+                        className={`block px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                          isActive(item.to)
                             ? "text-primary bg-primary/5"
                             : "text-slate-600 hover:bg-slate-50"
-                          }`}
+                        }`}
                       >
                         {lang === "id" ? item.labelId : item.labelEn}
                       </Link>
@@ -247,7 +253,7 @@ export default function Navbar() {
                   ))}
 
                   {/* Partner accordion */}
-                  <li>
+                  {/* <li>
                     <button
                       onClick={() => setOpenPartner((p) => !p)}
                       className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-colors cursor-pointer ${isPartnerActive
@@ -287,16 +293,17 @@ export default function Navbar() {
                         </motion.ul>
                       )}
                     </AnimatePresence>
-                  </li>
+                  </li> */}
 
                   {EXTRA_ITEMS.map((item) => (
                     <li key={item.to}>
                       <Link
                         to={item.to}
-                        className={`block px-4 py-3 rounded-xl text-sm font-medium transition-colors ${isActive(item.to)
+                        className={`block px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                          isActive(item.to)
                             ? "text-primary bg-primary/5"
                             : "text-slate-600 hover:bg-slate-50"
-                          }`}
+                        }`}
                       >
                         {lang === "id" ? item.labelId : item.labelEn}
                       </Link>
@@ -315,18 +322,21 @@ export default function Navbar() {
                   className="flex items-center bg-slate-100 rounded-full p-0.5 cursor-pointer select-none w-[120px] h-9 relative"
                 >
                   <div
-                    className={`absolute top-0.5 h-8 w-[58px] bg-primary rounded-full shadow-sm transition-all duration-300 ${lang === "id" ? "left-0.5" : "left-[60px]"
-                      }`}
+                    className={`absolute top-0.5 h-8 w-[58px] bg-primary rounded-full shadow-sm transition-all duration-300 ${
+                      lang === "id" ? "left-0.5" : "left-[60px]"
+                    }`}
                   />
                   <span
-                    className={`relative z-10 flex-1 text-center text-sm font-semibold transition-colors duration-300 ${lang === "id" ? "text-white" : "text-slate-500"
-                      }`}
+                    className={`relative z-10 flex-1 text-center text-sm font-semibold transition-colors duration-300 ${
+                      lang === "id" ? "text-white" : "text-slate-500"
+                    }`}
                   >
                     ID
                   </span>
                   <span
-                    className={`relative z-10 flex-1 text-center text-sm font-semibold transition-colors duration-300 ${lang === "en" ? "text-white" : "text-slate-500"
-                      }`}
+                    className={`relative z-10 flex-1 text-center text-sm font-semibold transition-colors duration-300 ${
+                      lang === "en" ? "text-white" : "text-slate-500"
+                    }`}
                   >
                     EN
                   </span>

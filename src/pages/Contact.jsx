@@ -61,13 +61,13 @@ const CONTENT = {
     },
     {
       icon: Phone,
-      id: { label: "Telepon", value: "+62 21 1234 5678" },
-      en: { label: "Phone", value: "+62 21 1234 5678" },
+      id: { label: "Telepon", value: "+622134833050" },
+      en: { label: "Phone", value: "+622134833050" },
     },
     {
       icon: Mail,
-      id: { label: "Email", value: "info@transforme.co.id" },
-      en: { label: "Email", value: "info@transforme.co.id" },
+      id: { label: "Email", value: "Transforme.indonesia@yahoo.co.id" },
+      en: { label: "Email", value: "Transforme.indonesia@yahoo.co.id" },
     },
     {
       icon: Clock,
@@ -207,8 +207,8 @@ export default function Contact() {
       </section>
 
       {/* ──────────── CONTACT INFO CARDS ──────────── */}
-      <section className="relative -mt-12 md:-mt-16 z-10 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      <section className="relative -mt-14 md:-mt-20 z-10 px-6">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           {info.map((item, i) => {
             const Icon = item.icon;
             return (
@@ -219,15 +219,30 @@ export default function Contact() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 custom={i}
-                className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow group"
+                className="group relative"
               >
-                <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors duration-300">
-                  <Icon className="w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" />
+                {/* Glow effect */}
+                <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/20 to-sky-400/20 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                <div className="relative bg-white rounded-2xl shadow-lg shadow-slate-200/50 border border-slate-100/80 p-6 hover:shadow-xl transition-all duration-300 h-full">
+                  {/* Icon */}
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-sky-400/10 flex items-center justify-center mb-4 group-hover:from-primary group-hover:to-sky-500 transition-all duration-300">
+                    <Icon className="w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" />
+                  </div>
+
+                  {/* Label */}
+                  <h3 className="font-bold text-slate-800 text-sm mb-1.5 tracking-wide">
+                    {item[lang].label}
+                  </h3>
+
+                  {/* Divider */}
+                  <div className="w-8 h-[2px] bg-gradient-to-r from-primary/30 to-transparent mb-2.5" />
+
+                  {/* Value */}
+                  <p className="text-slate-500 text-sm whitespace-pre-line leading-relaxed break-words">
+                    {item[lang].value}
+                  </p>
                 </div>
-                <h3 className="font-bold text-sm mb-1">{item[lang].label}</h3>
-                <p className="text-secondary text-sm whitespace-pre-line leading-relaxed">
-                  {item[lang].value}
-                </p>
               </motion.div>
             );
           })}

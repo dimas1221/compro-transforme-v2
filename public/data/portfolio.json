@@ -1,28 +1,124 @@
 {
   "portfolios": [
     {
+      "id": "simka",
+      "image": "/images/porto/simka2.png",
+      "title": {
+        "id": "SIMKA (Sistem Informasi Manajemen Kabinet)",
+        "en": "SIMKA (Cabinet Management Information System)"
+      },
+      "description": {
+        "id": "Sistem informasi manajemen kabinet yang dirancang untuk mendigitalisasi dan menyederhanakan pengelolaan data kabinet pemerintahan. <em>Platform</em> ini mengintegrasikan informasi kementerian, pejabat, dan kebijakan dalam satu <em>dashboard</em> terpusat untuk pengambilan keputusan yang lebih efisien.",
+        "en": "A cabinet management information system designed to digitize and streamline government cabinet data management. This platform integrates ministry, official, and policy information into a centralized dashboard for more efficient decision-making."
+      },
+      "features": {
+        "id": [
+          "<em>Dashboard</em> kabinet terpusat dan interaktif",
+          "Manajemen data kementerian dan pejabat",
+          "Pelacakan kebijakan dan keputusan kabinet",
+          "Sistem pelaporan otomatis dan komprehensif",
+          "Kontrol akses berbasis peran (<em>role-based</em>)",
+          "Integrasi dengan sistem pemerintahan lainnya"
+        ],
+        "en": [
+          "Centralized and interactive cabinet dashboard",
+          "Ministry and official data management",
+          "Cabinet policy and decision tracking",
+          "Automated and comprehensive reporting system",
+          "Role-based access control",
+          "Integration with other government systems"
+        ]
+      }
+    },
+    {
+      "id": "cosmo-modernland",
+      "image": "/images/porto/kosmo2.png",
+      "title": {
+        "id": "Cosmo Modernland (Resident Platform)",
+        "en": "Cosmo Modernland (Resident Platform)"
+      },
+      "description": {
+        "id": "Aplikasi <em>mobile</em> untuk penghuni kawasan Modernland yang menyediakan berbagai layanan hunian dalam satu <em>platform</em>. Penghuni dapat mengelola unit hunian, melakukan pemesanan dan pembayaran tagihan bulanan atau tahunan, mengakses layanan pelayanan, serta menemukan informasi promo, berita, properti, <em>event</em>, <em>marketplace</em>, dan <em>coworking space</em> di sekitar kawasan.",
+        "en": "A mobile application for Modernland residential area residents that provides various housing services in one platform. Residents can manage their housing units, make reservations and monthly or annual bill payments, access services, and discover information about promos, news, properties, events, marketplace, and coworking spaces within the area."
+      },
+      "features": {
+        "id": [
+          "Manajemen unit hunian dan pencarian hunian impian",
+          "Pemesanan dan pembayaran tagihan bulanan atau tahunan",
+          "Informasi lokasi fasilitas di sekitar kawasan",
+          "Layanan pelayanan dan bantuan penghuni",
+          "Fitur Momen untuk dokumentasi aktivitas penghuni",
+          "Informasi promo, berita, properti, <em>event</em>, <em>marketplace</em>, dan <em>coworking space</em>"
+        ],
+        "en": [
+          "Housing unit management and dream home search",
+          "Reservation and monthly or annual bill payment",
+          "Facility location information around the area",
+          "Resident services and support",
+          "Moment feature for resident activity documentation",
+          "Information on promos, news, properties, events, marketplace, and coworking spaces"
+        ]
+      }
+    },
+    {
+      "id": "kci-led-advertise",
+      "image": "/images/porto/kci.png",
+      "title": {
+        "id": "KCI LED Advertise",
+        "en": "KCI LED Advertise"
+      },
+      "description": {
+        "id": "Sistem periklanan LED digital untuk jaringan Kereta <em>Commuter</em> Indonesia (KCI). <em>Platform</em> ini mengelola konten iklan secara terpusat di seluruh stasiun dan gerbong kereta, dengan penjadwalan otomatis, analitik tayangan, dan kemampuan <em>update</em> konten secara <em>real-time</em>.",
+        "en": "A digital LED advertising system for the Indonesian Commuter Train (KCI) network. This platform centrally manages ad content across all stations and train cars, with automatic scheduling, impression analytics, and real-time content update capabilities."
+      },
+      "features": {
+        "id": [
+          "Manajemen konten LED terpusat multi-lokasi",
+          "Penjadwalan iklan otomatis dan fleksibel",
+          "Analitik tayangan dan jangkauan audiens",
+          "<em>Update</em> konten <em>real-time</em> jarak jauh",
+          "Dukungan format video, gambar, dan teks",
+          "<em>Monitoring</em> status perangkat LED secara <em>live</em>"
+        ],
+        "en": [
+          "Centralized multi-location LED content management",
+          "Automatic and flexible ad scheduling",
+          "Impression and audience reach analytics",
+          "Remote real-time content updates",
+          "Support for video, image, and text formats",
+          "Live LED device status monitoring"
+        ]
+      }
+    },
+    {
       "id": "apk-perlintasan",
-      "image": "/images/porto/perlintasan.png",
+      "image": "/images/porto/perlintasan2.png",
       "title": {
         "id": "APK Perlintasan",
         "en": "Border Crossing Application"
       },
       "description": {
-        "id": "Sistem aplikasi terintegrasi untuk pengelolaan dan pemantauan perlintasan secara digital. Platform ini dirancang untuk meningkatkan efisiensi operasional, akurasi data, dan keamanan di titik-titik perlintasan dengan memanfaatkan teknologi pengenalan wajah berbasis AI dan otomatisasi proses.",
-        "en": "An integrated application system for digital border crossing management and monitoring. This platform is designed to enhance operational efficiency, data accuracy, and security at crossing points by leveraging AI-based facial recognition technology and process automation."
+        "id": "Sistem aplikasi keimigrasian untuk mendata kedatangan dan keberangkatan Warga Negara Asing (WNA) dan Warga Negara Indonesia (WNI) berdasarkan jenis visa. Dilengkapi dengan fitur pemeriksaan cekal, pengecekan <em>Interpol</em>, riwayat perlintasan terakhir, pengecekan SOI, validasi <em>Arrival Card</em>, serta perhitungan denda <em>overstay</em> secara otomatis.",
+        "en": "An immigration application system for recording arrivals and departures of foreign nationals (WNA) and Indonesian citizens (WNI) based on visa type. Equipped with features for travel ban (cekal) checking, Interpol verification, last border crossing history, SOI checking, Arrival Card validation, and automated overstay fine calculation."
       },
       "features": {
         "id": [
-          "Dashboard analitik dan pelaporan komprehensif",
-          "Integrasi dengan database keimigrasian nasional",
-          "Sistem antrian otomatis untuk efisiensi waktu",
-          "Notifikasi dan alert keamanan instan"
+          "Pendataan kedatangan dan keberangkatan WNA dan WNI berdasarkan jenis visa",
+          "Pengecekan status cekal secara <em>real-time</em>",
+          "Pengecekan data <em>Interpol</em> untuk keamanan perlintasan",
+          "Riwayat perlintasan terakhir penumpang",
+          "Pengecekan SOI (<em>Subject of Interest</em>)",
+          "Validasi dan verifikasi <em>Arrival Card</em>",
+          "Perhitungan denda <em>overstay</em> secara otomatis"
         ],
         "en": [
-          "Comprehensive analytics dashboard and reporting",
-          "Integration with national immigration database",
-          "Automatic queuing system for time efficiency",
-          "Instant security notifications and alerts"
+          "Recording arrivals and departures of WNA and WNI based on visa type",
+          "Real-time travel ban (cekal) status checking",
+          "Interpol data verification for border security",
+          "Passenger last border crossing history",
+          "SOI (Subject of Interest) checking",
+          "Arrival Card validation and verification",
+          "Automated overstay fine calculation"
         ]
       }
     },
@@ -34,15 +130,15 @@
         "en": "VOA (Visa on Arrival)"
       },
       "description": {
-        "id": "Platform digital yang aman dan mudah digunakan untuk memperlancar proses Visa on Arrival bagi pelancong internasional. Memungkinkan pengajuan informasi, pengunggahan dokumen, dan penyelesaian pembayaran di muka, sehingga pemrosesan imigrasi menjadi lebih cepat dan mengurangi antrean.",
+        "id": "<em>Platform</em> digital yang aman dan mudah digunakan untuk memperlancar proses <em>Visa on Arrival</em> bagi pelancong internasional. Memungkinkan pengajuan informasi, pengunggahan dokumen, dan penyelesaian pembayaran di muka, sehingga pemrosesan imigrasi menjadi lebih cepat dan mengurangi antrean.",
         "en": "A secure and user-friendly digital platform that streamlines the Visa on Arrival process for international travelers. Allows information submission, document uploading, and advance payment completion, enabling faster immigration processing and reducing queues."
       },
       "features": {
         "id": [
-          "Pengajuan visa online sebelum kedatangan",
+          "Pengajuan visa <em>online</em> sebelum kedatangan",
           "Pengunggahan dan verifikasi dokumen otomatis",
           "Pembayaran digital terintegrasi multi-metode",
-          "Pelacakan status visa secara real-time",
+          "Pelacakan status visa secara <em>real-time</em>",
           "Antarmuka multibahasa untuk wisatawan global",
           "Enkripsi data tingkat tinggi untuk keamanan"
         ],
@@ -53,36 +149,6 @@
           "Real-time visa status tracking",
           "Multilingual interface for global travelers",
           "High-level data encryption for security"
-        ]
-      }
-    },
-    {
-      "id": "simka",
-      "image": "/images/porto/simka2.png",
-      "title": {
-        "id": "SIMKA (Sistem Informasi Manajemen Kabinet)",
-        "en": "SIMKA (Cabinet Management Information System)"
-      },
-      "description": {
-        "id": "Sistem informasi manajemen kabinet yang dirancang untuk mendigitalisasi dan menyederhanakan pengelolaan data kabinet pemerintahan. Platform ini mengintegrasikan informasi kementerian, pejabat, dan kebijakan dalam satu dashboard terpusat untuk pengambilan keputusan yang lebih efisien.",
-        "en": "A cabinet management information system designed to digitize and streamline government cabinet data management. This platform integrates ministry, official, and policy information into a centralized dashboard for more efficient decision-making."
-      },
-      "features": {
-        "id": [
-          "Dashboard kabinet terpusat dan interaktif",
-          "Manajemen data kementerian dan pejabat",
-          "Pelacakan kebijakan dan keputusan kabinet",
-          "Sistem pelaporan otomatis dan komprehensif",
-          "Kontrol akses berbasis peran (role-based)",
-          "Integrasi dengan sistem pemerintahan lainnya"
-        ],
-        "en": [
-          "Centralized and interactive cabinet dashboard",
-          "Ministry and official data management",
-          "Cabinet policy and decision tracking",
-          "Automated and comprehensive reporting system",
-          "Role-based access control",
-          "Integration with other government systems"
         ]
       }
     },
@@ -100,11 +166,11 @@
       "features": {
         "id": [
           "Kontrol suhu presisi berbasis sensor IoT",
-          "Kendali jarak jauh melalui aplikasi mobile",
-          "Auto-shutdown dan deteksi keamanan",
-          "Monitoring konsumsi energi real-time",
-          "Mode memasak otomatis dengan preset resep",
-          "Notifikasi dan alert status memasak"
+          "Kendali jarak jauh melalui aplikasi <em>mobile</em>",
+          "<em>Auto-shutdown</em> dan deteksi keamanan",
+          "<em>Monitoring</em> konsumsi energi <em>real-time</em>",
+          "Mode memasak otomatis dengan <em>preset</em> resep",
+          "Notifikasi dan <em>alert</em> status memasak"
         ],
         "en": [
           "Precision temperature control via IoT sensors",
@@ -124,16 +190,16 @@
         "en": "Smart Scale"
       },
       "description": {
-        "id": "Timbangan digital pintar yang terhubung dengan platform IoT untuk pencatatan dan analisis berat secara otomatis. Digunakan untuk berbagai keperluan industri dan komersial, dengan akurasi tinggi dan kemampuan integrasi data ke sistem manajemen terpusat.",
+        "id": "Timbangan digital pintar yang terhubung dengan <em>platform</em> IoT untuk pencatatan dan analisis berat secara otomatis. Digunakan untuk berbagai keperluan industri dan komersial, dengan akurasi tinggi dan kemampuan integrasi data ke sistem manajemen terpusat.",
         "en": "A smart digital scale connected to an IoT platform for automatic weight recording and analysis. Used for various industrial and commercial purposes, with high accuracy and data integration capabilities to centralized management systems."
       },
       "features": {
         "id": [
           "Pengukuran berat presisi tinggi",
-          "Pencatatan data otomatis ke cloud",
-          "Dashboard analitik dan tren berat",
+          "Pencatatan data otomatis ke <em>cloud</em>",
+          "<em>Dashboard</em> analitik dan tren berat",
           "Integrasi dengan sistem inventaris",
-          "Kalibrasi otomatis dan self-diagnostic",
+          "Kalibrasi otomatis dan <em>self-diagnostic</em>",
           "Dukungan multi-unit pengukuran"
         ],
         "en": [
@@ -147,84 +213,24 @@
       }
     },
     {
-      "id": "cosmo-modernland",
-      "image": "/images/porto/kosmo.png",
-      "title": {
-        "id": "Cosmo Modernland (Resident Platform)",
-        "en": "Cosmo Modernland (Resident Platform)"
-      },
-      "description": {
-        "id": "Platform digital penghuni untuk kompleks perumahan Modernland yang menghubungkan warga dengan manajemen properti. Menyediakan fitur pengajuan tiket, pembayaran tagihan, booking fasilitas, dan informasi komunitas dalam satu aplikasi terintegrasi.",
-        "en": "A digital resident platform for Modernland housing complexes connecting residents with property management. Provides ticket submission, bill payment, facility booking, and community information features in one integrated application."
-      },
-      "features": {
-        "id": [
-          "Portal penghuni dengan login aman",
-          "Pengajuan dan pelacakan tiket keluhan",
-          "Pembayaran tagihan online terintegrasi",
-          "Booking fasilitas dan area komunal",
-          "Notifikasi pengumuman dan event komunitas",
-          "Dashboard manajemen properti real-time"
-        ],
-        "en": [
-          "Secure resident portal with login",
-          "Complaint ticket submission and tracking",
-          "Integrated online bill payment",
-          "Facility and communal area booking",
-          "Community announcement and event notifications",
-          "Real-time property management dashboard"
-        ]
-      }
-    },
-    {
-      "id": "kci-led-advertise",
-      "image": "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&fit=crop&q=80",
-      "title": {
-        "id": "KCI LED Advertise",
-        "en": "KCI LED Advertise"
-      },
-      "description": {
-        "id": "Sistem periklanan LED digital untuk jaringan Kereta Commuter Indonesia (KCI). Platform ini mengelola konten iklan secara terpusat di seluruh stasiun dan gerbong kereta, dengan penjadwalan otomatis, analitik tayangan, dan kemampuan update konten secara real-time.",
-        "en": "A digital LED advertising system for the Indonesian Commuter Train (KCI) network. This platform centrally manages ad content across all stations and train cars, with automatic scheduling, impression analytics, and real-time content update capabilities."
-      },
-      "features": {
-        "id": [
-          "Manajemen konten LED terpusat multi-lokasi",
-          "Penjadwalan iklan otomatis dan fleksibel",
-          "Analitik tayangan dan jangkauan audiens",
-          "Update konten real-time jarak jauh",
-          "Dukungan format video, gambar, dan teks",
-          "Monitoring status perangkat LED secara live"
-        ],
-        "en": [
-          "Centralized multi-location LED content management",
-          "Automatic and flexible ad scheduling",
-          "Impression and audience reach analytics",
-          "Remote real-time content updates",
-          "Support for video, image, and text formats",
-          "Live LED device status monitoring"
-        ]
-      }
-    },
-    {
       "id": "smart-tv",
-      "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=800&fit=crop&q=80",
+      "image": "/images/porto/smarttv.png",
       "title": {
         "id": "Smart TV",
         "en": "Smart TV"
       },
       "description": {
-        "id": "Solusi Smart TV berbasis IoT yang mentransformasi televisi konvensional menjadi perangkat pintar terintegrasi. Mendukung kontrol melalui aplikasi, penjadwalan konten otomatis, dan integrasi dengan ekosistem smart home untuk pengalaman hiburan yang lebih cerdas.",
+        "id": "Solusi <em>Smart TV</em> berbasis IoT yang mentransformasi televisi konvensional menjadi perangkat pintar terintegrasi. Mendukung kontrol melalui aplikasi, penjadwalan konten otomatis, dan integrasi dengan ekosistem <em>smart home</em> untuk pengalaman hiburan yang lebih cerdas.",
         "en": "An IoT-based Smart TV solution that transforms conventional televisions into integrated smart devices. Supports app-based control, automatic content scheduling, and integration with the smart home ecosystem for a smarter entertainment experience."
       },
       "features": {
         "id": [
-          "Kontrol penuh melalui aplikasi mobile",
+          "Kontrol penuh melalui aplikasi <em>mobile</em>",
           "Penjadwalan dan rotasi konten otomatis",
-          "Integrasi dengan ekosistem smart home",
-          "Streaming media dari berbagai sumber",
-          "Monitoring penggunaan dan analitik",
-          "Update firmware OTA (Over-The-Air)"
+          "Integrasi dengan ekosistem <em>smart home</em>",
+          "<em>Streaming</em> media dari berbagai sumber",
+          "<em>Monitoring</em> penggunaan dan analitik",
+          "<em>Update firmware</em> OTA (<em>Over-The-Air</em>)"
         ],
         "en": [
           "Full control through mobile application",

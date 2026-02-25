@@ -52,11 +52,11 @@ const CONTENT = {
       icon: Building2,
       id: {
         label: "Kantor Pusat",
-        value: "Jln. Jenderal Sudirman No.Kav.2,\nJakarta 10150, Indonesia",
+        value: "Jln.Cideng Barat No.87C",
       },
       en: {
         label: "Head Office",
-        value: "Jln. Jenderal Sudirman No.Kav.2,\nJakarta 10150, Indonesia",
+        value: "Jln. Cideng Barat No.87C",
       },
     },
     {

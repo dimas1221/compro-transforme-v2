@@ -15,8 +15,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Menggabungkan algoritma AI untuk keamanan biometrik tingkat tinggi.",
             en: "Combining AI algorithms for ultra-high biometric security.",
           },
-          image:
-            "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=800&fit=crop&q=80",
+          image: "/images/product/palm.png",
           detail: {
             features: {
               id: [
@@ -55,8 +54,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Identifikasi presisi tinggi dengan iris dan wajah.",
             en: "High precision identification using iris and face.",
           },
-          image:
-            "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&fit=crop&q=80",
+          image: "/images/product/iris.png",
           detail: {
             features: {
               id: [
@@ -93,8 +91,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Pengenalan wajah cepat dan aman.",
             en: "Fast and secure face recognition.",
           },
-          image:
-            "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?w=800&fit=crop&q=80",
+          image: "/images/product/faceReg.png",
           detail: {
             features: {
               id: [
@@ -429,7 +426,7 @@ export const PRODUCT_CATEGORIES = [
               ],
             },
             parameters: {
-              display: "1.43\" AMOLED 466x466",
+              display: '1.43" AMOLED 466x466',
               battery: "Up to 14 days",
               connectivity: "Bluetooth 5.2, WiFi",
               sensors: "Heart rate, SpO2, Accelerometer, Gyroscope",
@@ -469,7 +466,7 @@ export const PRODUCT_CATEGORIES = [
               ],
             },
             parameters: {
-              display: "1.39\" AMOLED 454x454",
+              display: '1.39" AMOLED 454x454',
               battery: "Up to 21 days",
               connectivity: "Bluetooth 5.0, WiFi, NFC",
               sensors: "Barometer, Compass, Heart rate, SpO2",
@@ -509,7 +506,7 @@ export const PRODUCT_CATEGORIES = [
               ],
             },
             parameters: {
-              display: "1.4\" IPS Touch Screen",
+              display: '1.4" IPS Touch Screen',
               battery: "Up to 3 days",
               connectivity: "4G LTE, WiFi, GPS",
               sensors: "Accelerometer, Proximity",
@@ -549,7 +546,7 @@ export const PRODUCT_CATEGORIES = [
               ],
             },
             parameters: {
-              display: "1.47\" AMOLED 194x368",
+              display: '1.47" AMOLED 194x368',
               battery: "Up to 18 days",
               connectivity: "Bluetooth 5.1",
               sensors: "Heart rate, SpO2, Accelerometer",
@@ -589,7 +586,7 @@ export const PRODUCT_CATEGORIES = [
               ],
             },
             parameters: {
-              display: "1.4\" MIP always-on",
+              display: '1.4" MIP always-on',
               battery: "Up to 24 days (solar)",
               connectivity: "Bluetooth 5.0, ANT+, WiFi",
               sensors: "ABC sensor, Heart rate, SpO2, Thermometer",
@@ -715,7 +712,7 @@ export const PRODUCT_CATEGORIES = [
               ],
             },
             parameters: {
-              display: "3.5\" E-Ink Touch",
+              display: '3.5" E-Ink Touch',
               communicationInterface: "WiFi 2.4GHz, Zigbee 3.0",
               powerSupply: "24V AC / Battery backup",
               sensors: "Temperature, Humidity, Proximity, Ambient light",

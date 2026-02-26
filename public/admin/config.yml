@@ -11,9 +11,7 @@ publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 media_library:
-  name: "uploadcare"
-  config:
-    publicKey: "demopublickey"
+  name: ""
 
 collections:
   # ==========================================================

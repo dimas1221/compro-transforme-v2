@@ -8,10 +8,34 @@
 </head>
 
 <body>
-  <!-- Load Decap CMS first — auto-loads /admin/config.yml -->
+  <!-- Load Decap CMS — auto-loads /admin/config.yml -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <!-- Custom widgets AFTER CMS (needs window.CMS) -->
-  <script src="/admin/uuid.js"></script>
+
+  <!-- Register custom UUID widget after CMS loads -->
+  <script>
+    try {
+      var StringControl = CMS.getWidget("string").control;
+      var UUIDControl = class extends StringControl {
+        componentDidMount() {
+          if (!this.props.value) {
+            var uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+              /[xy]/g,
+              function (c) {
+                var r = (Math.random() * 16) | 0,
+                  v = c === "x" ? r : (r & 0x3) | 0x8;
+                return v.toString(16);
+              }
+            );
+            this.props.onChange(uuid);
+          }
+        }
+      };
+      CMS.registerWidget("uuid", UUIDControl, CMS.getWidget("string").preview);
+      console.log("✅ UUID widget registered");
+    } catch (e) {
+      console.warn("⚠️ UUID widget registration failed:", e);
+    }
+  </script>
 </body>
 
 </html>

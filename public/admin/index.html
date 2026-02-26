@@ -5,14 +5,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin Dashboard</title>
+  <script>window.CMS_MANUAL_INIT = true;</script>
 </head>
 
 <body>
-  <!-- Load Decap CMS — auto-loads /admin/config.yml -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
-  <!-- Register custom UUID widget after CMS loads -->
   <script>
+    // Register UUID widget
     try {
       var StringControl = CMS.getWidget("string").control;
       var UUIDControl = class extends StringControl {
@@ -31,10 +30,13 @@
         }
       };
       CMS.registerWidget("uuid", UUIDControl, CMS.getWidget("string").preview);
-      console.log("✅ UUID widget registered");
+      console.log("UUID widget registered");
     } catch (e) {
-      console.warn("⚠️ UUID widget registration failed:", e);
+      console.warn("UUID widget failed:", e);
     }
+
+    // Initialize CMS — loads /admin/config.yml automatically
+    CMS.init();
   </script>
 </body>
 

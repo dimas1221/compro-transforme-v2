@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <!-- Mount point wajib untuk Decap CMS -->
+    <div id="nc-root"></div>
+
+    <!-- Load Decap CMS dari CDN -->
+    <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
+    <script src="/admin/uuid.js"></script>
+
+    <script>
+      window.addEventListener("load", function () {
+        if (window.CMS) {
+          console.log("✅ Decap CMS loaded, initializin...");
+
+          // Inisialisasi Decap CMS dengan config.yml
+          window.CMS.init({
+            config: "/admin/config.yml",
+          });
+
+          console.log("✅ Decap CMS initialized successfully");
+        } else {
+          console.error("❌ CMS not loaded properly");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,10 +1,14 @@
 import { useLang } from "../context/LanguageContext";
 import ProductCategorySection from "./section-product/ProductCategorySection";
-import { PRODUCT_CATEGORIES } from "./section-product/productData";
+import { useJsonData } from "../hooks/useJsonData";
 import ProductHeroSection from "./section-product/ProductHeroSection";
 
 export default function Products() {
   const { lang } = useLang();
+  const { data: PRODUCT_CATEGORIES, loading } = useJsonData("/data/productData.json");
+
+  if (loading || !PRODUCT_CATEGORIES) return null;
+
   return (
     <>
       {/* PAGE TITLE (optional SEO / breadcrumb) */}

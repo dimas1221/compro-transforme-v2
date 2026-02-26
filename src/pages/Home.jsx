@@ -6,7 +6,7 @@ import bg from "../assets/maps_background.png";
 import Solution from "./Solution";
 import PartnersSection from "./section-home/Partner";
 import SuccessStoriesSection from "./section-home/SuccessStoriesSection";
-import { COMPANY_CONTENT } from "../data/companyContent";
+import { useJsonData } from "../hooks/useJsonData";
 
 /* ─── animation ─── */
 const fadeUp = {
@@ -19,6 +19,10 @@ const fadeUp = {
 };
 export default function Home() {
   const { lang } = useLang();
+  const { data: COMPANY_CONTENT, loading } = useJsonData("/data/companyContent.json");
+
+  if (loading || !COMPANY_CONTENT) return null;
+
   const about = COMPANY_CONTENT.about[lang];
   const vision = COMPANY_CONTENT.vision[lang];
 

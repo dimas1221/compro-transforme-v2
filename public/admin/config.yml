@@ -1,0 +1,219 @@
+backend:
+  name: github
+  repo: dimas1221/compro-transforme-v2
+  branch: main
+  auth_type: oauth
+  base_url: https://decap-oauth.vercel.app
+  auth_endpoint: auth
+  client_id: Ov23lihVYXS9ZNZr3qaj
+
+publish_mode: editorial_workflow
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # ==========================================================
+  # 1️⃣ FEATURES (features.json)
+  # ==========================================================
+  - name: "features"
+    label: "Features"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "public/data/features.json"
+        label: "Features Data"
+        name: "features_data"
+        fields:
+          - label: "Features"
+            name: "features"
+            widget: "list"
+            summary: "{{fields.title_en}}"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title (EN)", name: "title_en", widget: "string" }
+              - { label: "Title (ID)", name: "title_id", widget: "string" }
+              - { label: "Description (EN)", name: "desc_en", widget: "text" }
+              - { label: "Description (ID)", name: "desc_id", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string" }
+              - { label: "Image", name: "img", widget: "image" }
+              - { label: "Learn More Title (EN)", name: "learn_more_title_en", widget: "string" }
+              - { label: "Learn More Title (ID)", name: "learn_more_title_id", widget: "string" }
+              - { label: "Learn More Description (EN)", name: "learn_more_desc_en", widget: "text" }
+              - { label: "Learn More Description (ID)", name: "learn_more_desc_id", widget: "text" }
+              - { label: "Learn More Image", name: "learn_more_image", widget: "image" }
+
+              - label: "Header Learn More"
+                name: "header_learn_more"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title (EN)", name: "title_en", widget: "string" }
+                  - { label: "Title (ID)", name: "title_id", widget: "string" }
+                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
+                  - { label: "Description (ID)", name: "desc_id", widget: "text" }
+
+              - label: "Benefits"
+                name: "benefits"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Title (EN)", name: "title_en", widget: "string" }
+                  - { label: "Title (ID)", name: "title_id", widget: "string" }
+                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
+                  - { label: "Description (ID)", name: "desc_id", widget: "text" }
+
+              - label: "Tech Stack"
+                name: "tech_stack"
+                widget: "list"
+                required: false
+                field: { label: "Technology", name: "tech", widget: "string" }
+
+              - label: "Portfolio Learn More"
+                name: "portofolio_learn_more"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Title (EN)", name: "title_en", widget: "string" }
+                  - { label: "Title (ID)", name: "title_id", widget: "string" }
+                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
+                  - { label: "Description (ID)", name: "desc_id", widget: "text" }
+
+              - label: "Team Learn More"
+                name: "team_learn_more"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Message (EN)", name: "message_en", widget: "text" }
+                  - { label: "Message (ID)", name: "message_id", widget: "text" }
+
+  # ==========================================================
+  # 2️⃣ PORTFOLIO (portfolio.json)
+  # Structure: { portfolios: [{ id, image, title:{id,en}, description:{id,en}, features:{id:[],en:[]} }] }
+  # ==========================================================
+  - name: "portfolio"
+    label: "Portfolio"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "public/data/portfolio.json"
+        label: "Portfolio Data"
+        name: "portfolio_json"
+        fields:
+          - label: "Portfolio Items"
+            name: "portfolios"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "Bahasa Indonesia", name: "id", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+              - label: "Description"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "Bahasa Indonesia", name: "id", widget: "text" }
+                  - { label: "English", name: "en", widget: "text" }
+              - label: "Features"
+                name: "features"
+                widget: "object"
+                fields:
+                  - label: "Bahasa Indonesia"
+                    name: "id"
+                    widget: "list"
+                    field: { label: "Feature", name: "item", widget: "string" }
+                  - label: "English"
+                    name: "en"
+                    widget: "list"
+                    field: { label: "Feature", name: "item", widget: "string" }
+
+  # ==========================================================
+  # 3️⃣ COMPANY CONTENT (companyContent.json)
+  # ==========================================================
+  - name: "company_content"
+    label: "Company Content"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "public/data/companyContent.json"
+        label: "Company Content Data"
+        name: "company_content_json"
+        fields:
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - label: "Bahasa Indonesia"
+                name: "id"
+                widget: "object"
+                fields:
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "English"
+                name: "en"
+                widget: "object"
+                fields:
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+          - label: "Vision"
+            name: "vision"
+            widget: "object"
+            fields:
+              - label: "Bahasa Indonesia"
+                name: "id"
+                widget: "object"
+                fields:
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Quote", name: "quote", widget: "text" }
+              - label: "English"
+                name: "en"
+                widget: "object"
+                fields:
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Quote", name: "quote", widget: "text" }
+
+  # ==========================================================
+  # 4️⃣ PRODUCT CATEGORIES (productData.json)
+  # Structure: [{ key, title, tabs:[], items:{ "TabName": [{ slug, title:{id,en}, description:{id,en}, description_long:{id,en}, image, detail:{ features:{id:[],en:[]}, parameters:{...} } }] } }]
+  # Note: Decap CMS cannot handle dynamic object keys (tab names as keys).
+  # This collection provides basic editing for category-level info.
+  # For full product editing, edit the JSON directly.
+  # ==========================================================
+  - name: "product_categories"
+    label: "Product Categories"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "public/data/productData.json"
+        label: "Product Categories Data"
+        name: "product_categories_json"
+        fields:
+          - label: "Categories"
+            name: ""
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Key", name: "key", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Tabs"
+                name: "tabs"
+                widget: "list"
+                field: { label: "Tab Name", name: "tab", widget: "string" }

@@ -1,5 +1,5 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { PRODUCT_CATEGORIES } from "./section-product/productData";
+import { useJsonData } from "../hooks/useJsonData";
 import { useLang } from "../context/LanguageContext";
 import { motion } from "framer-motion";
 import {
@@ -63,6 +63,9 @@ export default function ProductDetail() {
   const { slug } = useParams();
   const { lang } = useLang();
   const navigate = useNavigate();
+  const { data: PRODUCT_CATEGORIES, loading } = useJsonData("/data/productData.json");
+
+  if (loading || !PRODUCT_CATEGORIES) return null;
 
   const product = PRODUCT_CATEGORIES.flatMap((cat) =>
     Object.values(cat.items).flat()

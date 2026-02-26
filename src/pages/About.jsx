@@ -2,7 +2,7 @@ import { useLang } from "../context/LanguageContext";
 import { motion } from "framer-motion";
 import { Eye, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { COMPANY_CONTENT } from "../data/companyContent";
+import { useJsonData } from "../hooks/useJsonData";
 
 /* ─────────── animation helpers ─────────── */
 const fadeUp = {
@@ -23,60 +23,35 @@ const scaleIn = {
   }),
 };
 
-/* ─────────── content data ─────────── */
-const CONTENT = {
-  hero: {
-    id: {
-      subtitle: COMPANY_CONTENT.about.id.subtitle,
-      title: "Mitra Teknologi Terpercaya Anda",
-      description: COMPANY_CONTENT.about.id.description,
-    },
-    en: {
-      subtitle: COMPANY_CONTENT.about.en.subtitle,
-      title: "Your Trusted Technology Partner",
-      description: COMPANY_CONTENT.about.en.description,
-    },
-  },
-
-  vision: {
-    id: {
-      title: "Visi",
-      text: COMPANY_CONTENT.vision.id.quote,
-    },
-    en: {
-      title: "Vision",
-      text: COMPANY_CONTENT.vision.en.quote,
-    },
-  },
-
-  stats: [
-    { value: "10+", id: "Tahun Pengalaman", en: "Years of Experience" },
-    { value: "200+", id: "Proyek Selesai", en: "Projects Completed" },
-    { value: "50+", id: "Klien Terlayani", en: "Clients Served" },
-    { value: "99%", id: "Tingkat Kepuasan", en: "Satisfaction Rate" },
-  ],
-
-  cta: {
-    id: {
-      title: "Siap Memulai Transformasi Digital?",
-      description: "Hubungi kami untuk konsultasi gratis dan temukan solusi terbaik untuk bisnis Anda.",
-      button: "Hubungi Kami",
-    },
-    en: {
-      title: "Ready to Start Your Digital Transformation?",
-      description: "Contact us for a free consultation and find the best solution for your business.",
-      button: "Contact Us",
-    },
-  },
-};
-
 /* ═══════════════════════════════════════════ */
 export default function About() {
   const { lang } = useLang();
-  const hero = CONTENT.hero[lang];
-  const vision = CONTENT.vision[lang];
-  const stats = CONTENT.stats;
-  const cta = CONTENT.cta[lang];
+  const { data: COMPANY_CONTENT, loading } = useJsonData("/data/companyContent.json");
+
+  if (loading || !COMPANY_CONTENT) return null;
+
+  /* ─────────── content data ─────────── */
+  const hero = {
+    subtitle: COMPANY_CONTENT.about[lang].subtitle,
+    title: lang === "id" ? "Mitra Teknologi Terpercaya Anda" : "Your Trusted Technology Partner",
+    description: COMPANY_CONTENT.about[lang].description,
+  };
+
+  const vision = {
+    title: lang === "id" ? "Visi" : "Vision",
+    text: COMPANY_CONTENT.vision[lang].quote,
+  };
+
+  const stats = [
+    { value: "10+", label: lang === "id" ? "Tahun Pengalaman" : "Years of Experience" },
+    { value: "200+", label: lang === "id" ? "Proyek Selesai" : "Projects Completed" },
+    { value: "50+", label: lang === "id" ? "Klien Terlayani" : "Clients Served" },
+    { value: "99%", label: lang === "id" ? "Tingkat Kepuasan" : "Satisfaction Rate" },
+  ];
+
+  const cta = lang === "id"
+    ? { title: "Siap Memulai Transformasi Digital?", description: "Hubungi kami untuk konsultasi gratis dan temukan solusi terbaik untuk bisnis Anda.", button: "Hubungi Kami" }
+    : { title: "Ready to Start Your Digital Transformation?", description: "Contact us for a free consultation and find the best solution for your business.", button: "Contact Us" };
 
   return (
     <>

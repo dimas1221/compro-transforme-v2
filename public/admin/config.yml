@@ -5,7 +5,7 @@ backend:
   auth_type: oauth
   base_url: https://decap-oauth.vercel.app
   auth_endpoint: auth
-  client_id: Ov23lihVYXS9ZNZr3qaj
+  client_id: Ov23liITg4x7Eiae4s6x
 
 publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
@@ -42,11 +42,31 @@ collections:
               - { label: "Description (ID)", name: "desc_id", widget: "text" }
               - { label: "Icon", name: "icon", widget: "string" }
               - { label: "Image", name: "img", widget: "image" }
-              - { label: "Learn More Title (EN)", name: "learn_more_title_en", widget: "string" }
-              - { label: "Learn More Title (ID)", name: "learn_more_title_id", widget: "string" }
-              - { label: "Learn More Description (EN)", name: "learn_more_desc_en", widget: "text" }
-              - { label: "Learn More Description (ID)", name: "learn_more_desc_id", widget: "text" }
-              - { label: "Learn More Image", name: "learn_more_image", widget: "image" }
+              - {
+                  label: "Learn More Title (EN)",
+                  name: "learn_more_title_en",
+                  widget: "string",
+                }
+              - {
+                  label: "Learn More Title (ID)",
+                  name: "learn_more_title_id",
+                  widget: "string",
+                }
+              - {
+                  label: "Learn More Description (EN)",
+                  name: "learn_more_desc_en",
+                  widget: "text",
+                }
+              - {
+                  label: "Learn More Description (ID)",
+                  name: "learn_more_desc_id",
+                  widget: "text",
+                }
+              - {
+                  label: "Learn More Image",
+                  name: "learn_more_image",
+                  widget: "image",
+                }
 
               - label: "Header Learn More"
                 name: "header_learn_more"
@@ -55,8 +75,16 @@ collections:
                   - { label: "Image", name: "image", widget: "image" }
                   - { label: "Title (EN)", name: "title_en", widget: "string" }
                   - { label: "Title (ID)", name: "title_id", widget: "string" }
-                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
-                  - { label: "Description (ID)", name: "desc_id", widget: "text" }
+                  - {
+                      label: "Description (EN)",
+                      name: "desc_en",
+                      widget: "text",
+                    }
+                  - {
+                      label: "Description (ID)",
+                      name: "desc_id",
+                      widget: "text",
+                    }
 
               - label: "Benefits"
                 name: "benefits"
@@ -65,8 +93,16 @@ collections:
                 fields:
                   - { label: "Title (EN)", name: "title_en", widget: "string" }
                   - { label: "Title (ID)", name: "title_id", widget: "string" }
-                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
-                  - { label: "Description (ID)", name: "desc_id", widget: "text" }
+                  - {
+                      label: "Description (EN)",
+                      name: "desc_en",
+                      widget: "text",
+                    }
+                  - {
+                      label: "Description (ID)",
+                      name: "desc_id",
+                      widget: "text",
+                    }
 
               - label: "Tech Stack"
                 name: "tech_stack"
@@ -82,8 +118,16 @@ collections:
                   - { label: "Image", name: "image", widget: "image" }
                   - { label: "Title (EN)", name: "title_en", widget: "string" }
                   - { label: "Title (ID)", name: "title_id", widget: "string" }
-                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
-                  - { label: "Description (ID)", name: "desc_id", widget: "text" }
+                  - {
+                      label: "Description (EN)",
+                      name: "desc_en",
+                      widget: "text",
+                    }
+                  - {
+                      label: "Description (ID)",
+                      name: "desc_id",
+                      widget: "text",
+                    }
 
               - label: "Team Learn More"
                 name: "team_learn_more"
@@ -92,8 +136,16 @@ collections:
                 fields:
                   - { label: "Image", name: "image", widget: "image" }
                   - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Message (EN)", name: "message_en", widget: "text" }
-                  - { label: "Message (ID)", name: "message_id", widget: "text" }
+                  - {
+                      label: "Message (EN)",
+                      name: "message_en",
+                      widget: "text",
+                    }
+                  - {
+                      label: "Message (ID)",
+                      name: "message_id",
+                      widget: "text",
+                    }
 
   # ==========================================================
   # 2️⃣ PORTFOLIO (portfolio.json)
@@ -165,14 +217,22 @@ collections:
                 fields:
                   - { label: "Subtitle", name: "subtitle", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
+                  - {
+                      label: "Description",
+                      name: "description",
+                      widget: "text",
+                    }
               - label: "English"
                 name: "en"
                 widget: "object"
                 fields:
                   - { label: "Subtitle", name: "subtitle", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
+                  - {
+                      label: "Description",
+                      name: "description",
+                      widget: "text",
+                    }
           - label: "Vision"
             name: "vision"
             widget: "object"

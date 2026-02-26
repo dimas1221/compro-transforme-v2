@@ -13,7 +13,7 @@ const fadeUp = {
 const PARTNERS = [
   {
     title: "MPI",
-    full: "Multi Prima Indonesia",
+    full: "Mitra Pembangunan Indonesia",
     logo: "/images/logo/mpi.png",
     color: "#2563EB",
   },

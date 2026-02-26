@@ -8,6 +8,7 @@ import {
   Settings2,
   ChevronRight,
   PackageOpen,
+  FileText,
 } from "lucide-react";
 
 /* ─── animation helpers ─── */
@@ -140,9 +141,36 @@ export default function ProductDetail() {
         </div>
       </section>
 
+      {/* ══════════ DESCRIPTION LONG ══════════ */}
+      {product.description_long?.[lang] && (
+        <section className="relative -mt-10 z-10 px-6 mb-8">
+          <div className="max-w-5xl mx-auto">
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-10"
+            >
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <FileText className="w-5 h-5 text-primary" />
+                </div>
+                <h2 className="text-xl md:text-2xl font-bold text-slate-800">
+                  {lang === "id" ? "Deskripsi Produk" : "Product Description"}
+                </h2>
+              </div>
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+                {product.description_long[lang]}
+              </p>
+            </motion.div>
+          </div>
+        </section>
+      )}
+
       {/* ══════════ FEATURES ══════════ */}
       {features.length > 0 && (
-        <section className="relative -mt-10 z-10 px-6">
+        <section className="relative mt-8 z-10 px-6">
           <div className="max-w-5xl mx-auto">
             <motion.div
               variants={fadeUp}

@@ -12,8 +12,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Palm Vein Capture Terminal",
           },
           description: {
-            id: "Menggabungkan algoritma AI untuk keamanan biometrik tingkat tinggi.",
-            en: "Combining AI algorithms for ultra-high biometric security.",
+            id: "Menggabungkan algoritma AI canggih untuk keamanan biometrik tingkat tinggi dan autentikasi cepat.",
+            en: "Combining advanced AI algorithms for ultra-high biometric security and rapid authentication.",
+          },
+          description_long: {
+            id: "Terminal Tangkap Telapak Tangan menggunakan teknologi pemindaian pembuluh darah telapak tangan yang canggih, dikombinasikan dengan algoritma AI untuk memberikan tingkat keamanan biometrik tertinggi. Perangkat ini mampu mengenali identitas pengguna bahkan dalam kondisi tangan basah atau lingkungan berkabut, menjadikannya solusi ideal untuk area dengan keamanan kritis seperti pusat data, laboratorium, dan fasilitas pemerintahan.",
+            en: "The Palm Vein Capture Terminal utilizes advanced palm vein scanning technology, combined with AI algorithms to deliver the highest level of biometric security. This device can recognize user identity even with wet hands or in misty environments, making it an ideal solution for critical security areas such as data centers, laboratories, and government facilities.",
           },
           image: "/images/product/palm.png",
           detail: {
@@ -51,8 +55,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Multi-Biometric Capture Terminal (Iris)",
           },
           description: {
-            id: "Identifikasi presisi tinggi dengan iris dan wajah.",
-            en: "High precision identification using iris and face.",
+            id: "Identifikasi presisi tinggi menggunakan teknologi iris dan pengenalan wajah multi-lapisan.",
+            en: "High precision identification using iris technology and multi-layer face recognition.",
+          },
+          description_long: {
+            id: "Terminal Multi-Biometrik Iris menggabungkan pengenalan iris mata dan wajah dalam satu perangkat terintegrasi. Dengan keamanan multi-lapisan, perangkat ini menawarkan akurasi identifikasi yang sangat tinggi dan cocok untuk diterapkan di area dengan tingkat keamanan maksimum seperti bandara, gedung pemerintahan, dan fasilitas militer.",
+            en: "The Multi-Biometric Iris Terminal combines iris and facial recognition in a single integrated device. With multi-layer security, this device offers extremely high identification accuracy and is suitable for deployment in maximum security areas such as airports, government buildings, and military facilities.",
           },
           image: "/images/product/iris.png",
           detail: {
@@ -88,8 +96,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Face Recognition Terminal",
           },
           description: {
-            id: "Pengenalan wajah cepat dan aman.",
-            en: "Fast and secure face recognition.",
+            id: "Pengenalan wajah cepat dan aman dengan akurasi tinggi dalam berbagai kondisi pencahayaan.",
+            en: "Fast and secure face recognition with high accuracy in various lighting conditions.",
+          },
+          description_long: {
+            id: "Terminal Pengenalan Wajah dirancang untuk memberikan identifikasi real-time dengan akurasi tinggi, bahkan dalam kondisi pencahayaan rendah. Terintegrasi dengan sistem akses kontrol, perangkat ini ideal untuk perkantoran, apartemen, dan fasilitas komersial yang membutuhkan keamanan modern tanpa mengorbankan kenyamanan pengguna.",
+            en: "The Face Recognition Terminal is designed to provide real-time identification with high accuracy, even in low-light conditions. Integrated with access control systems, this device is ideal for offices, apartments, and commercial facilities that require modern security without compromising user convenience.",
           },
           image: "/images/product/faceReg.png",
           detail: {
@@ -123,8 +135,12 @@ export const PRODUCT_CATEGORIES = [
             en: "AI Access Control",
           },
           description: {
-            id: "Kontrol akses berbasis AI.",
-            en: "AI-powered access control system.",
+            id: "Sistem kontrol akses cerdas berbasis AI dengan integrasi multi-biometrik dan monitoring real-time.",
+            en: "Intelligent AI-powered access control system with multi-biometric integration and real-time monitoring.",
+          },
+          description_long: {
+            id: "AI Access Control adalah sistem kontrol akses generasi terbaru yang memanfaatkan kecerdasan buatan untuk mengelola dan memantau akses secara real-time. Dengan kemampuan integrasi multi-biometrik, sistem ini dapat menggabungkan pengenalan wajah, sidik jari, dan kartu akses dalam satu platform terpadu, memberikan fleksibilitas dan keamanan maksimum untuk berbagai jenis fasilitas.",
+            en: "AI Access Control is a next-generation access control system that leverages artificial intelligence to manage and monitor access in real-time. With multi-biometric integration capabilities, this system can combine face recognition, fingerprint, and access cards in a single unified platform, providing maximum flexibility and security for various types of facilities.",
           },
           image:
             "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&fit=crop&q=80",
@@ -159,8 +175,12 @@ export const PRODUCT_CATEGORIES = [
             en: "AI Voice Assistant Module",
           },
           description: {
-            id: "Modul asisten suara pintar dengan pemrosesan bahasa alami.",
-            en: "Smart voice assistant module with natural language processing.",
+            id: "Modul asisten suara pintar dengan pemrosesan bahasa alami untuk integrasi smart home dan IoT.",
+            en: "Smart voice assistant module with natural language processing for smart home and IoT integration.",
+          },
+          description_long: {
+            id: "Modul Asisten Suara AI menghadirkan pengalaman interaksi suara yang natural dan responsif. Dilengkapi dengan pemrosesan bahasa alami (NLP) multi-bahasa, modul ini dapat diintegrasikan dengan berbagai perangkat smart home dan IoT. Dengan latensi rendah dan akurasi pengenalan suara di atas 95%, modul ini ideal untuk otomatisasi rumah, asisten virtual, dan aplikasi hands-free lainnya.",
+            en: "The AI Voice Assistant Module delivers a natural and responsive voice interaction experience. Equipped with multi-language natural language processing (NLP), this module can be integrated with various smart home and IoT devices. With low latency and voice recognition accuracy above 95%, this module is ideal for home automation, virtual assistants, and other hands-free applications.",
           },
           image:
             "https://images.unsplash.com/photo-1543512214-318c7553f230?w=800&fit=crop&q=80",
@@ -200,8 +220,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Smart Fingerprint Lock",
           },
           description: {
-            id: "Kunci pintu pintar dengan sensor sidik jari AI presisi tinggi.",
-            en: "Smart door lock with high-precision AI fingerprint sensor.",
+            id: "Kunci pintu pintar dengan sensor sidik jari AI presisi tinggi dan desain tahan air IP65.",
+            en: "Smart door lock with high-precision AI fingerprint sensor and IP65 waterproof design.",
+          },
+          description_long: {
+            id: "Kunci Sidik Jari Pintar menghadirkan keamanan rumah generasi terbaru dengan sensor sidik jari bertenaga AI yang mampu membuka kunci dalam waktu kurang dari 0.5 detik. Dengan kapasitas hingga 100 sidik jari, alarm anti-perusakan, baterai tahan 12 bulan, dan desain tahan air IP65, kunci ini dirancang untuk memberikan perlindungan maksimum dan kenyamanan tanpa kunci konvensional.",
+            en: "The Smart Fingerprint Lock delivers next-generation home security with an AI-powered fingerprint sensor capable of unlocking in less than 0.5 seconds. With capacity for up to 100 fingerprints, anti-tamper alarm, 12-month battery life, and IP65 waterproof design, this lock is designed to provide maximum protection and convenience without conventional keys.",
           },
           image: "/images/product/finger.png",
           detail: {
@@ -239,8 +263,12 @@ export const PRODUCT_CATEGORIES = [
             en: "AI Parking System",
           },
           description: {
-            id: "Sistem parkir otomatis dengan pengenalan plat nomor berbasis AI.",
-            en: "Automated parking system with AI-based license plate recognition.",
+            id: "Sistem parkir otomatis cerdas dengan pengenalan plat nomor berbasis AI dan pembayaran cashless.",
+            en: "Smart automated parking system with AI-based license plate recognition and cashless payment.",
+          },
+          description_long: {
+            id: "Sistem Parkir AI merevolusi manajemen parkir dengan teknologi pengenalan plat nomor otomatis yang memiliki akurasi di atas 98%. Dilengkapi dengan deteksi slot parkir real-time, pembayaran cashless terintegrasi, dan dashboard monitoring berbasis cloud, sistem ini meningkatkan efisiensi operasional dan pengalaman pengguna secara signifikan untuk pusat perbelanjaan, bandara, dan area parkir komersial.",
+            en: "The AI Parking System revolutionizes parking management with automatic license plate recognition technology with over 98% accuracy. Equipped with real-time parking slot detection, integrated cashless payment, and cloud-based monitoring dashboard, this system significantly improves operational efficiency and user experience for shopping centers, airports, and commercial parking areas.",
           },
           image:
             "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=800&fit=crop&q=80",
@@ -279,8 +307,12 @@ export const PRODUCT_CATEGORIES = [
             en: "AI Visitor Management",
           },
           description: {
-            id: "Sistem manajemen pengunjung cerdas dengan registrasi mandiri.",
-            en: "Smart visitor management system with self-registration.",
+            id: "Sistem manajemen pengunjung cerdas dengan registrasi mandiri dan pengenalan wajah otomatis.",
+            en: "Smart visitor management system with self-registration and automatic face recognition.",
+          },
+          description_long: {
+            id: "Manajemen Pengunjung AI menyederhanakan proses penerimaan tamu dengan registrasi mandiri via tablet, pengenalan wajah pengunjung, dan pencetakan badge otomatis. Terintegrasi dengan kalender tamu dan laporan kunjungan real-time, sistem ini meningkatkan keamanan dan profesionalisme di perkantoran, gedung pemerintahan, dan fasilitas publik lainnya.",
+            en: "AI Visitor Management streamlines the guest reception process with self-registration via tablet, visitor face recognition, and automatic badge printing. Integrated with guest calendar and real-time visit reports, this system enhances security and professionalism in offices, government buildings, and other public facilities.",
           },
           image: "/images/product/ai1.png",
           detail: {
@@ -321,8 +353,12 @@ export const PRODUCT_CATEGORIES = [
             en: "AI Health Smartwatch",
           },
           description: {
-            id: "Jam tangan pintar dengan pemantauan kesehatan berbasis AI.",
-            en: "Smart watch with AI-powered health monitoring.",
+            id: "Jam tangan pintar dengan pemantauan kesehatan berbasis AI dan pelacakan aktivitas 24/7.",
+            en: "Smart watch with AI-powered health monitoring and 24/7 activity tracking.",
+          },
+          description_long: {
+            id: "Smartwatch Kesehatan AI adalah perangkat wearable canggih yang memantau detak jantung, SpO2, tingkat stres, dan kualitas tidur secara 24/7 menggunakan algoritma AI. Dengan GPS terintegrasi dan ketahanan air 5ATM, smartwatch ini menjadi pendamping sempurna untuk gaya hidup aktif dan sehat, memberikan insight kesehatan yang akurat dan rekomendasi personal.",
+            en: "The AI Health Smartwatch is an advanced wearable device that monitors heart rate, SpO2, stress levels, and sleep quality 24/7 using AI algorithms. With built-in GPS and 5ATM water resistance, this smartwatch is the perfect companion for an active and healthy lifestyle, providing accurate health insights and personal recommendations.",
           },
           image:
             "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=800&fit=crop&q=80",
@@ -361,8 +397,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Smartwatch Pro GPS",
           },
           description: {
-            id: "Smartwatch premium dengan GPS ganda dan layar AMOLED.",
-            en: "Premium smartwatch with dual GPS and AMOLED display.",
+            id: "Smartwatch premium dengan GPS ganda, layar AMOLED always-on, dan bodi titanium alloy.",
+            en: "Premium smartwatch with dual GPS, always-on AMOLED display, and titanium alloy body.",
+          },
+          description_long: {
+            id: "Smartwatch Pro GPS adalah jam tangan pintar kelas premium yang dirancang untuk para profesional dan penggemar olahraga serius. Dengan GPS ganda (GPS + GLONASS), layar AMOLED always-on, lebih dari 150 mode olahraga, baterai tahan hingga 21 hari, dan bodi titanium alloy yang elegan, smartwatch ini menawarkan performa dan gaya tanpa kompromi.",
+            en: "The Smartwatch Pro GPS is a premium-class smart watch designed for professionals and serious sports enthusiasts. With dual GPS (GPS + GLONASS), always-on AMOLED display, over 150 sports modes, battery life up to 21 days, and an elegant titanium alloy body, this smartwatch offers uncompromised performance and style.",
           },
           image:
             "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&fit=crop&q=80",
@@ -401,8 +441,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Kids Tracker Smartwatch",
           },
           description: {
-            id: "Jam tangan pintar untuk anak dengan pelacakan lokasi real-time.",
-            en: "Kids smart watch with real-time location tracking.",
+            id: "Jam tangan pintar untuk anak dengan pelacakan lokasi real-time, panggilan dua arah, dan SOS darurat.",
+            en: "Kids smart watch with real-time location tracking, two-way calling, and SOS emergency.",
+          },
+          description_long: {
+            id: "Smartwatch Pelacak Anak dirancang khusus untuk keamanan dan kenyamanan orang tua dalam memantau anak-anak. Dilengkapi pelacakan GPS real-time, panggilan dua arah, tombol SOS darurat, geo-fencing zona aman, dan kamera terintegrasi, jam tangan ini memungkinkan orang tua tetap terhubung dengan anak kapan saja dan di mana saja dengan rasa aman.",
+            en: "The Kids Tracker Smartwatch is specifically designed for parents' peace of mind in monitoring their children. Equipped with real-time GPS tracking, two-way calling, SOS emergency button, safe zone geo-fencing, and built-in camera, this watch allows parents to stay connected with their children anytime and anywhere with a sense of security.",
           },
           image:
             "https://images.unsplash.com/photo-1510017803434-a899b57f1f64?w=800&fit=crop&q=80",
@@ -441,8 +485,12 @@ export const PRODUCT_CATEGORIES = [
             en: "AI Fitness Smartband",
           },
           description: {
-            id: "Gelang kebugaran pintar dengan analisis olahraga berbasis AI.",
-            en: "Smart fitness band with AI-powered workout analysis.",
+            id: "Gelang kebugaran pintar dengan analisis olahraga berbasis AI dan baterai tahan hingga 18 hari.",
+            en: "Smart fitness band with AI-powered workout analysis and up to 18-day battery life.",
+          },
+          description_long: {
+            id: "Smartband Fitness AI adalah gelang kebugaran pintar yang menggunakan kecerdasan buatan untuk menganalisis aktivitas olahraga secara otomatis. Dengan layar AMOLED fleksibel, pemantauan stres sepanjang hari, skor kualitas tidur, dan baterai yang tahan hingga 18 hari, smartband ini menjadi teman setia untuk mencapai target kebugaran harian Anda.",
+            en: "The AI Fitness Smartband is a smart fitness band that uses artificial intelligence to automatically analyze workout activities. With a flexible AMOLED display, all-day stress monitoring, sleep quality score, and battery lasting up to 18 days, this smartband is your faithful companion for achieving your daily fitness goals.",
           },
           image:
             "https://images.unsplash.com/photo-1557438159-51eec7a6c9e8?w=800&fit=crop&q=80",
@@ -481,8 +529,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Rugged Outdoor Smartwatch",
           },
           description: {
-            id: "Jam tangan tangguh untuk petualangan luar ruangan dengan standar militer.",
-            en: "Military-grade rugged smartwatch built for outdoor adventures.",
+            id: "Jam tangan tangguh standar militer untuk petualangan luar ruangan dengan solar charging.",
+            en: "Military-grade rugged smartwatch for outdoor adventures with solar charging capability.",
+          },
+          description_long: {
+            id: "Smartwatch Outdoor Tangguh dirancang dengan standar militer MIL-STD-810G untuk menghadapi kondisi alam yang paling ekstrem. Dilengkapi navigasi offline peta topografi, sensor altimeter-barometer-kompas, baterai solar charging yang tahan hingga 24 hari, dan layar safir anti gores, jam tangan ini adalah pilihan utama para petualang, pendaki gunung, dan pecinta alam.",
+            en: "The Rugged Outdoor Smartwatch is built to MIL-STD-810G military standards to withstand the most extreme natural conditions. Equipped with offline topographic map navigation, altimeter-barometer-compass sensors, solar charging battery lasting up to 24 days, and scratch-resistant sapphire screen, this watch is the top choice for adventurers, mountaineers, and nature enthusiasts.",
           },
           image:
             "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&fit=crop&q=80",
@@ -531,8 +583,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Smart Hub",
           },
           description: {
-            id: "Pusat kendali perangkat IoT di rumah Anda.",
-            en: "Central control for all IoT devices in your home.",
+            id: "Pusat kendali terpadu untuk semua perangkat IoT di rumah Anda dengan koneksi multi-protokol.",
+            en: "Unified central control for all IoT devices in your home with multi-protocol connectivity.",
+          },
+          description_long: {
+            id: "Smart Hub adalah pusat kendali cerdas yang menghubungkan dan mengelola lebih dari 500 perangkat IoT di rumah Anda. Dengan dukungan multi-protokol (WiFi, Zigbee, Bluetooth), manajemen perangkat terpusat, dan kontrol real-time, Smart Hub menyederhanakan kehidupan sehari-hari Anda menjadi satu ekosistem yang terintegrasi dan mudah dioperasikan.",
+            en: "Smart Hub is an intelligent control center that connects and manages over 500 IoT devices in your home. With multi-protocol support (WiFi, Zigbee, Bluetooth), centralized device management, and real-time control, Smart Hub simplifies your daily life into one integrated and easy-to-operate ecosystem.",
           },
           image:
             "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&fit=crop&q=80",
@@ -568,8 +624,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Smart Light System",
           },
           description: {
-            id: "Sistem pencahayaan pintar yang dapat dikendalikan via aplikasi.",
-            en: "Smart lighting system controllable via mobile app.",
+            id: "Sistem pencahayaan pintar dengan 16 juta pilihan warna yang dapat dikendalikan via aplikasi dan suara.",
+            en: "Smart lighting system with 16 million color options controllable via app and voice.",
+          },
+          description_long: {
+            id: "Sistem Lampu Pintar menghadirkan pencahayaan yang dapat dipersonalisasi sepenuhnya dengan 16 juta pilihan warna dan kontrol via aplikasi maupun perintah suara. Dengan penjadwalan otomatis, mode hemat energi, dan integrasi dengan Alexa & Google Home, sistem ini memberikan kenyamanan, efisiensi, dan suasana pencahayaan sempurna untuk setiap ruangan di rumah Anda.",
+            en: "The Smart Light System delivers fully customizable lighting with 16 million color options and control via app or voice commands. With automatic scheduling, energy saving mode, and Alexa & Google Home integration, this system provides comfort, efficiency, and the perfect lighting ambiance for every room in your home.",
           },
           image: "/images/product/slight.png",
           detail: {
@@ -606,8 +666,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Smart Thermostat",
           },
           description: {
-            id: "Termostat cerdas yang mempelajari kebiasaan Anda untuk efisiensi energi.",
-            en: "Intelligent thermostat that learns your habits for energy efficiency.",
+            id: "Termostat cerdas yang mempelajari kebiasaan Anda secara otomatis untuk efisiensi energi hingga 30%.",
+            en: "Intelligent thermostat that automatically learns your habits for up to 30% energy efficiency.",
+          },
+          description_long: {
+            id: "Termostat Pintar menggunakan teknologi pembelajaran otomatis untuk memahami pola penggunaan Anda dan mengoptimalkan suhu ruangan demi efisiensi energi hingga 30%. Dengan kontrol zona multi-ruangan, sensor kehadiran terintegrasi, dan layar sentuh e-ink yang elegan, termostat ini memberikan kenyamanan premium sekaligus menghemat biaya energi secara signifikan.",
+            en: "The Smart Thermostat uses automatic learning technology to understand your usage patterns and optimize room temperature for up to 30% energy efficiency. With multi-room zone control, built-in occupancy sensor, and elegant e-ink touch display, this thermostat delivers premium comfort while significantly reducing energy costs.",
           },
           image: "/images/product/temostat.png",
           detail: {
@@ -644,8 +708,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Smart Door Sensor",
           },
           description: {
-            id: "Sensor pintu dan jendela pintar dengan notifikasi instan.",
-            en: "Smart door and window sensor with instant notification.",
+            id: "Sensor pintu dan jendela pintar dengan notifikasi instan dan baterai tahan hingga 2 tahun.",
+            en: "Smart door and window sensor with instant notification and up to 2-year battery life.",
+          },
+          description_long: {
+            id: "Sensor Pintu Pintar memberikan keamanan ekstra untuk rumah Anda dengan deteksi buka/tutup instan dan notifikasi push real-time langsung ke smartphone. Dengan baterai yang tahan hingga 2 tahun, pemasangan tanpa kabel, dan riwayat aktivitas 30 hari, sensor ini mudah dipasang dan ideal untuk memantau pintu utama, jendela, dan area sensitif lainnya.",
+            en: "The Smart Door Sensor provides extra security for your home with instant open/close detection and real-time push notifications directly to your smartphone. With battery lasting up to 2 years, wireless installation, and 30-day activity history, this sensor is easy to install and ideal for monitoring main doors, windows, and other sensitive areas.",
           },
           image: "images/product/door.png",
           detail: {
@@ -682,8 +750,12 @@ export const PRODUCT_CATEGORIES = [
             en: "Smart Plug Energy Monitor",
           },
           description: {
-            id: "Colokan pintar dengan pemantauan konsumsi energi real-time.",
-            en: "Smart plug with real-time energy consumption monitoring.",
+            id: "Colokan pintar dengan pemantauan konsumsi energi real-time dan kontrol suara via Alexa/Google.",
+            en: "Smart plug with real-time energy consumption monitoring and voice control via Alexa/Google.",
+          },
+          description_long: {
+            id: "Smart Plug Monitor Energi memungkinkan Anda memantau dan mengontrol konsumsi daya perangkat elektronik secara real-time. Dengan penjadwalan on/off otomatis, kontrol suara via Alexa/Google, laporan konsumsi energi bulanan, dan proteksi beban lebih, colokan pintar ini membantu Anda menghemat listrik dan menjaga keamanan perangkat rumah tangga.",
+            en: "The Smart Plug Energy Monitor allows you to monitor and control electronic device power consumption in real-time. With automatic on/off scheduling, voice control via Alexa/Google, monthly energy consumption reports, and overload protection, this smart plug helps you save electricity and maintain household device safety.",
           },
           image: "/images/product/plug.png",
           detail: {
@@ -723,8 +795,12 @@ export const PRODUCT_CATEGORIES = [
             en: "AI Outdoor Camera",
           },
           description: {
-            id: "Kamera keamanan luar ruangan dengan deteksi objek berbasis AI.",
-            en: "Outdoor security camera with AI-based object detection.",
+            id: "Kamera keamanan luar ruangan 4K Ultra HD dengan deteksi manusia dan kendaraan berbasis AI.",
+            en: "4K Ultra HD outdoor security camera with AI-based human and vehicle detection.",
+          },
+          description_long: {
+            id: "Kamera Outdoor AI menghadirkan keamanan luar ruangan terdepan dengan resolusi 4K Ultra HD, deteksi manusia dan kendaraan berbasis AI, night vision warna penuh hingga 30 meter, dan ketahanan cuaca IP67. Dengan penyimpanan cloud dan lokal, kamera ini memberikan pemantauan keamanan tanpa kompromi untuk rumah, perkantoran, dan area komersial.",
+            en: "The AI Outdoor Camera delivers cutting-edge outdoor security with 4K Ultra HD resolution, AI-based human and vehicle detection, full-color night vision up to 30 meters, and IP67 weather resistance. With cloud and local storage, this camera provides uncompromised security monitoring for homes, offices, and commercial areas.",
           },
           image: "/images/product/cctv.png",
           detail: {

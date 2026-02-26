@@ -29,6 +29,36 @@ function formatLabel(key) {
     .trim();
 }
 
+/* ─── bilingual parameter labels ─── */
+const PARAM_LABELS = {
+  accuracy: { id: "Akurasi", en: "Accuracy" },
+  operatingSystem: { id: "Sistem Operasi", en: "Operating System" },
+  communicationInterface: { id: "Antarmuka Komunikasi", en: "Communication Interface" },
+  powerSupply: { id: "Catu Daya", en: "Power Supply" },
+  powerConsumption: { id: "Konsumsi Daya", en: "Power Consumption" },
+  operatingTemperature: { id: "Suhu Operasi", en: "Operating Temperature" },
+  workingHumidity: { id: "Kelembapan Kerja", en: "Working Humidity" },
+  display: { id: "Layar", en: "Display" },
+  battery: { id: "Baterai", en: "Battery" },
+  connectivity: { id: "Konektivitas", en: "Connectivity" },
+  sensors: { id: "Sensor", en: "Sensors" },
+  waterResistance: { id: "Ketahanan Air", en: "Water Resistance" },
+  weight: { id: "Berat", en: "Weight" },
+  resolution: { id: "Resolusi", en: "Resolution" },
+  lens: { id: "Lensa", en: "Lens" },
+  nightVision: { id: "Penglihatan Malam", en: "Night Vision" },
+  storageSupport: { id: "Dukungan Penyimpanan", en: "Storage Support" },
+  wattage: { id: "Daya", en: "Wattage" },
+  colorTemp: { id: "Suhu Warna", en: "Color Temperature" },
+  lifespan: { id: "Masa Pakai", en: "Lifespan" },
+  batteryLife: { id: "Masa Pakai Baterai", en: "Battery Life" },
+  detectionRange: { id: "Jarak Deteksi", en: "Detection Range" },
+  dimensions: { id: "Dimensi", en: "Dimensions" },
+  maxLoad: { id: "Beban Maksimal", en: "Max Load" },
+  powerMeasurement: { id: "Pengukuran Daya", en: "Power Measurement" },
+  certifications: { id: "Sertifikasi", en: "Certifications" },
+};
+
 export default function ProductDetail() {
   const { slug } = useParams();
   const { lang } = useLang();
@@ -244,10 +274,10 @@ export default function ProductDetail() {
                     }`}
                 >
                   <span className="text-sm font-semibold text-slate-700">
-                    {formatLabel(key)}
+                    {PARAM_LABELS[key]?.[lang] || formatLabel(key)}
                   </span>
                   <span className="text-sm text-slate-500 sm:text-right">
-                    {value}
+                    {typeof value === "object" && value !== null ? value[lang] || value.en : value}
                   </span>
                 </motion.div>
               ))}

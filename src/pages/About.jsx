@@ -1,16 +1,8 @@
 import { useLang } from "../context/LanguageContext";
 import { motion } from "framer-motion";
-import {
-  Target,
-  Eye,
-  Lightbulb,
-  Users,
-  Award,
-  Globe,
-  CheckCircle,
-  ArrowRight,
-} from "lucide-react";
+import { Eye, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { COMPANY_CONTENT } from "../data/companyContent";
 
 /* ─────────── animation helpers ─────────── */
 const fadeUp = {
@@ -35,76 +27,26 @@ const scaleIn = {
 const CONTENT = {
   hero: {
     id: {
-      subtitle: "Tentang Kami",
+      subtitle: COMPANY_CONTENT.about.id.subtitle,
       title: "Mitra Teknologi Terpercaya Anda",
-      description:
-        "PT Transforme Indonesia adalah penyedia solusi teknologi informasi end‑to‑end terkemuka untuk korporasi bisnis di Indonesia. Solusi kreatif kami menggabungkan teknologi mutakhir dan keahlian rekayasa proses bisnis untuk memaksimalkan keuntungan klien.",
+      description: COMPANY_CONTENT.about.id.description,
     },
     en: {
-      subtitle: "About Us",
+      subtitle: COMPANY_CONTENT.about.en.subtitle,
       title: "Your Trusted Technology Partner",
-      description:
-        "PT Transforme Indonesia is the leading provider of end‑to‑end information technology solutions to business corporations in Indonesia. Our creative solution combines cutting‑edge technology and business process reengineering expertise to maximize client profit.",
+      description: COMPANY_CONTENT.about.en.description,
     },
   },
 
   vision: {
     id: {
       title: "Visi",
-      text: "Menciptakan, mengeksploitasi, dan memberikan nilai maksimal kepada klien kami dengan memanfaatkan solusi teknologi mutakhir melalui semangat, dedikasi, dan keunggulan.",
+      text: COMPANY_CONTENT.vision.id.quote,
     },
     en: {
       title: "Vision",
-      text: "To create, exploit, and deliver maximum values to our clients by leveraging cutting‑edge technology solutions through passion, dedication, and excellence.",
+      text: COMPANY_CONTENT.vision.en.quote,
     },
-  },
-
-  mission: {
-    id: {
-      title: "Misi",
-      items: [
-        "Menyediakan solusi teknologi inovatif yang disesuaikan dengan kebutuhan klien.",
-        "Membangun kemitraan jangka panjang berdasarkan kepercayaan dan hasil nyata.",
-        "Mendorong transformasi digital untuk pertumbuhan bisnis berkelanjutan.",
-        "Mengembangkan talenta dan keahlian terdepan di industri.",
-      ],
-    },
-    en: {
-      title: "Mission",
-      items: [
-        "Provide innovative technology solutions tailored to client needs.",
-        "Build long‑term partnerships based on trust and tangible results.",
-        "Drive digital transformation for sustainable business growth.",
-        "Develop top‑tier talent and industry‑leading expertise.",
-      ],
-    },
-  },
-
-  values: {
-    id: { title: "Nilai Inti Kami" },
-    en: { title: "Our Core Values" },
-    items: [
-      {
-        icon: Lightbulb,
-        id: { name: "Inovasi", desc: "Selalu terdepan dengan solusi kreatif dan teknologi terbaru." },
-        en: { name: "Innovation", desc: "Always at the forefront with creative solutions and the latest technology." },
-      },
-      {
-        icon: Users,
-        id: { name: "Kolaborasi", desc: "Bekerja sama dengan klien sebagai mitra strategis." },
-        en: { name: "Collaboration", desc: "Working with clients as strategic partners." },
-      },
-      {
-        icon: Award,
-        id: { name: "Keunggulan", desc: "Standar kualitas tertinggi dalam setiap proyek." },
-        en: { name: "Excellence", desc: "The highest quality standards in every project." },
-      },
-      {
-        icon: Globe,
-        id: { name: "Integritas", desc: "Transparansi dan kejujuran dalam setiap interaksi." },
-        en: { name: "Integrity", desc: "Transparency and honesty in every interaction." },
-      },
-    ],
   },
 
   stats: [
@@ -133,8 +75,6 @@ export default function About() {
   const { lang } = useLang();
   const hero = CONTENT.hero[lang];
   const vision = CONTENT.vision[lang];
-  const mission = CONTENT.mission[lang];
-  const values = CONTENT.values;
   const stats = CONTENT.stats;
   const cta = CONTENT.cta[lang];
 
@@ -203,95 +143,35 @@ export default function About() {
         </div>
       </section>
 
-      {/* ──────────── VISION & MISSION ──────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-20 md:py-28">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-          {/* Vision */}
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="bg-gradient-to-br from-primary/5 to-transparent border border-primary/10 rounded-2xl p-8 md:p-10"
-          >
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-              <Eye className="w-6 h-6 text-primary" />
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+      {/* ──────────── VISION ──────────── */}
+      <section className="py-20 md:py-28 px-6">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="relative max-w-3xl mx-auto bg-gradient-to-br from-primary/5 via-white to-sky-50 border border-primary/10 rounded-2xl p-10 md:p-14 overflow-hidden"
+        >
+          {/* decorative circles */}
+          <div className="absolute -top-16 -right-16 w-48 h-48 bg-primary/5 rounded-full" />
+          <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-sky-100/40 rounded-full" />
+
+          {/* accent bar */}
+          <div className="absolute left-0 top-10 bottom-10 w-1 bg-gradient-to-b from-primary via-sky-400 to-primary/20 rounded-full" />
+
+          <div className="relative pl-5">
+            <span className="inline-flex items-center gap-1.5 text-primary font-semibold tracking-widest uppercase text-[10px] mb-4">
+              <Eye className="w-4 h-4" />
+              {lang === "id" ? "Visi Kami" : "Our Vision"}
+            </span>
+            <h2 className="text-2xl md:text-3xl font-bold mb-5">
               {vision.title}
             </h2>
-            <p className="text-secondary leading-relaxed italic text-sm md:text-base">
-              "{vision.text}"
+            <p className="text-slate-600 leading-relaxed italic text-base md:text-lg">
+              &ldquo;{vision.text}&rdquo;
             </p>
-          </motion.div>
-
-          {/* Mission */}
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            custom={1}
-            className="bg-gradient-to-br from-slate-50 to-transparent border border-slate-100 rounded-2xl p-8 md:p-10"
-          >
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-              <Target className="w-6 h-6 text-primary" />
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              {mission.title}
-            </h2>
-            <ul className="space-y-3">
-              {mission.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-secondary text-sm md:text-base leading-relaxed">
-                    {item}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ──────────── CORE VALUES ──────────── */}
-      <section className="bg-slate-50 py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.h2
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-2xl md:text-4xl font-bold text-center mb-14"
-          >
-            {values[lang].title}
-          </motion.h2>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.items.map((v, i) => {
-              const Icon = v.icon;
-              return (
-                <motion.div
-                  key={i}
-                  variants={fadeUp}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  custom={i}
-                  className="group bg-white rounded-2xl p-7 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                    <Icon className="w-6 h-6 text-primary group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <h3 className="font-bold text-lg mb-2">{v[lang].name}</h3>
-                  <p className="text-secondary text-sm leading-relaxed">
-                    {v[lang].desc}
-                  </p>
-                </motion.div>
-              );
-            })}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* ──────────── CTA ──────────── */}

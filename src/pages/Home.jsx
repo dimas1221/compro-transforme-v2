@@ -6,6 +6,7 @@ import bg from "../assets/maps_background.png";
 import Solution from "./Solution";
 import PartnersSection from "./section-home/Partner";
 import SuccessStoriesSection from "./section-home/SuccessStoriesSection";
+import { COMPANY_CONTENT } from "../data/companyContent";
 
 /* ─── animation ─── */
 const fadeUp = {
@@ -16,43 +17,10 @@ const fadeUp = {
     transition: { delay: i * 0.12, duration: 0.6, ease: "easeOut" },
   }),
 };
-
-/* ─── bilingual content ─── */
-const CONTENT = {
-  about: {
-    id: {
-      subtitle: "Tentang Kami",
-      title: "Penyedia Solusi IT Terdepan",
-      description:
-        "PT Transforme Indonesia adalah penyedia solusi teknologi informasi end-to-end terdepan untuk korporasi bisnis di Indonesia. Solusi kreatif kami menggabungkan teknologi mutakhir dan keahlian rekayasa proses bisnis untuk memaksimalkan keuntungan klien kami.",
-    },
-    en: {
-      subtitle: "About Us",
-      title: "Leading IT Solutions Provider",
-      description:
-        "PT Transforme Indonesia is the leading provider of end-to-end information technology solutions to business corporations in Indonesia. Our creative solution combines the leverage of cutting-edge technology and business process reengineering expertise to maximize the profit of our clients.",
-    },
-  },
-  vision: {
-    id: {
-      subtitle: "Visi & Misi",
-      title: "Apa yang Kami Percaya",
-      quote:
-        "Menciptakan, mengeksploitasi, dan memberikan nilai maksimum kepada klien kami dengan memanfaatkan solusi teknologi mutakhir melalui passion, dedikasi, dan keunggulan.",
-    },
-    en: {
-      subtitle: "Vision & Mission",
-      title: "What We Believe",
-      quote:
-        "To create, exploit, and deliver maximum values to our clients by leveraging cutting-edge technology solutions through passion, dedication, and excellence.",
-    },
-  },
-};
-
 export default function Home() {
   const { lang } = useLang();
-  const about = CONTENT.about[lang];
-  const vision = CONTENT.vision[lang];
+  const about = COMPANY_CONTENT.about[lang];
+  const vision = COMPANY_CONTENT.vision[lang];
 
   return (
     <>

@@ -1,42 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Dashboard</title>
+  <title>Content Manager</title>
   <script>window.CMS_MANUAL_INIT = true;</script>
 </head>
 
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script src="https://unpkg.com/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
   <script>
-    // Register UUID widget
-    try {
-      var StringControl = CMS.getWidget("string").control;
-      var UUIDControl = class extends StringControl {
-        componentDidMount() {
-          if (!this.props.value) {
-            var uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
-              /[xy]/g,
-              function (c) {
-                var r = (Math.random() * 16) | 0,
-                  v = c === "x" ? r : (r & 0x3) | 0x8;
-                return v.toString(16);
-              }
-            );
-            this.props.onChange(uuid);
-          }
-        }
-      };
-      CMS.registerWidget("uuid", UUIDControl, CMS.getWidget("string").preview);
-      console.log("UUID widget registered");
-    } catch (e) {
-      console.warn("UUID widget failed:", e);
-    }
+    // Fetch and parse config.yml manually, then init CMS
+    fetch("/admin/config.yml")
+      .then(function (response) {
+        if (!response.ok) throw new Error("Failed: " + response.status);
+        return response.text();
+      })
+      .then(function (yamlText) {
+        var config = jsyaml.load(yamlText);
+        console.log("Config loaded:", Object.keys(config));
 
-    // Initialize CMS — loads /admin/config.yml automatically
-    CMS.init();
+        // Register UUID widget
+        try {
+          var StringWidget = CMS.getWidget("string");
+          var UUIDControl = class extends StringWidget.control {
+            componentDidMount() {
+              if (!this.props.value) {
+                var uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+                  /[xy]/g, function (c) {
+                    var r = (Math.random() * 16) | 0;
+                    return (c === "x" ? r : (r & 0x3) | 0x8).toString(16);
+                  }
+                );
+                this.props.onChange(uuid);
+              }
+            }
+          };
+          CMS.registerWidget("uuid", UUIDControl, StringWidget.preview);
+        } catch (e) {
+          console.warn("UUID widget failed:", e);
+        }
+
+        // Init CMS with parsed config
+        CMS.init({ config: config });
+      })
+      .catch(function (err) {
+        console.error("Config load error:", err);
+        document.body.innerHTML = "<h2>Failed to load config: " + err.message + "</h2>";
+      });
   </script>
 </body>
 

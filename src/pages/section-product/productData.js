@@ -203,8 +203,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Kunci pintu pintar dengan sensor sidik jari AI presisi tinggi.",
             en: "Smart door lock with high-precision AI fingerprint sensor.",
           },
-          image:
-            "https://images.unsplash.com/photo-1595750938235-c260d7145bc2?w=800&fit=crop&q=80",
+          image: "/images/product/finger.png",
           detail: {
             features: {
               id: [
@@ -230,46 +229,6 @@ export const PRODUCT_CATEGORIES = [
               powerConsumption: "<1W standby",
               operatingTemperature: "-20°C ~ 60°C",
               workingHumidity: "20%RH ~ 95%RH",
-            },
-          },
-        },
-        {
-          slug: "ai-attendance-machine",
-          title: {
-            id: "Mesin Absensi AI",
-            en: "AI Attendance Machine",
-          },
-          description: {
-            id: "Mesin absensi karyawan dengan pengenalan wajah dan suhu tubuh.",
-            en: "Employee attendance machine with face recognition and body temperature.",
-          },
-          image:
-            "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=800&fit=crop&q=80",
-          detail: {
-            features: {
-              id: [
-                "Pengenalan wajah dengan masker",
-                "Pengukuran suhu tubuh otomatis",
-                "Kapasitas 10.000 wajah",
-                "Sinkronisasi cloud real-time",
-                "Layar sentuh 7 inci",
-              ],
-              en: [
-                "Face recognition with mask",
-                "Automatic body temperature detection",
-                "10,000 face capacity",
-                "Real-time cloud sync",
-                "7-inch touch screen",
-              ],
-            },
-            parameters: {
-              accuracy: "Face recognition >99.5%",
-              operatingSystem: "Android 9.0",
-              communicationInterface: "WiFi, Ethernet, 4G",
-              powerSupply: "DC 12V / 2A",
-              powerConsumption: "<15W",
-              operatingTemperature: "-10°C ~ 50°C",
-              workingHumidity: "10%RH ~ 90%RH",
             },
           },
         },
@@ -323,8 +282,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Sistem manajemen pengunjung cerdas dengan registrasi mandiri.",
             en: "Smart visitor management system with self-registration.",
           },
-          image:
-            "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&fit=crop&q=80",
+          image: "/images/product/ai1.png",
           detail: {
             features: {
               id: [
@@ -350,46 +308,6 @@ export const PRODUCT_CATEGORIES = [
               powerConsumption: "<12W",
               operatingTemperature: "0°C ~ 45°C",
               workingHumidity: "20%RH ~ 85%RH",
-            },
-          },
-        },
-        {
-          slug: "ai-intrusion-detector",
-          title: {
-            id: "Detektor Intrusi AI",
-            en: "AI Intrusion Detector",
-          },
-          description: {
-            id: "Sistem deteksi penyusup berbasis AI dengan analisis video cerdas.",
-            en: "AI-based intrusion detection system with smart video analytics.",
-          },
-          image:
-            "https://images.unsplash.com/photo-1558002038-bb0237f4e2d5?w=800&fit=crop&q=80",
-          detail: {
-            features: {
-              id: [
-                "Deteksi penyusup real-time",
-                "Analisis video berbasis deep learning",
-                "Notifikasi instan ke smartphone",
-                "Zona deteksi kustomisasi",
-                "Rekaman bukti otomatis",
-              ],
-              en: [
-                "Real-time intrusion detection",
-                "Deep learning video analytics",
-                "Instant smartphone notification",
-                "Customizable detection zones",
-                "Automatic evidence recording",
-              ],
-            },
-            parameters: {
-              accuracy: "Detection accuracy >97%",
-              operatingSystem: "Linux",
-              communicationInterface: "Ethernet, WiFi",
-              powerSupply: "PoE / DC 12V",
-              powerConsumption: "<8W",
-              operatingTemperature: "-30°C ~ 60°C",
-              workingHumidity: "10%RH ~ 95%RH",
             },
           },
         },
@@ -653,8 +571,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Sistem pencahayaan pintar yang dapat dikendalikan via aplikasi.",
             en: "Smart lighting system controllable via mobile app.",
           },
-          image:
-            "https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?w=800&fit=crop&q=80",
+          image: "/images/product/slight.png",
           detail: {
             features: {
               id: [
@@ -692,8 +609,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Termostat cerdas yang mempelajari kebiasaan Anda untuk efisiensi energi.",
             en: "Intelligent thermostat that learns your habits for energy efficiency.",
           },
-          image:
-            "https://images.unsplash.com/photo-1567925086983-925db5a0095d?w=800&fit=crop&q=80",
+          image: "/images/product/temostat.png",
           detail: {
             features: {
               id: [
@@ -731,8 +647,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Sensor pintu dan jendela pintar dengan notifikasi instan.",
             en: "Smart door and window sensor with instant notification.",
           },
-          image:
-            "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&fit=crop&q=80",
+          image: "images/product/door.png",
           detail: {
             features: {
               id: [
@@ -770,8 +685,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Colokan pintar dengan pemantauan konsumsi energi real-time.",
             en: "Smart plug with real-time energy consumption monitoring.",
           },
-          image:
-            "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&fit=crop&q=80",
+          image: "/images/product/plug.png",
           detail: {
             features: {
               id: [
@@ -812,8 +726,7 @@ export const PRODUCT_CATEGORIES = [
             id: "Kamera keamanan luar ruangan dengan deteksi objek berbasis AI.",
             en: "Outdoor security camera with AI-based object detection.",
           },
-          image:
-            "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&fit=crop&q=80",
+          image: "/images/product/cctv.png",
           detail: {
             features: {
               id: [
@@ -839,166 +752,6 @@ export const PRODUCT_CATEGORIES = [
               powerSupply: "PoE (802.3af) / DC 12V",
               storageSupport: "MicroSD up to 256GB",
               operatingTemperature: "-30°C ~ 60°C",
-            },
-          },
-        },
-        {
-          slug: "ptz-dome-camera",
-          title: {
-            id: "Kamera PTZ Dome",
-            en: "PTZ Dome Camera",
-          },
-          description: {
-            id: "Kamera dome PTZ dengan zoom optikal 30x dan pelacakan otomatis.",
-            en: "PTZ dome camera with 30x optical zoom and auto-tracking.",
-          },
-          image:
-            "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&fit=crop&q=80",
-          detail: {
-            features: {
-              id: [
-                "Zoom optikal 30x",
-                "Pelacakan otomatis objek bergerak",
-                "Rotasi 360° tanpa batas",
-                "Resolusi 2MP Full HD",
-                "Smart IR hingga 150m",
-              ],
-              en: [
-                "30x optical zoom",
-                "Auto-tracking of moving objects",
-                "360° unlimited rotation",
-                "2MP Full HD resolution",
-                "Smart IR up to 150m",
-              ],
-            },
-            parameters: {
-              resolution: "1920x1080 (Full HD)",
-              lens: "4.5-135mm motorized",
-              panRange: "360° endless",
-              tiltRange: "-15° ~ 90°",
-              communicationInterface: "Ethernet PoE+",
-              powerSupply: "PoE+ (802.3at) / AC 24V",
-              operatingTemperature: "-40°C ~ 65°C",
-            },
-          },
-        },
-        {
-          slug: "nvr-16-channel",
-          title: {
-            id: "NVR 16 Channel",
-            en: "16-Channel NVR",
-          },
-          description: {
-            id: "Network Video Recorder 16 channel dengan playback cerdas.",
-            en: "16-channel Network Video Recorder with smart playback.",
-          },
-          image:
-            "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&fit=crop&q=80",
-          detail: {
-            features: {
-              id: [
-                "Dukungan 16 kamera IP",
-                "Rekaman 4K simultan",
-                "Pencarian cerdas berbasis AI",
-                "Dual HDD (hingga 20TB)",
-                "Output HDMI & VGA",
-              ],
-              en: [
-                "Support for 16 IP cameras",
-                "Simultaneous 4K recording",
-                "AI-based smart search",
-                "Dual HDD (up to 20TB)",
-                "HDMI & VGA output",
-              ],
-            },
-            parameters: {
-              channels: "16 channels",
-              maxResolution: "12MP per channel",
-              bandwidth: "160Mbps incoming",
-              storageSupport: "2x SATA (up to 10TB each)",
-              communicationInterface: "Ethernet Gigabit, USB 3.0",
-              powerSupply: "DC 12V / 2A",
-              operatingTemperature: "-10°C ~ 55°C",
-            },
-          },
-        },
-        {
-          slug: "wireless-battery-camera",
-          title: {
-            id: "Kamera Baterai Wireless",
-            en: "Wireless Battery Camera",
-          },
-          description: {
-            id: "Kamera keamanan nirkabel dengan baterai isi ulang tahan lama.",
-            en: "Wireless security camera with long-lasting rechargeable battery.",
-          },
-          image:
-            "https://images.unsplash.com/photo-1557862921-37829c790f19?w=800&fit=crop&q=80",
-          detail: {
-            features: {
-              id: [
-                "Baterai isi ulang tahan 6 bulan",
-                "Panel solar opsional",
-                "Resolusi 2K QHD",
-                "Komunikasi dua arah",
-                "Sirene peringatan built-in",
-              ],
-              en: [
-                "6-month rechargeable battery",
-                "Optional solar panel",
-                "2K QHD resolution",
-                "Two-way communication",
-                "Built-in warning siren",
-              ],
-            },
-            parameters: {
-              resolution: "2560x1440 (2K QHD)",
-              lens: "3.6mm, 130° wide angle",
-              nightVision: "IR up to 10m",
-              battery: "6500mAh rechargeable",
-              communicationInterface: "WiFi 2.4GHz",
-              waterResistance: "IP65",
-              operatingTemperature: "-20°C ~ 50°C",
-            },
-          },
-        },
-        {
-          slug: "doorbell-camera-ai",
-          title: {
-            id: "Bel Pintu Kamera AI",
-            en: "AI Doorbell Camera",
-          },
-          description: {
-            id: "Bel pintu pintar dengan kamera AI dan deteksi paket.",
-            en: "Smart doorbell with AI camera and package detection.",
-          },
-          image:
-            "https://images.unsplash.com/photo-1580191947416-62d35a55e71d?w=800&fit=crop&q=80",
-          detail: {
-            features: {
-              id: [
-                "Deteksi pengunjung & paket AI",
-                "Video 2K HDR",
-                "Komunikasi dua arah",
-                "Pre-roll video 3 detik",
-                "Penyimpanan cloud gratis 30 hari",
-              ],
-              en: [
-                "AI visitor & package detection",
-                "2K HDR video",
-                "Two-way communication",
-                "3-second pre-roll video",
-                "30-day free cloud storage",
-              ],
-            },
-            parameters: {
-              resolution: "2560x1920 (2K)",
-              fieldOfView: "160° diagonal",
-              nightVision: "IR + Color night vision",
-              communicationInterface: "WiFi 2.4/5GHz",
-              powerSupply: "Wired 16-24V AC / Battery",
-              waterResistance: "IP65",
-              operatingTemperature: "-20°C ~ 50°C",
             },
           },
         },

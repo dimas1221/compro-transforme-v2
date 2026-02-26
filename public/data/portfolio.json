@@ -154,7 +154,7 @@
     },
     {
       "id": "smart-induction-cooker",
-      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&fit=crop&q=80",
+      "image": "/images/porto/sic.png",
       "title": {
         "id": "Smart Induction Cooker",
         "en": "Smart Induction Cooker"

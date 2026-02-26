@@ -63,9 +63,11 @@ export default function ProductDetail() {
   const { slug } = useParams();
   const { lang } = useLang();
   const navigate = useNavigate();
-  const { data: PRODUCT_CATEGORIES, loading } = useJsonData("/data/productData.json");
+  const { data: productData, loading } = useJsonData("/data/productData.json");
 
-  if (loading || !PRODUCT_CATEGORIES) return null;
+  if (loading || !productData) return null;
+
+  const PRODUCT_CATEGORIES = productData.categories;
 
   const product = PRODUCT_CATEGORIES.flatMap((cat) => cat.items)
     .find((item) => item.slug === slug);

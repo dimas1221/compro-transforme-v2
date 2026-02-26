@@ -5,9 +5,11 @@ import ProductHeroSection from "./section-product/ProductHeroSection";
 
 export default function Products() {
   const { lang } = useLang();
-  const { data: PRODUCT_CATEGORIES, loading } = useJsonData("/data/productData.json");
+  const { data: productData, loading } = useJsonData("/data/productData.json");
 
-  if (loading || !PRODUCT_CATEGORIES) return null;
+  if (loading || !productData) return null;
+
+  const PRODUCT_CATEGORIES = productData.categories;
 
   return (
     <>

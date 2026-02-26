@@ -265,7 +265,7 @@ collections:
         name: "product_categories_json"
         fields:
           - label: "Categories"
-            name: ""
+            name: "categories"
             widget: "list"
             summary: "{{fields.title}}"
             fields:

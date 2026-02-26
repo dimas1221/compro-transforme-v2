@@ -67,9 +67,8 @@ export default function ProductDetail() {
 
   if (loading || !PRODUCT_CATEGORIES) return null;
 
-  const product = PRODUCT_CATEGORIES.flatMap((cat) =>
-    Object.values(cat.items).flat()
-  ).find((item) => item.slug === slug);
+  const product = PRODUCT_CATEGORIES.flatMap((cat) => cat.items)
+    .find((item) => item.slug === slug);
 
   /* ── NOT FOUND ── */
   if (!product) {

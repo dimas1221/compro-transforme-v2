@@ -29,7 +29,7 @@ export default function ProductCategorySection({ category }) {
 
   /* ─── FILTER ─── */
   const filteredItems = useMemo(() => {
-    const items = category.items?.[activeTab] || [];
+    const items = (category.items || []).filter((i) => i.tab === activeTab);
     if (!search) return items;
     const keyword = search.toLowerCase();
     return items.filter(

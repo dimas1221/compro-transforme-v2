@@ -252,10 +252,6 @@ collections:
 
   # ==========================================================
   # 4️⃣ PRODUCT CATEGORIES (productData.json)
-  # Structure: [{ key, title, tabs:[], items:{ "TabName": [{ slug, title:{id,en}, description:{id,en}, description_long:{id,en}, image, detail:{ features:{id:[],en:[]}, parameters:{...} } }] } }]
-  # Note: Decap CMS cannot handle dynamic object keys (tab names as keys).
-  # This collection provides basic editing for category-level info.
-  # For full product editing, edit the JSON directly.
   # ==========================================================
   - name: "product_categories"
     label: "Product Categories"
@@ -279,3 +275,48 @@ collections:
                 name: "tabs"
                 widget: "list"
                 field: { label: "Tab Name", name: "tab", widget: "string" }
+              - label: "Products"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.slug}} ({{fields.tab}})"
+                fields:
+                  - { label: "Slug", name: "slug", widget: "string" }
+                  - { label: "Tab", name: "tab", widget: "string", hint: "Must match one of the tab names above" }
+                  - label: "Title"
+                    name: "title"
+                    widget: "object"
+                    fields:
+                      - { label: "Bahasa Indonesia", name: "id", widget: "string" }
+                      - { label: "English", name: "en", widget: "string" }
+                  - label: "Short Description"
+                    name: "description"
+                    widget: "object"
+                    fields:
+                      - { label: "Bahasa Indonesia", name: "id", widget: "text" }
+                      - { label: "English", name: "en", widget: "text" }
+                  - label: "Long Description"
+                    name: "description_long"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - { label: "Bahasa Indonesia", name: "id", widget: "text" }
+                      - { label: "English", name: "en", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - label: "Detail"
+                    name: "detail"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - label: "Features"
+                        name: "features"
+                        widget: "object"
+                        fields:
+                          - label: "Bahasa Indonesia"
+                            name: "id"
+                            widget: "list"
+                            field: { label: "Feature", name: "item", widget: "string" }
+                          - label: "English"
+                            name: "en"
+                            widget: "list"
+                            field: { label: "Feature", name: "item", widget: "string" }
+

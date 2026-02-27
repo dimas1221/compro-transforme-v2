@@ -320,3 +320,27 @@ collections:
                             widget: "list"
                             field: { label: "Feature", name: "item", widget: "string" }
 
+  # ==========================================================
+  # 5️⃣ PARTNERS (partners.json)
+  # ==========================================================
+  - name: "partners"
+    label: "Partners"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "public/data/partners.json"
+        label: "Partners Data"
+        name: "partners_json"
+        fields:
+          - label: "Partners"
+            name: "partners"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.full}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Full Name", name: "full", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Color", name: "color", widget: "string", hint: "Hex color code, e.g. #2563EB" }
+              - { label: "Use Initials", name: "useInitials", widget: "boolean", default: false, hint: "Show initials instead of logo image" }

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useLang } from "../../context/LanguageContext";
 
@@ -10,67 +11,18 @@ const fadeUp = {
   }),
 };
 
-const PARTNERS = [
-  {
-    title: "MPI",
-    full: "Mitra Pembangunan Indonesia",
-    logo: "/images/logo/mpi.png",
-    color: "#2563EB",
-  },
-  {
-    title: "Syncro",
-    full: "Syncro Technology",
-    logo: "/images/logo/syncro.png",
-    color: "#0EA5E9",
-  },
-  {
-    title: "DJP",
-    full: "Direktorat Jenderal Pajak",
-    logo: "/images/logo/djp.png",
-    color: "#D97706",
-  },
-  {
-    title: "BNI",
-    full: "Bank Negara Indonesia",
-    logo: "/images/logo/bni.png",
-    color: "#F97316",
-  },
-  {
-    title: "KCI",
-    full: "Kereta Commuter Indonesia",
-    logo: "/images/logo/kci.png",
-    color: "#DC2626",
-    useInitials: true,
-  },
-  {
-    title: "Imedin",
-    full: "Imedin Healthcare",
-    logo: "/images/logo/imedin.png",
-    color: "#059669",
-    useInitials: true,
-  },
-  {
-    title: "Modernland",
-    full: "Modernland Realty",
-    logo: "/images/logo/modernland.png",
-    color: "#7C3AED",
-  },
-  {
-    title: "Paradigma",
-    full: "Paradigma Teknologi",
-    logo: "/images/logo/paradigma.png",
-    color: "#0284C7",
-  },
-  {
-    title: "Suma",
-    full: "Suma Analitika",
-    logo: "/images/logo/suma.png",
-    color: "#1D4ED8",
-  },
-];
-
 export default function PartnersSection() {
   const { lang } = useLang();
+  const [partners, setPartners] = useState([]);
+
+  useEffect(() => {
+    fetch("/data/partners.json")
+      .then((res) => res.json())
+      .then((data) => setPartners(data.partners || []))
+      .catch(() => setPartners([]));
+  }, []);
+
+  if (partners.length === 0) return null;
 
   return (
     <section className="relative py-20 md:py-28 px-6 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
@@ -101,7 +53,7 @@ export default function PartnersSection() {
 
         {/* Partner grid */}
         <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-5">
-          {PARTNERS.map((partner, i) => {
+          {partners.map((partner, i) => {
             return (
               <motion.div
                 key={partner.title}

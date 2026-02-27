@@ -1,0 +1,67 @@
+{
+    "partners": [
+        {
+            "title": "MPI",
+            "full": "Mitra Pembangunan Indonesia",
+            "logo": "/images/logo/mpi.png",
+            "color": "#2563EB",
+            "useInitials": false
+        },
+        {
+            "title": "Syncro",
+            "full": "Syncro Technology",
+            "logo": "/images/logo/syncro.png",
+            "color": "#0EA5E9",
+            "useInitials": false
+        },
+        {
+            "title": "DJP",
+            "full": "Direktorat Jenderal Pajak",
+            "logo": "/images/logo/djp.png",
+            "color": "#D97706",
+            "useInitials": false
+        },
+        {
+            "title": "BNI",
+            "full": "Bank Negara Indonesia",
+            "logo": "/images/logo/bni.png",
+            "color": "#F97316",
+            "useInitials": false
+        },
+        {
+            "title": "KCI",
+            "full": "Kereta Commuter Indonesia",
+            "logo": "/images/logo/kci.png",
+            "color": "#DC2626",
+            "useInitials": true
+        },
+        {
+            "title": "Imedin",
+            "full": "Imedin Healthcare",
+            "logo": "/images/logo/imedin.png",
+            "color": "#059669",
+            "useInitials": true
+        },
+        {
+            "title": "Modernland",
+            "full": "Modernland Realty",
+            "logo": "/images/logo/modernland.png",
+            "color": "#7C3AED",
+            "useInitials": false
+        },
+        {
+            "title": "Paradigma",
+            "full": "Paradigma Teknologi",
+            "logo": "/images/logo/paradigma.png",
+            "color": "#0284C7",
+            "useInitials": false
+        },
+        {
+            "title": "Suma",
+            "full": "Suma Analitika",
+            "logo": "/images/logo/suma.png",
+            "color": "#1D4ED8",
+            "useInitials": false
+        }
+    ]
+}

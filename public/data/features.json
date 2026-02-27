@@ -1,18 +1,7 @@
 {
   "features": [
     {
-      "id": 2,
       "title_id": "Internet of Things (IoT)",
-      "title_en": "Internet of Things (IoT)",
-      "desc_id": "Hubungkan dan kontrol perangkat melalui jaringan IoT untuk menciptakan lingkungan yang lebih cerdas.",
-      "desc_en": "Connect and control devices through IoT networks to enable smarter environments.",
-      "icon": "Wifi",
-      "img": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=60",
-      "learn_more_image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=60",
-      "learn_more_title_id": "Membangun Masa Depan dengan IoT",
-      "learn_more_title_en": "Powering the Future with IoT",
-      "learn_more_desc_id": "IoT menghubungkan perangkat sehingga dapat melakukan otomatisasi, pemantauan, dan pengendalian jarak jauh.",
-      "learn_more_desc_en": "IoT connects devices, enabling automation, monitoring, and remote intelligence.",
       "header_learn_more": [
         {
           "image": "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=900&q=60",
@@ -36,6 +25,16 @@
           "desc_id": "Gateway edge yang dibangun khusus untuk memproses data secara lokal sebelum dikirim ke cloud. Kurangi latensi, hemat bandwidth, dan aktifkan operasi offline untuk aplikasi mission-critical."
         }
       ],
+      "img": "/images/uploads/traffic-incident-detection-algorithms.png",
+      "learn_more_desc_en": "IoT connects devices, enabling automation, monitoring, and remote intelligence.",
+      "desc_id": "Hubungkan dan kontrol perangkat melalui jaringan IoT untuk menciptakan lingkungan yang lebih cerdas.",
+      "learn_more_image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=60",
+      "title_en": "Internet of Things (IoT)",
+      "learn_more_title_id": "Membangun Masa Depan dengan IoT",
+      "desc_en": "Connect and control devices through IoT networks to enable smarter environments.",
+      "icon": "Wifi",
+      "learn_more_desc_id": "IoT menghubungkan perangkat sehingga dapat melakukan otomatisasi, pemantauan, dan pengendalian jarak jauh.",
+      "id": 2,
       "benefits": [
         {
           "title_id": "Pemantauan Real-Time",
@@ -74,6 +73,7 @@
           "desc_en": "Open APIs and standard protocols (MQTT, HTTP) make it easy to integrate with existing systems."
         }
       ],
+      "learn_more_title_en": "Powering the Future with IoT",
       "tech_stack": [
         "MQTT",
         "Node.js",
@@ -84,18 +84,7 @@
       ]
     },
     {
-      "id": 4,
       "title_id": "Artificial Intelligence (AI)",
-      "title_en": "Artificial Intelligence (AI)",
-      "desc_id": "Solusi kecerdasan buatan canggih untuk keamanan biometrik, pengenalan wajah, dan otomatisasi cerdas.",
-      "desc_en": "Advanced artificial intelligence solutions for biometric security, face recognition, and intelligent automation.",
-      "icon": "Brain",
-      "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=60",
-      "learn_more_image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=60",
-      "learn_more_title_id": "Teknologi AI untuk Keamanan dan Efisiensi",
-      "learn_more_title_en": "AI Technology for Security and Efficiency",
-      "learn_more_desc_id": "Kami mengembangkan solusi berbasis kecerdasan buatan yang dirancang untuk meningkatkan keamanan dan efisiensi operasional di berbagai sektor.\n\nDari pengenalan wajah dan iris mata hingga autentikasi pembuluh darah telapak tangan, teknologi AI kami memberikan tingkat akurasi dan keamanan tertinggi untuk fasilitas Anda.\n\nDengan algoritma deep learning terkini dan perangkat keras yang dioptimalkan, kami memastikan setiap solusi AI bekerja secara real-time dengan performa yang andal.",
-      "learn_more_desc_en": "We develop artificial intelligence-based solutions designed to enhance security and operational efficiency across various sectors.\n\nFrom face and iris recognition to palm vein authentication, our AI technology delivers the highest levels of accuracy and security for your facilities.\n\nWith cutting-edge deep learning algorithms and optimized hardware, we ensure every AI solution works in real-time with reliable performance.",
       "header_learn_more": [
         {
           "image": "https://images.unsplash.com/photo-1555952517-2e8e729e0b44?auto=format&fit=crop&w=900&q=60",
@@ -119,6 +108,16 @@
           "desc_id": "Sistem kontrol akses cerdas bertenaga AI yang menggabungkan pengenalan wajah, sidik jari, dan kartu akses dalam satu platform terpadu. Termasuk sistem parkir AI dengan pengenalan plat nomor otomatis dan manajemen pengunjung pintar."
         }
       ],
+      "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=60",
+      "learn_more_desc_en": "We develop artificial intelligence-based solutions designed to enhance security and operational efficiency across various sectors.\n\nFrom face and iris recognition to palm vein authentication, our AI technology delivers the highest levels of accuracy and security for your facilities.\n\nWith cutting-edge deep learning algorithms and optimized hardware, we ensure every AI solution works in real-time with reliable performance.",
+      "desc_id": "Solusi kecerdasan buatan canggih untuk keamanan biometrik, pengenalan wajah, dan otomatisasi cerdas.",
+      "learn_more_image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=60",
+      "title_en": "Artificial Intelligence (AI)",
+      "learn_more_title_id": "Teknologi AI untuk Keamanan dan Efisiensi",
+      "desc_en": "Advanced artificial intelligence solutions for biometric security, face recognition, and intelligent automation.",
+      "icon": "Brain",
+      "learn_more_desc_id": "Kami mengembangkan solusi berbasis kecerdasan buatan yang dirancang untuk meningkatkan keamanan dan efisiensi operasional di berbagai sektor.\n\nDari pengenalan wajah dan iris mata hingga autentikasi pembuluh darah telapak tangan, teknologi AI kami memberikan tingkat akurasi dan keamanan tertinggi untuk fasilitas Anda.\n\nDengan algoritma deep learning terkini dan perangkat keras yang dioptimalkan, kami memastikan setiap solusi AI bekerja secara real-time dengan performa yang andal.",
+      "id": 4,
       "benefits": [
         {
           "title_id": "Akurasi Tinggi",
@@ -157,6 +156,7 @@
           "desc_en": "Architecture designed to handle thousands of users simultaneously with high uptime and performance."
         }
       ],
+      "learn_more_title_en": "AI Technology for Security and Efficiency",
       "tech_stack": [
         "TensorFlow",
         "PyTorch",

@@ -375,6 +375,49 @@ collections:
                 fields:
                   - { label: "ID", name: "id", widget: "text" }
                   - { label: "EN", name: "en", widget: "text" }
+              - label: "About"
+                name: "about"
+                widget: "object"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "object"
+                    fields:
+                      - { label: "ID", name: "id", widget: "string" }
+                      - { label: "EN", name: "en", widget: "string" }
+                  - label: "Text"
+                    name: "text"
+                    widget: "object"
+                    fields:
+                      - { label: "ID", name: "id", widget: "text" }
+                      - { label: "EN", name: "en", widget: "text" }
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                required: false
+                summary: "{{fields.value}}"
+                fields:
+                  - { label: "Value", name: "value", widget: "string", hint: "e.g. 400+, ≥10%" }
+                  - label: "Label"
+                    name: "label"
+                    widget: "object"
+                    fields:
+                      - { label: "ID", name: "id", widget: "string" }
+                      - { label: "EN", name: "en", widget: "string" }
+              - label: "Features / Technologies"
+                name: "features"
+                widget: "list"
+                required: false
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - label: "Description"
+                    name: "description"
+                    widget: "object"
+                    fields:
+                      - { label: "ID", name: "id", widget: "text" }
+                      - { label: "EN", name: "en", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image", required: false }
               - label: "Highlights"
                 name: "highlights"
                 widget: "object"
@@ -390,17 +433,6 @@ collections:
               - { label: "Banner Image", name: "image", widget: "image" }
               - { label: "Logo", name: "logo", widget: "image" }
               - { label: "Color (hex)", name: "color", widget: "string", hint: "e.g. #0EA5E9" }
-              - label: "Stat"
-                name: "stat"
-                widget: "object"
-                fields:
-                  - { label: "Value", name: "value", widget: "string", hint: "e.g. 500+" }
-                  - label: "Label"
-                    name: "label"
-                    widget: "object"
-                    fields:
-                      - { label: "ID", name: "id", widget: "string" }
-                      - { label: "EN", name: "en", widget: "string" }
 
   # ==========================================================
   # 6️⃣ PARTNERS (partners.json)

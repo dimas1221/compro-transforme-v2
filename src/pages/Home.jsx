@@ -7,6 +7,9 @@ import Solution from "./Solution";
 import PartnersSection from "./section-home/Partner";
 import SuccessStoriesSection from "./section-home/SuccessStoriesSection";
 import { useJsonData } from "../hooks/useJsonData";
+import Contact from "./Contact";
+import OurPrinciple from "./section-home/OurPrinciple";
+import { useEffect } from "react";
 
 /* ─── animation ─── */
 const fadeUp = {
@@ -21,6 +24,14 @@ export default function Home() {
   const { lang } = useLang();
   const { data: COMPANY_CONTENT, loading } = useJsonData("/data/companyContent.json");
 
+  useEffect(() => {
+    if (!loading && COMPANY_CONTENT) {
+      requestAnimationFrame(() =>
+        window.dispatchEvent(new Event("sections-ready"))
+      );
+    }
+  }, [loading, COMPANY_CONTENT]);
+
   if (loading || !COMPANY_CONTENT) return null;
 
   const about = COMPANY_CONTENT.about[lang];
@@ -29,7 +40,7 @@ export default function Home() {
   return (
     <>
       {/* ══════════ HERO — FULL MAP ══════════ */}
-      <section className="relative w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-white px-4">
+      <section id="hero" className="relative w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-white px-4">
         <img
           src={bg}
           alt="background map"
@@ -38,7 +49,7 @@ export default function Home() {
       </section>
 
       {/* ══════════ ABOUT + VISION ══════════ */}
-      <section className="py-20 md:py-28 px-6">
+      <section id="about" className="py-20 md:py-28 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           {/* About card */}
           <motion.div
@@ -57,13 +68,13 @@ export default function Home() {
             <p className="text-slate-500 text-sm md:text-base leading-relaxed mb-6">
               {about.description}
             </p>
-            <Link
+            {/* <Link
               to="/about"
               className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
             >
               {lang === "id" ? "Selengkapnya" : "Learn More"}
               <ArrowRight className="w-4 h-4" />
-            </Link>
+            </Link> */}
           </motion.div>
 
           {/* Vision card */}
@@ -108,8 +119,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════════ SOLUTIONS ══════════ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 md:py-28 px-6">
+      {/* ══════════ OUR PRINCIPALS ══════════ */}
+      <OurPrinciple />
+
+      {/* ══════════ Product ══════════ */}
+      <section id="product" className="relative overflow-hidden  py-20 md:py-28 px-6">
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
         <div className="max-w-6xl mx-auto">
@@ -121,9 +135,9 @@ export default function Home() {
             className="text-center mb-12"
           >
             <span className="inline-block text-primary font-semibold tracking-widest uppercase text-xs mb-3">
-              {lang === "id" ? "Layanan Kami" : "Our Services"}
+              {lang === "id" ? "Produk" : "Product"}
             </span>
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4">
               {lang === "id" ? "Solusi Teknologi" : "Technology Solutions"}
             </h2>
           </motion.div>
@@ -132,11 +146,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════════ SUCCESS STORIES ══════════ */}
-      {/* <SuccessStoriesSection /> */}
+      {/* ══════════ CONTACT ══════════ */}
+      <div id="contact">
+        <Contact />
+      </div>
 
-      {/* ══════════ PARTNERS ══════════ */}
-      <PartnersSection />
+
     </>
   );
 }

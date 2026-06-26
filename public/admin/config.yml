@@ -321,7 +321,89 @@ collections:
                             field: { label: "Feature", name: "item", widget: "string" }
 
   # ==========================================================
-  # 5️⃣ PARTNERS (partners.json)
+  # 5️⃣ PRINCIPALS (principals.json)
+  # ==========================================================
+  - name: "principals"
+    label: "Our Principals"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "public/data/principals.json"
+        label: "Principals Data"
+        name: "principals_json"
+        fields:
+          - label: "Section"
+            name: "section"
+            widget: "object"
+            fields:
+              - label: "Subtitle (ID)"
+                name: "subtitle"
+                widget: "object"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Description"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "ID", name: "id", widget: "text" }
+                  - { label: "EN", name: "en", widget: "text" }
+          - label: "Principals"
+            name: "principals"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - label: "Tagline"
+                name: "tagline"
+                widget: "object"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "EN", name: "en", widget: "string" }
+              - label: "Description"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "ID", name: "id", widget: "text" }
+                  - { label: "EN", name: "en", widget: "text" }
+              - label: "Highlights"
+                name: "highlights"
+                widget: "object"
+                fields:
+                  - label: "ID"
+                    name: "id"
+                    widget: "list"
+                    field: { label: "Item", name: "item", widget: "string" }
+                  - label: "EN"
+                    name: "en"
+                    widget: "list"
+                    field: { label: "Item", name: "item", widget: "string" }
+              - { label: "Banner Image", name: "image", widget: "image" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Color (hex)", name: "color", widget: "string", hint: "e.g. #0EA5E9" }
+              - label: "Stat"
+                name: "stat"
+                widget: "object"
+                fields:
+                  - { label: "Value", name: "value", widget: "string", hint: "e.g. 500+" }
+                  - label: "Label"
+                    name: "label"
+                    widget: "object"
+                    fields:
+                      - { label: "ID", name: "id", widget: "string" }
+                      - { label: "EN", name: "en", widget: "string" }
+
+  # ==========================================================
+  # 6️⃣ PARTNERS (partners.json)
   # ==========================================================
   - name: "partners"
     label: "Partners"

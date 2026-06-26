@@ -1,169 +1,293 @@
 {
   "features": [
     {
+      "id": 1,
+      "icon": "Wifi",
       "title_id": "Internet of Things (IoT)",
+      "title_en": "Internet of Things (IoT)",
+      "desc_id": "Solusi IoT terintegrasi untuk sistem keamanan, parkir cerdas, dan sensor alarm yang terhubung secara real-time.",
+      "desc_en": "Integrated IoT solutions for security systems, smart parking, and real-time connected alarm sensors.",
+      "img": "/images/uploads/traffic-incident-detection-algorithms.png",
+      "learn_more_title_id": "Ekosistem IoT untuk Keamanan & Operasional Cerdas",
+      "learn_more_title_en": "IoT Ecosystem for Smart Security & Operations",
+      "learn_more_desc_id": "Kami menghadirkan ekosistem IoT yang komprehensif untuk membantu institusi dan bisnis mengelola keamanan, parkir, dan deteksi ancaman secara otomatis.\n\nSetiap perangkat terhubung dalam jaringan terpadu yang memungkinkan pemantauan real-time, respons insiden cepat, dan laporan otomatis langsung ke tim Anda.\n\nDengan arsitektur yang skalabel dan protokol industri terkini, solusi kami mudah diintegrasikan dengan infrastruktur yang sudah ada.",
+      "learn_more_desc_en": "We deliver a comprehensive IoT ecosystem to help institutions and businesses manage security, parking, and threat detection automatically.\n\nEvery device is connected in a unified network enabling real-time monitoring, rapid incident response, and automated reports delivered directly to your team.\n\nWith a scalable architecture and the latest industry protocols, our solutions integrate seamlessly with your existing infrastructure.",
+      "learn_more_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=60",
       "header_learn_more": [
         {
-          "image": "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=900&q=60",
-          "title_en": "Smart Home & Building",
-          "title_id": "Smart Home & Building",
-          "desc_en": "Intelligent automation systems for residential and commercial buildings. Control lighting, HVAC, security, and energy usage from a single unified platform.",
-          "desc_id": "Sistem otomasi cerdas untuk gedung residensial dan komersial. Kontrol pencahayaan, HVAC, keamanan, dan penggunaan energi dari satu platform terpadu."
+          "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=900&q=60",
+          "title_id": "Sistem Keamanan Terintegrasi",
+          "title_en": "Integrated Security System",
+          "desc_id": "Platform keamanan berbasis IoT yang menghubungkan kamera CCTV, access control, dan sensor dalam satu dashboard terpusat. Notifikasi insiden dikirim secara otomatis ke petugas keamanan melalui aplikasi mobile.",
+          "desc_en": "IoT-based security platform connecting CCTV cameras, access control, and sensors in one centralized dashboard. Incident notifications are automatically pushed to security personnel via mobile app."
         },
         {
-          "image": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=60",
-          "title_en": "Industrial IoT (IIoT)",
-          "title_id": "Industrial IoT (IIoT)",
-          "desc_en": "End-to-end sensor networks for factories and warehouses. Real-time monitoring of production lines, predictive maintenance, and automated quality control.",
-          "desc_id": "Jaringan sensor end-to-end untuk pabrik dan gudang. Pemantauan lini produksi secara real-time, perawatan prediktif, dan kontrol kualitas otomatis."
+          "image": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=900&q=60",
+          "title_id": "Sistem Parkir Cerdas",
+          "title_en": "Smart Parking System",
+          "desc_id": "Manajemen parkir otomatis dengan sensor IoT per slot, pengenalan plat nomor kendaraan, dan panduan navigasi digital. Pengelola mendapatkan laporan kapasitas dan pendapatan secara real-time.",
+          "desc_en": "Automated parking management with per-slot IoT sensors, license plate recognition, and digital navigation guidance. Managers receive real-time capacity and revenue reports."
         },
         {
-          "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=900&q=60",
-          "title_en": "IoT Gateway & Edge Computing",
-          "title_id": "IoT Gateway & Edge Computing",
-          "desc_en": "Custom-built edge gateways that process data locally before sending to the cloud. Reduce latency, save bandwidth, and enable offline operation for mission-critical applications.",
-          "desc_id": "Gateway edge yang dibangun khusus untuk memproses data secara lokal sebelum dikirim ke cloud. Kurangi latensi, hemat bandwidth, dan aktifkan operasi offline untuk aplikasi mission-critical."
+          "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=900&q=60",
+          "title_id": "Sensor Alarm & Deteksi Ancaman",
+          "title_en": "Alarm Sensor & Threat Detection",
+          "desc_id": "Jaringan sensor pintar untuk deteksi asap, kebakaran, intrusi, dan perubahan lingkungan. Sistem alarm berbasis IoT dengan respons otomatis dan eskalasi peringatan bertingkat kepada tim terkait.",
+          "desc_en": "Smart sensor networks for smoke, fire, intrusion, and environmental change detection. IoT-based alarm system with automated response and tiered alert escalation to the relevant teams."
         }
       ],
-      "img": "/images/uploads/traffic-incident-detection-algorithms.png",
-      "learn_more_desc_en": "IoT connects devices, enabling automation, monitoring, and remote intelligence.",
-      "desc_id": "Hubungkan dan kontrol perangkat melalui jaringan IoT untuk menciptakan lingkungan yang lebih cerdas.",
-      "learn_more_image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=60",
-      "title_en": "Internet of Things (IoT)",
-      "learn_more_title_id": "Membangun Masa Depan dengan IoT",
-      "desc_en": "Connect and control devices through IoT networks to enable smarter environments.",
-      "icon": "Wifi",
-      "learn_more_desc_id": "IoT menghubungkan perangkat sehingga dapat melakukan otomatisasi, pemantauan, dan pengendalian jarak jauh.",
-      "id": 2,
       "benefits": [
         {
-          "title_id": "Pemantauan Real-Time",
-          "title_en": "Real-Time Monitoring",
-          "desc_id": "Pantau seluruh perangkat dan sensor secara langsung dari satu dashboard terpusat, kapan saja dan di mana saja.",
-          "desc_en": "Monitor all devices and sensors live from a centralized dashboard, anytime and anywhere."
+          "title_id": "Pemantauan Real-Time 24/7",
+          "title_en": "24/7 Real-Time Monitoring",
+          "desc_id": "Pantau seluruh perangkat IoT dari satu dashboard terpusat, kapan saja dan di mana saja.",
+          "desc_en": "Monitor all IoT devices from a single centralized dashboard, anytime and anywhere."
+        },
+        {
+          "title_id": "Respons Insiden Cepat",
+          "title_en": "Rapid Incident Response",
+          "desc_id": "Notifikasi otomatis dan eskalasi peringatan memastikan setiap insiden ditangani dalam hitungan detik.",
+          "desc_en": "Automated notifications and alert escalation ensure every incident is handled within seconds."
         },
         {
           "title_id": "Efisiensi Operasional",
           "title_en": "Operational Efficiency",
-          "desc_id": "Otomatisasi proses manual mengurangi biaya operasional hingga 40% dan meminimalkan human error.",
-          "desc_en": "Automating manual processes reduces operational costs by up to 40% and minimizes human error."
+          "desc_id": "Otomatisasi proses keamanan dan parkir mengurangi kebutuhan tenaga manual hingga 60%.",
+          "desc_en": "Automating security and parking processes reduces manual labor needs by up to 60%."
         },
         {
-          "title_id": "Skalabilitas Tinggi",
-          "title_en": "High Scalability",
-          "desc_id": "Arsitektur modular memungkinkan penambahan ratusan perangkat baru tanpa mengganggu sistem yang sudah berjalan.",
-          "desc_en": "Modular architecture allows adding hundreds of new devices without disrupting existing systems."
-        },
-        {
-          "title_id": "Keamanan Data Terjamin",
-          "title_en": "Guaranteed Data Security",
-          "desc_id": "Enkripsi end-to-end dan protokol keamanan IoT terkini memastikan setiap data terlindungi.",
-          "desc_en": "End-to-end encryption and the latest IoT security protocols ensure every piece of data is protected."
-        },
-        {
-          "title_id": "Analitik Prediktif",
-          "title_en": "Predictive Analytics",
-          "desc_id": "Data dari sensor diolah menggunakan AI untuk memprediksi kebutuhan perawatan sebelum terjadi kerusakan.",
-          "desc_en": "Sensor data is processed using AI to predict maintenance needs before failures occur."
+          "title_id": "Laporan & Analitik Otomatis",
+          "title_en": "Automated Reports & Analytics",
+          "desc_id": "Data dari seluruh sensor diolah menjadi laporan harian, mingguan, dan bulanan secara otomatis.",
+          "desc_en": "Data from all sensors is automatically processed into daily, weekly, and monthly reports."
         },
         {
           "title_id": "Integrasi Mudah",
           "title_en": "Easy Integration",
-          "desc_id": "API terbuka dan protokol standar (MQTT, HTTP) memudahkan integrasi dengan sistem yang sudah ada.",
-          "desc_en": "Open APIs and standard protocols (MQTT, HTTP) make it easy to integrate with existing systems."
+          "desc_id": "Protokol standar (MQTT, HTTP, Modbus) memudahkan integrasi dengan sistem yang sudah ada.",
+          "desc_en": "Standard protocols (MQTT, HTTP, Modbus) make integration with existing systems straightforward."
+        },
+        {
+          "title_id": "Skalabel & Modular",
+          "title_en": "Scalable & Modular",
+          "desc_id": "Tambah ratusan perangkat baru tanpa mengganggu jaringan yang sudah berjalan.",
+          "desc_en": "Add hundreds of new devices without disrupting the existing running network."
         }
       ],
-      "learn_more_title_en": "Powering the Future with IoT",
       "tech_stack": [
         "MQTT",
         "Node.js",
         "Python",
-        "AWS IoT",
+        "InfluxDB",
         "Grafana",
-        "InfluxDB"
+        "AWS IoT",
+        "Modbus",
+        "OpenCV"
       ]
     },
     {
+      "id": 2,
+      "icon": "Cpu",
       "title_id": "Artificial Intelligence (AI)",
+      "title_en": "Artificial Intelligence (AI)",
+      "desc_id": "Solusi AI canggih untuk pelacakan objek & kendaraan secara real-time serta analitik perjalanan berbasis kecerdasan buatan.",
+      "desc_en": "Advanced AI solutions for real-time object & vehicle tracking and AI-based journey analytics.",
+      "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=60",
+      "learn_more_title_id": "AI untuk Tracking & Journey Analytics",
+      "learn_more_title_en": "AI for Tracking & Journey Analytics",
+      "learn_more_desc_id": "Kami mengembangkan platform kecerdasan buatan yang mampu melacak pergerakan objek, kendaraan, dan manusia secara real-time dengan akurasi tinggi.\n\nTeknologi AI Journey kami menganalisis pola perjalanan, kepadatan lalu lintas, dan anomali pergerakan untuk membantu pengambilan keputusan operasional yang lebih cepat dan akurat.\n\nDengan deep learning dan computer vision terkini, setiap kamera menjadi sensor cerdas yang menghasilkan insight bernilai tinggi.",
+      "learn_more_desc_en": "We develop artificial intelligence platforms capable of tracking the movement of objects, vehicles, and people in real-time with high accuracy.\n\nOur AI Journey technology analyzes travel patterns, traffic density, and movement anomalies to support faster and more accurate operational decision-making.\n\nWith the latest deep learning and computer vision, every camera becomes a smart sensor generating high-value insights.",
+      "learn_more_image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=60",
       "header_learn_more": [
         {
-          "image": "https://images.unsplash.com/photo-1555952517-2e8e729e0b44?auto=format&fit=crop&w=900&q=60",
-          "title_en": "Biometric Security",
-          "title_id": "Keamanan Biometrik",
-          "desc_en": "Multi-modal biometric solutions including palm vein scanning, iris recognition, and fingerprint authentication — delivering the highest level of identity verification for critical facilities.",
-          "desc_id": "Solusi biometrik multi-modal meliputi pemindaian pembuluh darah telapak tangan, pengenalan iris, dan autentikasi sidik jari — memberikan tingkat tertinggi verifikasi identitas untuk fasilitas kritis."
+          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=60",
+          "title_id": "AI Tracking System",
+          "title_en": "AI Tracking System",
+          "desc_id": "Sistem pelacakan berbasis AI yang mampu mendeteksi dan melacak pergerakan kendaraan, orang, dan objek secara real-time dari feed CCTV. Mendukung multi-kamera dengan re-identification otomatis saat objek berpindah zona.",
+          "desc_en": "AI-based tracking system capable of detecting and tracing vehicle, person, and object movements in real-time from CCTV feeds. Supports multi-camera with automatic re-identification as objects move between zones."
         },
         {
-          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=60",
-          "title_en": "Face Recognition Systems",
-          "title_id": "Sistem Pengenalan Wajah",
-          "desc_en": "AI-powered face recognition terminals with real-time identification, high accuracy in low-light conditions, and seamless integration with access control systems for offices, apartments, and commercial buildings.",
-          "desc_id": "Terminal pengenalan wajah bertenaga AI dengan identifikasi real-time, akurasi tinggi dalam kondisi cahaya rendah, dan integrasi mulus dengan sistem akses kontrol untuk perkantoran, apartemen, dan gedung komersial."
+          "image": "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=900&q=60",
+          "title_id": "AI Journey & Analitik Perjalanan",
+          "title_en": "AI Journey & Travel Analytics",
+          "desc_id": "Platform analitik perjalanan yang memetakan rute, pola kepadatan, dan waktu tempuh kendaraan maupun pejalan kaki. Menghasilkan heatmap, origin-destination matrix, dan laporan tren mobilitas untuk perencanaan operasional.",
+          "desc_en": "Travel analytics platform that maps routes, density patterns, and travel times for vehicles and pedestrians. Generates heatmaps, origin-destination matrices, and mobility trend reports for operational planning."
         },
         {
-          "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=60",
-          "title_en": "AI Access Control & Automation",
-          "title_id": "Kontrol Akses & Otomasi AI",
-          "desc_en": "Intelligent access control systems powered by AI that combine face recognition, fingerprint, and card access in a unified platform. Includes AI parking systems with automatic license plate recognition and smart visitor management.",
-          "desc_id": "Sistem kontrol akses cerdas bertenaga AI yang menggabungkan pengenalan wajah, sidik jari, dan kartu akses dalam satu platform terpadu. Termasuk sistem parkir AI dengan pengenalan plat nomor otomatis dan manajemen pengunjung pintar."
+          "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=60",
+          "title_id": "Deteksi Anomali & Perilaku",
+          "title_en": "Anomaly & Behavior Detection",
+          "desc_id": "Algoritma AI yang secara otomatis mendeteksi perilaku mencurigakan, pelanggaran zona terlarang, objek tertinggal, dan kerumunan berlebihan. Peringatan dini dikirim langsung ke operator sebelum insiden berkembang.",
+          "desc_en": "AI algorithms that automatically detect suspicious behavior, restricted zone violations, abandoned objects, and overcrowding. Early warnings are sent directly to operators before incidents escalate."
         }
       ],
-      "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=60",
-      "learn_more_desc_en": "We develop artificial intelligence-based solutions designed to enhance security and operational efficiency across various sectors.\n\nFrom face and iris recognition to palm vein authentication, our AI technology delivers the highest levels of accuracy and security for your facilities.\n\nWith cutting-edge deep learning algorithms and optimized hardware, we ensure every AI solution works in real-time with reliable performance.",
-      "desc_id": "Solusi kecerdasan buatan canggih untuk keamanan biometrik, pengenalan wajah, dan otomatisasi cerdas.",
-      "learn_more_image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=60",
-      "title_en": "Artificial Intelligence (AI)",
-      "learn_more_title_id": "Teknologi AI untuk Keamanan dan Efisiensi",
-      "desc_en": "Advanced artificial intelligence solutions for biometric security, face recognition, and intelligent automation.",
-      "icon": "Brain",
-      "learn_more_desc_id": "Kami mengembangkan solusi berbasis kecerdasan buatan yang dirancang untuk meningkatkan keamanan dan efisiensi operasional di berbagai sektor.\n\nDari pengenalan wajah dan iris mata hingga autentikasi pembuluh darah telapak tangan, teknologi AI kami memberikan tingkat akurasi dan keamanan tertinggi untuk fasilitas Anda.\n\nDengan algoritma deep learning terkini dan perangkat keras yang dioptimalkan, kami memastikan setiap solusi AI bekerja secara real-time dengan performa yang andal.",
-      "id": 4,
       "benefits": [
         {
-          "title_id": "Akurasi Tinggi",
-          "title_en": "High Accuracy",
-          "desc_id": "Algoritma deep learning mencapai tingkat akurasi pengenalan biometrik di atas 99%, meminimalkan kesalahan identifikasi.",
-          "desc_en": "Deep learning algorithms achieve biometric recognition accuracy above 99%, minimizing identification errors."
+          "title_id": "Akurasi Deteksi Tinggi",
+          "title_en": "High Detection Accuracy",
+          "desc_id": "Model deep learning terlatih mencapai akurasi deteksi objek dan kendaraan di atas 97% dalam berbagai kondisi cahaya.",
+          "desc_en": "Trained deep learning models achieve object and vehicle detection accuracy above 97% in various lighting conditions."
         },
         {
           "title_id": "Pemrosesan Real-Time",
           "title_en": "Real-Time Processing",
-          "desc_id": "Identifikasi dan autentikasi dilakukan dalam hitungan milidetik, memastikan pengalaman pengguna yang cepat dan seamless.",
-          "desc_en": "Identification and authentication are performed in milliseconds, ensuring a fast and seamless user experience."
+          "desc_id": "Analisis video dan tracking dilakukan langsung di edge device, menghasilkan insight instan tanpa latensi tinggi.",
+          "desc_en": "Video analysis and tracking are performed directly on edge devices, delivering instant insights without high latency."
         },
         {
-          "title_id": "Keamanan Multi-Lapisan",
-          "title_en": "Multi-Layer Security",
-          "desc_id": "Kombinasi beberapa metode biometrik (wajah, iris, sidik jari, telapak tangan) memberikan keamanan berlapis yang sulit ditembus.",
-          "desc_en": "Combining multiple biometric methods (face, iris, fingerprint, palm vein) provides multi-layered security that is hard to breach."
+          "title_id": "Multi-Kamera & Multi-Zona",
+          "title_en": "Multi-Camera & Multi-Zone",
+          "desc_id": "Lacak objek secara konsisten di ratusan kamera dan zona berbeda dengan re-identification otomatis.",
+          "desc_en": "Track objects consistently across hundreds of cameras and different zones with automatic re-identification."
         },
         {
-          "title_id": "Adaptif & Cerdas",
-          "title_en": "Adaptive & Intelligent",
-          "desc_id": "Model AI terus belajar dan beradaptasi terhadap perubahan kondisi lingkungan seperti pencahayaan, sudut, dan penampilan.",
-          "desc_en": "AI models continuously learn and adapt to changing environmental conditions such as lighting, angles, and appearance."
+          "title_id": "Insight Operasional Mendalam",
+          "title_en": "Deep Operational Insights",
+          "desc_id": "Data perjalanan dan pola pergerakan dianalisis menjadi laporan strategis untuk optimasi operasional dan perencanaan.",
+          "desc_en": "Journey data and movement patterns are analyzed into strategic reports for operational optimization and planning."
         },
         {
-          "title_id": "Integrasi Mudah",
-          "title_en": "Easy Integration",
-          "desc_id": "SDK dan API yang lengkap memudahkan integrasi dengan sistem yang sudah ada tanpa perombakan infrastruktur.",
-          "desc_en": "Comprehensive SDKs and APIs make it easy to integrate with existing systems without infrastructure overhaul."
+          "title_id": "Deteksi Anomali Otomatis",
+          "title_en": "Automatic Anomaly Detection",
+          "desc_id": "Sistem secara proaktif mengidentifikasi perilaku mencurigakan dan mengirim peringatan sebelum insiden terjadi.",
+          "desc_en": "The system proactively identifies suspicious behavior and sends alerts before incidents occur."
         },
         {
-          "title_id": "Skalabel & Andal",
-          "title_en": "Scalable & Reliable",
-          "desc_id": "Arsitektur yang dirancang untuk menangani ribuan pengguna secara bersamaan dengan uptime dan performa tinggi.",
-          "desc_en": "Architecture designed to handle thousands of users simultaneously with high uptime and performance."
+          "title_id": "Skalabel untuk Skala Besar",
+          "title_en": "Scalable for Large Scale",
+          "desc_id": "Arsitektur terdistribusi mampu menangani ratusan stream video secara bersamaan dengan performa stabil.",
+          "desc_en": "Distributed architecture handles hundreds of simultaneous video streams with stable performance."
         }
       ],
-      "learn_more_title_en": "AI Technology for Security and Efficiency",
       "tech_stack": [
         "TensorFlow",
         "PyTorch",
         "OpenCV",
-        "ONNX",
+        "YOLO",
+        "DeepSORT",
         "Python",
-        "CUDA"
+        "CUDA",
+        "ONNX"
+      ]
+    },
+    {
+      "id": 3,
+      "icon": "Code",
+      "title_id": "Software Development",
+      "title_en": "Software Development",
+      "desc_id": "Pengembangan perangkat lunak custom untuk kebutuhan pemerintahan, industri, dan komersial dengan teknologi modern dan arsitektur yang skalabel.",
+      "desc_en": "Custom software development for government, industrial, and commercial needs with modern technology and scalable architecture.",
+      "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=60",
+      "learn_more_title_id": "Solusi Perangkat Lunak untuk Berbagai Industri",
+      "learn_more_title_en": "Software Solutions Across Industries",
+      "learn_more_desc_id": "Kami membangun perangkat lunak custom yang dirancang sesuai kebutuhan spesifik bisnis dan institusi Anda — mulai dari sistem informasi pemerintahan, aplikasi mobile, platform iklan digital, hingga solusi IoT terintegrasi.\n\nSetiap produk dikembangkan dengan standar kualitas tinggi, arsitektur yang maintainable, dan pengalaman pengguna yang intuitif.\n\nTim kami berpengalaman menangani proyek skala nasional dengan kebutuhan keamanan, performa, dan keandalan tinggi.",
+      "learn_more_desc_en": "We build custom software tailored to the specific needs of your business and institution — from government information systems, mobile applications, digital advertising platforms, to integrated IoT solutions.\n\nEvery product is developed to high quality standards, with maintainable architecture and an intuitive user experience.\n\nOur team has extensive experience handling national-scale projects with high security, performance, and reliability requirements.",
+      "learn_more_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=60",
+      "header_learn_more": [
+        {
+          "image": "/images/porto/simka2.png",
+          "title_id": "SIMKA (Sistem Informasi Manajemen Kabinet)",
+          "title_en": "SIMKA (Cabinet Management Information System)",
+          "desc_id": "Sistem informasi manajemen kabinet yang dirancang untuk mendigitalisasi dan menyederhanakan pengelolaan data kabinet pemerintahan. Platform ini mengintegrasikan informasi kementerian, pejabat, dan kebijakan dalam satu dashboard terpusat untuk pengambilan keputusan yang lebih efisien.",
+          "desc_en": "A cabinet management information system designed to digitize and streamline government cabinet data management. This platform integrates ministry, official, and policy information into a centralized dashboard for more efficient decision-making."
+        },
+        {
+          "image": "/images/porto/kosmo2.png",
+          "title_id": "Cosmo Modernland (Resident Platform)",
+          "title_en": "Cosmo Modernland (Resident Platform)",
+          "desc_id": "Aplikasi mobile untuk penghuni kawasan Modernland yang menyediakan berbagai layanan hunian dalam satu platform. Penghuni dapat mengelola unit hunian, melakukan pemesanan dan pembayaran tagihan, mengakses layanan pelayanan, serta menemukan informasi promo, berita, properti, event, marketplace, dan coworking space.",
+          "desc_en": "A mobile application for Modernland residential area residents that provides various housing services in one platform. Residents can manage units, make reservations and bill payments, access services, and discover promos, news, properties, events, marketplace, and coworking spaces."
+        },
+        {
+          "image": "/images/porto/kci.png",
+          "title_id": "KCI LED Advertise",
+          "title_en": "KCI LED Advertise",
+          "desc_id": "Sistem periklanan LED digital untuk jaringan Kereta Commuter Indonesia (KCI). Platform ini mengelola konten iklan secara terpusat di seluruh stasiun dan gerbong kereta, dengan penjadwalan otomatis, analitik tayangan, dan kemampuan update konten secara real-time.",
+          "desc_en": "A digital LED advertising system for the Indonesian Commuter Train (KCI) network. This platform centrally manages ad content across all stations and train cars, with automatic scheduling, impression analytics, and real-time content update capabilities."
+        },
+        {
+          "image": "/images/porto/perlintasan2.png",
+          "title_id": "APK Perlintasan",
+          "title_en": "Border Crossing Application",
+          "desc_id": "Sistem aplikasi keimigrasian untuk mendata kedatangan dan keberangkatan WNA dan WNI berdasarkan jenis visa. Dilengkapi pemeriksaan cekal, pengecekan Interpol, riwayat perlintasan, validasi Arrival Card, serta perhitungan denda overstay secara otomatis.",
+          "desc_en": "An immigration application system for recording arrivals and departures of foreign nationals and Indonesian citizens based on visa type. Features travel ban checking, Interpol verification, crossing history, Arrival Card validation, and automated overstay fine calculation."
+        },
+        {
+          "image": "/images/porto/voa.png",
+          "title_id": "VOA (Visa on Arrival)",
+          "title_en": "VOA (Visa on Arrival)",
+          "desc_id": "Platform digital yang aman dan mudah digunakan untuk memperlancar proses Visa on Arrival bagi pelancong internasional. Memungkinkan pengajuan informasi, pengunggahan dokumen, dan penyelesaian pembayaran di muka untuk pemrosesan imigrasi yang lebih cepat.",
+          "desc_en": "A secure and user-friendly digital platform that streamlines the Visa on Arrival process for international travelers. Allows information submission, document uploading, and advance payment for faster immigration processing."
+        },
+        {
+          "image": "/images/porto/sic.png",
+          "title_id": "Smart Induction Cooker",
+          "title_en": "Smart Induction Cooker",
+          "desc_id": "Kompor induksi pintar yang terintegrasi dengan teknologi IoT untuk kontrol memasak yang presisi dan efisien. Dilengkapi dengan sensor suhu otomatis, kontrol jarak jauh melalui aplikasi, dan fitur keamanan canggih.",
+          "desc_en": "A smart induction cooker integrated with IoT technology for precise and efficient cooking control. Equipped with automatic temperature sensors, remote app control, and advanced safety features."
+        },
+        {
+          "image": "/images/porto/scale.png",
+          "title_id": "Smart Scale",
+          "title_en": "Smart Scale",
+          "desc_id": "Timbangan digital pintar yang terhubung dengan platform IoT untuk pencatatan dan analisis berat secara otomatis. Digunakan untuk berbagai keperluan industri dan komersial dengan akurasi tinggi dan integrasi ke sistem manajemen terpusat.",
+          "desc_en": "A smart digital scale connected to an IoT platform for automatic weight recording and analysis. Used for industrial and commercial purposes with high accuracy and integration to centralized management systems."
+        },
+        {
+          "image": "/images/porto/smarttv.png",
+          "title_id": "Smart TV",
+          "title_en": "Smart TV",
+          "desc_id": "Solusi Smart TV berbasis IoT yang mentransformasi televisi konvensional menjadi perangkat pintar terintegrasi. Mendukung kontrol melalui aplikasi, penjadwalan konten otomatis, dan integrasi dengan ekosistem smart home.",
+          "desc_en": "An IoT-based Smart TV solution that transforms conventional televisions into integrated smart devices. Supports app-based control, automatic content scheduling, and smart home ecosystem integration."
+        }
+      ],
+      "benefits": [
+        {
+          "title_id": "Solusi Custom Sesuai Kebutuhan",
+          "title_en": "Tailored Custom Solutions",
+          "desc_id": "Setiap perangkat lunak dirancang dari awal sesuai proses bisnis dan kebutuhan spesifik klien, bukan template generik.",
+          "desc_en": "Every software is designed from scratch to match the client's business processes and specific needs, not generic templates."
+        },
+        {
+          "title_id": "Pengalaman Proyek Nasional",
+          "title_en": "National Project Experience",
+          "desc_id": "Berpengalaman menangani sistem skala nasional untuk instansi pemerintah, BUMN, dan perusahaan swasta terkemuka.",
+          "desc_en": "Experienced in handling national-scale systems for government agencies, state-owned enterprises, and leading private companies."
+        },
+        {
+          "title_id": "Arsitektur Skalabel & Maintainable",
+          "title_en": "Scalable & Maintainable Architecture",
+          "desc_id": "Kode yang bersih, terdokumentasi, dan dibangun dengan pola arsitektur modern untuk kemudahan pengembangan jangka panjang.",
+          "desc_en": "Clean, documented code built with modern architectural patterns for long-term development ease."
+        },
+        {
+          "title_id": "Keamanan Tingkat Enterprise",
+          "title_en": "Enterprise-Grade Security",
+          "desc_id": "Implementasi standar keamanan terkini termasuk enkripsi data, autentikasi berlapis, dan perlindungan terhadap ancaman siber.",
+          "desc_en": "Implementation of the latest security standards including data encryption, multi-layer authentication, and cyber threat protection."
+        },
+        {
+          "title_id": "Dukungan & Pemeliharaan Berkelanjutan",
+          "title_en": "Continuous Support & Maintenance",
+          "desc_id": "Tim dedikasi tersedia untuk pemeliharaan, pembaruan fitur, dan dukungan teknis pasca-implementasi.",
+          "desc_en": "Dedicated team available for maintenance, feature updates, and post-implementation technical support."
+        },
+        {
+          "title_id": "Integrasi Sistem yang Mulus",
+          "title_en": "Seamless System Integration",
+          "desc_id": "Kemampuan integrasi dengan sistem existing melalui REST API, WebSocket, dan berbagai protokol standar industri.",
+          "desc_en": "Integration capability with existing systems via REST API, WebSocket, and various industry-standard protocols."
+        }
+      ],
+      "tech_stack": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Laravel",
+        "Flutter",
+        "PostgreSQL",
+        "Docker",
+        "AWS"
       ]
     }
   ]

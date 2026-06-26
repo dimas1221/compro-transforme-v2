@@ -1,0 +1,90 @@
+{
+  "section": {
+    "subtitle": {
+      "id": "Mitra Utama Kami",
+      "en": "Our Principal Partners"
+    },
+    "title": {
+      "id": "Didukung oleh Brand Terpercaya",
+      "en": "Backed by Trusted Brands"
+    },
+    "description": {
+      "id": "Kami bermitra eksklusif dengan produsen teknologi terkemuka dunia untuk menghadirkan solusi terbaik bagi Anda.",
+      "en": "We partner exclusively with world-leading technology manufacturers to deliver the best solutions for you."
+    }
+  },
+  "principals": [
+    {
+      "id": "maxvision",
+      "name": "Maxvision",
+      "tagline": {
+        "id": "Teknologi Surveillance Terdepan",
+        "en": "Leading Surveillance Technology"
+      },
+      "description": {
+        "id": "Maxvision adalah pemimpin global dalam solusi keamanan dan pengawasan berbasis kecerdasan buatan. Produk-produknya mencakup kamera IP berkualitas tinggi, sistem manajemen video, dan platform analitik pintar yang digunakan oleh ribuan institusi di seluruh dunia.",
+        "en": "Maxvision is a global leader in AI-based security and surveillance solutions. Its products include high-quality IP cameras, video management systems, and smart analytics platforms used by thousands of institutions worldwide."
+      },
+      "highlights": {
+        "id": [
+          "AI-Powered Analytics",
+          "Resolusi 4K Ultra HD",
+          "Integrasi Cloud & Edge",
+          "Sertifikasi Internasional"
+        ],
+        "en": [
+          "AI-Powered Analytics",
+          "4K Ultra HD Resolution",
+          "Cloud & Edge Integration",
+          "International Certification"
+        ]
+      },
+      "image": "/images/uploads/maxvision-banner.jpg",
+      "logo": "/images/uploads/maxvision-logo.png",
+      "color": "#0EA5E9",
+      "stat": {
+        "value": "",
+        "label": {
+          "id": "",
+          "en": ""
+        }
+      }
+    },
+    {
+      "id": "jovision",
+      "name": "Jovision",
+      "tagline": {
+        "id": "Solusi CCTV Profesional",
+        "en": "Professional CCTV Solutions"
+      },
+      "description": {
+        "id": "Jovision menghadirkan ekosistem CCTV dan keamanan digital yang komprehensif, mulai dari kamera beresolusi tinggi hingga sistem NVR/DVR canggih. Dikenal dengan keandalan, kemudahan instalasi, dan dukungan teknis yang responsif.",
+        "en": "Jovision delivers a comprehensive CCTV and digital security ecosystem, from high-resolution cameras to advanced NVR/DVR systems. Known for reliability, ease of installation, and responsive technical support."
+      },
+      "highlights": {
+        "id": [
+          "NVR & DVR Canggih",
+          "Night Vision Teknologi",
+          "Remote Monitoring 24/7",
+          "Garansi Produk 3 Tahun"
+        ],
+        "en": [
+          "Advanced NVR & DVR",
+          "Night Vision Technology",
+          "24/7 Remote Monitoring",
+          "3-Year Product Warranty"
+        ]
+      },
+      "image": "/images/uploads/jovision-banner.jpg",
+      "logo": "/images/uploads/jovision-logo.png",
+      "color": "#10B981",
+      "stat": {
+        "value": "",
+        "label": {
+          "id": "",
+          "en": ""
+        }
+      }
+    }
+  ]
+}

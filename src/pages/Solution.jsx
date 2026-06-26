@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Cpu, Wifi, Home, Server, Code } from "lucide-react";
 import { useLang } from "../context/LanguageContext";
-import { useNavigate } from "react-router-dom";
+import SolutionDrawer from "./SolutionDrawer";
+
+import featuresData from "../../public/data/features.json";
 
 const iconMap = {
   Cpu: <Cpu className="w-7 h-7" />,
@@ -15,13 +17,11 @@ const iconMap = {
 export default function Solution() {
   const [features, setFeatures] = useState([]);
   const [active, setActive] = useState(1);
+  const [selected, setSelected] = useState(null);
   const { lang } = useLang();
-  const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/data/features.json")
-      .then((res) => res.json())
-      .then((data) => setFeatures(data?.features || []));
+    setFeatures(featuresData.features || []);
   }, []);
 
   return (
@@ -51,28 +51,24 @@ export default function Solution() {
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover object-center"
               />
-
-              {/* Overlay */}
               <div
-                className={`absolute inset-0 ${isActive
+                className={`absolute inset-0 ${
+                  isActive
                     ? "bg-gradient-to-t from-black/70 via-black/30 to-transparent"
                     : "bg-black/60"
-                  } transition-all duration-700`}
+                } transition-all duration-700`}
               />
-
-              {/* Content */}
               <div
-                className={`absolute inset-0 flex flex-col justify-end p-6
-                transition-all duration-700
+                className={`absolute inset-0 flex flex-col justify-end p-6 transition-all duration-700
                 ${isActive ? "opacity-100" : "items-center justify-center text-center opacity-80"}`}
               >
                 <div className={`mb-2 text-white ${!isActive ? "mb-1" : ""}`}>
                   {icon}
                 </div>
-
                 <h3
-                  className={`font-bold text-white transition-all duration-500 ${isActive ? "text-xl md:text-2xl" : "text-sm md:text-base"
-                    }`}
+                  className={`font-bold text-white transition-all duration-500 ${
+                    isActive ? "text-xl md:text-2xl" : "text-sm md:text-base"
+                  }`}
                 >
                   {title}
                 </h3>
@@ -89,7 +85,7 @@ export default function Solution() {
                       className="mt-3"
                     >
                       <button
-                        onClick={() => navigate(`/solution/${f.id}`)}
+                        onClick={() => setSelected(f)}
                         className="mt-4 px-5 py-2 border border-white/30 rounded-full text-sm font-medium text-white hover:bg-white hover:text-slate-900 transition-colors cursor-pointer"
                       >
                         {lang === "id" ? "Pelajari lebih lanjut" : "Learn more"}
@@ -127,30 +123,25 @@ export default function Solution() {
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover object-center"
               />
-
-              {/* Overlay */}
               <div
-                className={`absolute inset-0 ${isActive
+                className={`absolute inset-0 ${
+                  isActive
                     ? "bg-gradient-to-t from-black/70 via-black/30 to-transparent"
                     : "bg-black/65"
-                  } transition-all duration-700`}
+                } transition-all duration-700`}
               />
-
-              {/* Content */}
               <div
-                className={`absolute inset-0 flex flex-col px-5
-                transition-all duration-700
+                className={`absolute inset-0 flex flex-col px-5 transition-all duration-700
                 ${isActive ? "justify-end pb-6" : "items-center justify-center text-center"}`}
               >
                 <div className="mb-1 text-white scale-90">{icon}</div>
-
                 <h3
-                  className={`font-bold text-white transition-all duration-500 ${isActive ? "text-base" : "text-sm"
-                    }`}
+                  className={`font-bold text-white transition-all duration-500 ${
+                    isActive ? "text-base" : "text-sm"
+                  }`}
                 >
                   {title}
                 </h3>
-
                 <AnimatePresence>
                   {isActive && (
                     <motion.div
@@ -164,7 +155,7 @@ export default function Solution() {
                         {desc}
                       </p>
                       <button
-                        onClick={() => navigate(`/solution/${f.id}`)}
+                        onClick={(e) => { e.stopPropagation(); setSelected(f); }}
                         className="mt-3 text-sm font-medium text-primary hover:underline cursor-pointer"
                       >
                         {lang === "id" ? "Pelajari" : "Learn more"}
@@ -177,6 +168,12 @@ export default function Solution() {
           );
         })}
       </div>
+
+      <SolutionDrawer
+        feature={selected}
+        onClose={() => setSelected(null)}
+        lang={lang}
+      />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavbarV2";
 import { LanguageProvider } from "./context/LanguageContext";
 
 import Home from "./pages/Home";
@@ -22,9 +22,7 @@ function App() {
       <Router>
         <ScrollToTopOnRoute />
         <Navbar />
-        <div className="pt-24">
-          {" "}
-          {/* Wajib supaya konten turun */}
+        <div className="pt-16">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

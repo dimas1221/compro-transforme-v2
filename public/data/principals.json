@@ -15,16 +15,9 @@
   },
   "principals": [
     {
-      "id": "maxvision",
+      "color": "#0EA5E9",
+      "logo": "/images/uploads/maxvision-logo.png",
       "name": "Maxvision",
-      "tagline": {
-        "id": "Teknologi Surveillance Terdepan",
-        "en": "Leading Surveillance Technology"
-      },
-      "description": {
-        "id": "Maxvision adalah pemimpin global dalam solusi keamanan dan pengawasan berbasis kecerdasan buatan. Produk-produknya mencakup kamera IP berkualitas tinggi, sistem manajemen video, dan platform analitik pintar yang digunakan oleh ribuan institusi di seluruh dunia.",
-        "en": "Maxvision is a global leader in AI-based security and surveillance solutions. Its products include high-quality IP cameras, video management systems, and smart analytics platforms used by thousands of institutions worldwide."
-      },
       "about": {
         "title": {
           "id": "Tentang Maxvision",
@@ -35,6 +28,17 @@
           "en": "Maxvision Technology Corp. is a listed enterprise on the Main Board of Shenzhen Stock Exchange (stock code '002990'), with its headquarters in Shenzhen City."
         }
       },
+      "tagline": {
+        "id": "Teknologi Surveillance Terdepan",
+        "en": "Leading Surveillance Technology"
+      },
+      "id": "maxvision",
+      "image": "/images/uploads/mxv.jpg",
+      "description": {
+        "id": "Maxvision adalah pemimpin global dalam solusi keamanan dan pengawasan berbasis kecerdasan buatan. Produk-produknya mencakup kamera IP berkualitas tinggi, sistem manajemen video, dan platform analitik pintar yang digunakan oleh ribuan institusi di seluruh dunia.",
+        "en": "Maxvision is a global leader in AI-based security and surveillance solutions. Its products include high-quality IP cameras, video management systems, and smart analytics platforms used by thousands of institutions worldwide."
+      },
+      "features": [],
       "stats": [
         {
           "value": "400+",
@@ -58,7 +62,6 @@
           }
         }
       ],
-      "features": [],
       "highlights": {
         "id": [
           "AI-Powered Analytics",
@@ -72,22 +75,12 @@
           "Cloud & Edge Integration",
           "International Certification"
         ]
-      },
-      "image": "/images/uploads/maxvision-banner.jpg",
-      "logo": "/images/uploads/maxvision-logo.png",
-      "color": "#0EA5E9"
+      }
     },
     {
-      "id": "jovision",
+      "color": "#10B981",
+      "logo": "/images/uploads/jovision-logo.png",
       "name": "Jovision",
-      "tagline": {
-        "id": "Solusi CCTV Profesional",
-        "en": "Professional CCTV Solutions"
-      },
-      "description": {
-        "id": "Jovision menghadirkan ekosistem CCTV dan keamanan digital yang komprehensif, mulai dari kamera beresolusi tinggi hingga sistem NVR/DVR canggih. Dikenal dengan keandalan, kemudahan instalasi, dan dukungan teknis yang responsif.",
-        "en": "Jovision delivers a comprehensive CCTV and digital security ecosystem, from high-resolution cameras to advanced NVR/DVR systems. Known for reliability, ease of installation, and responsive technical support."
-      },
       "about": {
         "title": {
           "id": "JOVISION, didirikan pada tahun 2000, adalah penyedia Produk dan Solusi Vision Cerdas.",
@@ -98,7 +91,16 @@
           "en": "Leveraging more than 20 years of R&D and manufacturing experiences, Jovision has established a Video + AI-based intelligent vision service system. Its business now covers more than 80 countries and regions worldwide, continuously promoting customers' digital transformation and empowering global partners.\n\nJOVISION has a complete intelligent vision product portfolio, including smart cameras, intelligent core modules, edge computing servers, NVRs, video aggregation servers, cloud platforms, and SaaS application services."
         }
       },
-      "stats": [],
+      "tagline": {
+        "id": "Solusi CCTV Profesional",
+        "en": "Professional CCTV Solutions"
+      },
+      "id": "jovision",
+      "image": "/images/uploads/jovision-banner.jpg",
+      "description": {
+        "id": "Jovision menghadirkan ekosistem CCTV dan keamanan digital yang komprehensif, mulai dari kamera beresolusi tinggi hingga sistem NVR/DVR canggih. Dikenal dengan keandalan, kemudahan instalasi, dan dukungan teknis yang responsif.",
+        "en": "Jovision delivers a comprehensive CCTV and digital security ecosystem, from high-resolution cameras to advanced NVR/DVR systems. Known for reliability, ease of installation, and responsive technical support."
+      },
       "features": [
         {
           "title": "SAFE",
@@ -133,6 +135,7 @@
           "image": "/images/uploads/jovision-vusion.jpg"
         }
       ],
+      "stats": [],
       "highlights": {
         "id": [
           "NVR & DVR Canggih",
@@ -146,10 +149,7 @@
           "24/7 Remote Monitoring",
           "3-Year Product Warranty"
         ]
-      },
-      "image": "/images/uploads/jovision-banner.jpg",
-      "logo": "/images/uploads/jovision-logo.png",
-      "color": "#10B981"
+      }
     }
   ]
 }

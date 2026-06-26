@@ -4,8 +4,6 @@ import { Cpu, Wifi, Home, Server, Code } from "lucide-react";
 import { useLang } from "../context/LanguageContext";
 import SolutionDrawer from "./SolutionDrawer";
 
-import featuresData from "../../public/data/features.json";
-
 const iconMap = {
   Cpu: <Cpu className="w-7 h-7" />,
   Wifi: <Wifi className="w-7 h-7" />,
@@ -21,7 +19,9 @@ export default function Solution() {
   const { lang } = useLang();
 
   useEffect(() => {
-    setFeatures(featuresData.features || []);
+    fetch("/data/features.json?v=" + new Date().getTime())
+      .then(r => r.json())
+      .then((data) => setFeatures(data?.features || []));
   }, []);
 
   return (

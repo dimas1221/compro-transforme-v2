@@ -1,18 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLang } from "../../context/LanguageContext";
-import { CheckCircle2, ArrowRight } from "lucide-react";
-
-import principalsData from "../../../public/data/principals.json";
-
-const fadeUp = {
-    hidden: { opacity: 0, y: 32 },
-    visible: (i = 0) => ({
-        opacity: 1,
-        y: 0,
-        transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" },
-    }),
-};
+import { CheckCircle2, Building2, Cpu } from "lucide-react";
 
 export default function OurPrinciple() {
     const { lang } = useLang();
@@ -20,7 +9,10 @@ export default function OurPrinciple() {
     const [active, setActive] = useState(0);
 
     useEffect(() => {
-        setData(principalsData);
+        fetch("/data/principals.json?v=" + new Date().getTime())
+            .then(r => r.json())
+            .then(setData)
+            .catch(() => {});
     }, []);
 
     if (!data) return null;
@@ -29,51 +21,51 @@ export default function OurPrinciple() {
     const current = principals[active];
 
     return (
-        <section id="principals" className="relative py-24 md:py-32 px-6 bg-[#0B1120] overflow-hidden">
-            {/* Ambient Background Glows */}
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] opacity-60 pointer-events-none" />
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[128px] opacity-60 pointer-events-none" />
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none"></div>
+        <section id="principals" className="relative py-20 md:py-28 px-4 md:px-6 bg-[#0B1120] overflow-hidden">
+            {/* Ambient glows */}
+            <div className="absolute top-0 left-1/4 w-80 h-80 bg-primary/15 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none" />
 
             <div className="relative max-w-6xl mx-auto z-10">
-                {/* Header */}
+                {/* ── HEADER ── */}
                 <motion.div
-                    variants={fadeUp}
-                    initial="hidden"
-                    whileInView="visible"
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    transition={{ duration: 0.5 }}
+                    className="text-center mb-12"
                 >
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary mb-5">
-                        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                        <span className="text-xs font-bold tracking-widest uppercase">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary mb-4">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                        <span className="text-[11px] font-bold tracking-widest uppercase">
                             {section.subtitle[lang]}
                         </span>
                     </div>
-                    <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-5 tracking-tight">
+                    <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-3 tracking-tight">
                         {section.title[lang]}
                     </h2>
-                    <p className="text-slate-400 text-sm md:text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-slate-400 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
                         {section.description[lang]}
                     </p>
                 </motion.div>
 
-                {/* Tab switcher (Premium Glass Pill) */}
-                <div className="flex justify-center mb-12">
-                    <div className="inline-flex bg-white/5 backdrop-blur-xl rounded-full p-1.5 gap-1 border border-white/10 shadow-xl">
+                {/* ── TAB SWITCHER ── */}
+                <div className="flex justify-center mb-8">
+                    <div className="inline-flex bg-white/5 backdrop-blur-xl rounded-full p-1 gap-0.5 border border-white/10">
                         {principals.map((p, i) => (
                             <button
                                 key={p.id}
                                 onClick={() => setActive(i)}
-                                className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer relative ${active === i
-                                        ? "text-white"
-                                        : "text-slate-400 hover:text-white hover:bg-white/5"
-                                    }`}
+                                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer relative ${active === i
+                                    ? "text-white"
+                                    : "text-slate-400 hover:text-white"
+                                }`}
                             >
                                 {active === i && (
                                     <motion.div
-                                        layoutId="activeTab"
-                                        className="absolute inset-0 bg-primary rounded-full"
+                                        layoutId="principalTab"
+                                        className="absolute inset-0 rounded-full"
+                                        style={{ backgroundColor: current.color }}
                                         initial={false}
                                         transition={{ type: "spring", stiffness: 400, damping: 30 }}
                                     />
@@ -84,149 +76,182 @@ export default function OurPrinciple() {
                     </div>
                 </div>
 
-                {/* Content panel */}
+                {/* ── CONTENT ── */}
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={current.id}
-                        initial={{ opacity: 0, y: 30, scale: 0.98 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: -20, scale: 0.98 }}
-                        transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
-                        className="grid lg:grid-cols-5 gap-0 rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/10 bg-slate-900/40 backdrop-blur-2xl relative"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -16 }}
+                        transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
+                        className="rounded-3xl border border-white/10 bg-slate-900/50 backdrop-blur-xl overflow-hidden shadow-2xl relative"
                     >
-                        {/* decorative card glow */}
+                        {/* subtle glow */}
                         <div
-                            className="absolute -top-32 -right-32 w-80 h-80 rounded-full blur-[100px] pointer-events-none opacity-30"
+                            className="absolute -top-24 -right-24 w-64 h-64 rounded-full blur-[80px] pointer-events-none opacity-20"
                             style={{ backgroundColor: current.color }}
                         />
 
-                        {/* Left — image (2 columns) */}
-                        <div className="relative lg:col-span-2 min-h-[350px] lg:min-h-[500px] overflow-hidden group">
-                            <motion.img
-                                initial={{ scale: 1.1 }}
-                                animate={{ scale: 1 }}
-                                transition={{ duration: 1.5, ease: "easeOut" }}
-                                src={current.image}
-                                alt={current.name}
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                onError={(e) => {
-                                    e.currentTarget.style.display = "none";
-                                    e.currentTarget.parentElement.style.background =
-                                        `linear-gradient(135deg, ${current.color}22 0%, ${current.color}11 100%)`;
-                                }}
-                            />
-                            {/* gradient overlay matching dark theme */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent" />
-                            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-transparent to-transparent lg:hidden" />
-                            <div className="absolute inset-0 bg-gradient-to-l from-slate-900/90 via-slate-900/20 to-transparent hidden lg:block" />
+                        {/* ── ROW 1: HERO BANNER + INFO ── */}
+                        <div className="grid lg:grid-cols-2 gap-0">
+                            {/* Left — Image */}
+                            <div className="relative min-h-[260px] lg:min-h-[380px] overflow-hidden">
+                                <img
+                                    src={current.image}
+                                    alt={current.name}
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                    onError={(e) => {
+                                        e.currentTarget.style.display = "none";
+                                        e.currentTarget.parentElement.style.background =
+                                            `linear-gradient(135deg, ${current.color}15 0%, ${current.color}08 100%)`;
+                                    }}
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-l from-slate-900/70 to-transparent hidden lg:block" />
 
-                            {/* Brand Name Overlay */}
-                            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10 z-10">
-                                <div className="inline-flex items-center gap-3 bg-slate-900/60 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/10 mb-2">
-                                    <div
-                                        className="w-2.5 h-2.5 rounded-full flex-shrink-0 shadow-[0_0_10px_rgba(255,255,255,0.5)]"
-                                        style={{ background: current.color, boxShadow: `0 0 15px ${current.color}` }}
-                                    />
-                                    <span className="text-white font-bold text-lg tracking-wide">
-                                        {current.name}
-                                    </span>
+                                {/* Brand badge */}
+                                <div className="absolute bottom-5 left-5 z-10">
+                                    <div className="flex items-center gap-2.5 bg-black/40 backdrop-blur-md rounded-xl px-4 py-2.5 border border-white/10">
+                                        <div
+                                            className="w-2 h-2 rounded-full"
+                                            style={{ background: current.color, boxShadow: `0 0 12px ${current.color}` }}
+                                        />
+                                        <span className="text-white font-bold text-base">{current.name}</span>
+                                    </div>
                                 </div>
-                                {/* stat badge */}
-                                {current.stat?.value && (
-                                    <motion.div 
-                                        initial={{ opacity: 0, y: 10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: 0.3 }}
-                                        className="mt-4 flex flex-col"
-                                    >
-                                        <span className="text-white text-5xl font-black tracking-tight" style={{ textShadow: `0 4px 20px ${current.color}40` }}>
-                                            {current.stat.value}
-                                        </span>
-                                        <span className="text-slate-300 text-sm font-medium tracking-wide uppercase mt-1">
-                                            {current.stat.label[lang]}
-                                        </span>
-                                    </motion.div>
+
+                                {/* Stats overlay (if available) */}
+                                {current.stats && current.stats.length > 0 && (
+                                    <div className="absolute bottom-5 right-5 z-10 hidden md:flex gap-2">
+                                        {current.stats.map((s, i) => (
+                                            <div key={i} className="bg-black/40 backdrop-blur-md rounded-xl px-3.5 py-2 border border-white/10 text-center min-w-[80px]">
+                                                <div className="text-lg font-black text-white leading-none" style={{ color: current.color }}>{s.value}</div>
+                                                <div className="text-[10px] text-slate-300 mt-1 leading-tight font-medium max-w-[100px]">{s.label[lang]}</div>
+                                            </div>
+                                        ))}
+                                    </div>
                                 )}
                             </div>
-                        </div>
 
-                        {/* Right — content (3 columns) */}
-                        <div className="lg:col-span-3 p-8 md:p-12 lg:p-14 flex flex-col justify-center relative z-10">
-                            <motion.span
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: 0.2 }}
-                                className="text-xs font-bold tracking-widest uppercase mb-4"
-                                style={{ color: current.color }}
-                            >
-                                {current.tagline[lang]}
-                            </motion.span>
-                            
-                            <motion.h3 
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.3 }}
-                                className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight"
-                            >
-                                Solusi Lengkap dari <br className="hidden sm:block" />
-                                <span style={{ color: current.color }}>{current.name}</span>
-                            </motion.h3>
+                            {/* Right — Overview */}
+                            <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center relative z-10">
+                                <span
+                                    className="text-[11px] font-bold tracking-widest uppercase mb-2"
+                                    style={{ color: current.color }}
+                                >
+                                    {current.tagline[lang]}
+                                </span>
+                                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 leading-snug">
+                                    {current.description[lang].substring(0, 80)}...
+                                </h3>
+                                <p className="text-slate-400 text-sm leading-relaxed mb-5">
+                                    {current.description[lang]}
+                                </p>
 
-                            <motion.p 
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.4 }}
-                                className="text-slate-400 text-sm md:text-base leading-relaxed mb-10"
-                            >
-                                {current.description[lang]}
-                            </motion.p>
-
-                            {/* highlights grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-                                {current.highlights[lang].map((item, i) => (
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: 0.5 + i * 0.1 }}
-                                        key={i}
-                                        className="group flex items-center gap-3.5 bg-white/5 border border-white/5 rounded-2xl p-4 hover:bg-white/10 hover:border-white/10 transition-all duration-300"
-                                    >
-                                        <div
-                                            className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
-                                            style={{ backgroundColor: `${current.color}15` }}
-                                        >
+                                {/* Inline highlights */}
+                                <div className="grid grid-cols-2 gap-2.5">
+                                    {current.highlights[lang].map((item, i) => (
+                                        <div key={i} className="flex items-center gap-2 bg-white/5 rounded-xl px-3 py-2.5 border border-white/5">
                                             <CheckCircle2
-                                                className="w-4 h-4"
+                                                className="w-3.5 h-3.5 shrink-0"
                                                 style={{ color: current.color }}
                                             />
+                                            <span className="text-slate-200 text-xs font-medium leading-tight">{item}</span>
                                         </div>
-                                        <span className="text-slate-200 text-sm font-semibold leading-snug group-hover:text-white transition-colors">
-                                            {item}
-                                        </span>
-                                    </motion.div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* ── MOBILE STATS (shown below image on small screens) ── */}
+                        {current.stats && current.stats.length > 0 && (
+                            <div className="grid grid-cols-3 gap-px bg-white/5 md:hidden">
+                                {current.stats.map((s, i) => (
+                                    <div key={i} className="bg-slate-900/80 p-4 text-center">
+                                        <div className="text-2xl font-black leading-none mb-1" style={{ color: current.color }}>{s.value}</div>
+                                        <div className="text-[10px] text-slate-400 leading-tight font-medium">{s.label[lang]}</div>
+                                    </div>
                                 ))}
                             </div>
+                        )}
 
-                            {/* Call to action or decorative line */}
-                            <motion.div
-                                initial={{ opacity: 0, scaleX: 0 }}
-                                animate={{ opacity: 1, scaleX: 1 }}
-                                transition={{ delay: 0.8, duration: 0.6 }}
-                                className="h-1 w-20 rounded-full"
-                                style={{ background: `linear-gradient(90deg, ${current.color}, transparent)` }}
-                            />
-                        </div>
+                        {/* ── DIVIDER ── */}
+                        <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+                        {/* ── ROW 2: ABOUT ── */}
+                        {current.about && (
+                            <div className="p-6 md:p-8 lg:px-10">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: `${current.color}15` }}>
+                                        <Building2 className="w-4 h-4" style={{ color: current.color }} />
+                                    </div>
+                                    <div className="flex-1 min-w-0">
+                                        <h4 className="text-base font-bold text-white mb-2">
+                                            {current.about.title[lang]}
+                                        </h4>
+                                        <p className="text-slate-400 text-sm leading-relaxed whitespace-pre-line">
+                                            {current.about.text[lang]}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* ── ROW 3: FEATURES GRID ── */}
+                        {current.features && current.features.length > 0 && (
+                            <>
+                                <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+                                <div className="p-6 md:p-8 lg:px-10">
+                                    <div className="flex items-center gap-3 mb-5">
+                                        <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: `${current.color}15` }}>
+                                            <Cpu className="w-4 h-4" style={{ color: current.color }} />
+                                        </div>
+                                        <h4 className="text-base font-bold text-white">
+                                            {lang === "id" ? "Teknologi Unggulan" : "Key Technologies"}
+                                        </h4>
+                                    </div>
+                                    <div className="grid sm:grid-cols-2 gap-3">
+                                        {current.features.map((f, i) => (
+                                            <div
+                                                key={i}
+                                                className="group bg-white/[0.03] border border-white/5 rounded-2xl overflow-hidden hover:border-white/15 transition-all duration-300"
+                                            >
+                                                <div className="h-40 bg-slate-800/50 relative overflow-hidden">
+                                                    <img
+                                                        src={f.image}
+                                                        alt={f.title}
+                                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                                        onError={(e) => {
+                                                            e.currentTarget.style.display = "none";
+                                                        }}
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+                                                    <div className="absolute bottom-3 left-4">
+                                                        <span className="text-sm font-bold" style={{ color: current.color }}>{f.title}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="px-4 py-3">
+                                                    <p className="text-slate-400 text-xs leading-relaxed line-clamp-3">
+                                                        {f.description[lang]}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </>
+                        )}
                     </motion.div>
                 </AnimatePresence>
 
-                {/* dot indicators */}
-                <div className="flex justify-center gap-3 mt-12">
-                    {principals.map((p, i) => (
+                {/* Dot indicators */}
+                <div className="flex justify-center gap-2.5 mt-10">
+                    {principals.map((_, i) => (
                         <button
                             key={i}
                             onClick={() => setActive(i)}
-                            className={`rounded-full transition-all duration-500 cursor-pointer ${active === i 
-                                ? "w-10 h-2" 
+                            className={`rounded-full transition-all duration-500 cursor-pointer ${active === i
+                                ? "w-8 h-2"
                                 : "w-2 h-2 bg-slate-600 hover:bg-slate-400"
                             }`}
                             style={{ backgroundColor: active === i ? current.color : undefined }}

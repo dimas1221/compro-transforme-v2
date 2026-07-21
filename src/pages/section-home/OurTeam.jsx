@@ -30,8 +30,8 @@ function MemberCard({ member, index, lang }) {
             onError={() => setImgError(true)}
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <span className="text-slate-600 font-black text-4xl tracking-widest select-none">
+          <div className="w-full h-full bg-slate-100 flex items-center justify-center">
+            <span className="text-slate-400 font-black text-4xl tracking-widest select-none">
               {initials}
             </span>
           </div>
@@ -39,7 +39,7 @@ function MemberCard({ member, index, lang }) {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
 
       {/* Info */}
@@ -53,7 +53,7 @@ function MemberCard({ member, index, lang }) {
       </div>
 
       {/* Index watermark */}
-      <span className="absolute top-2 right-2.5 text-white/8 font-black text-3xl leading-none select-none tabular-nums">
+      <span className="absolute top-2 right-2.5 text-white/10 font-black text-3xl leading-none select-none tabular-nums">
         {String(index + 1).padStart(2, "0")}
       </span>
     </motion.div>
@@ -78,9 +78,9 @@ export default function OurTeam() {
   return (
     <section
       id="team"
-      className="relative py-20 md:py-24 px-4 md:px-6 bg-[#0B1120] overflow-hidden"
+      className="relative py-20 md:py-24 px-4 md:px-6 bg-white overflow-hidden"
     >
-      <div className="absolute top-0 right-1/3 w-72 h-72 bg-primary/8 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 right-1/3 w-72 h-72 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto z-10">
         {/* Header */}
@@ -98,10 +98,10 @@ export default function OurTeam() {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
               {section.title[lang]}
             </h2>
-            <p className="text-slate-400 text-sm max-w-xs leading-relaxed">
+            <p className="text-slate-500 text-sm max-w-xs leading-relaxed">
               {section.description[lang]}
             </p>
           </div>

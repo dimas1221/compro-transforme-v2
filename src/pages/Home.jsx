@@ -10,6 +10,7 @@ import { useJsonData } from "../hooks/useJsonData";
 import Contact from "./Contact";
 import OurPrinciple from "./section-home/OurPrinciple";
 import { useEffect } from "react";
+import OurTeam from "./section-home/OurTeam";
 
 /* ─── animation ─── */
 const fadeUp = {
@@ -22,12 +23,14 @@ const fadeUp = {
 };
 export default function Home() {
   const { lang } = useLang();
-  const { data: COMPANY_CONTENT, loading } = useJsonData("/data/companyContent.json");
+  const { data: COMPANY_CONTENT, loading } = useJsonData(
+    "/data/companyContent.json",
+  );
 
   useEffect(() => {
     if (!loading && COMPANY_CONTENT) {
       requestAnimationFrame(() =>
-        window.dispatchEvent(new Event("sections-ready"))
+        window.dispatchEvent(new Event("sections-ready")),
       );
     }
   }, [loading, COMPANY_CONTENT]);
@@ -40,7 +43,10 @@ export default function Home() {
   return (
     <>
       {/* ══════════ HERO — FULL MAP ══════════ */}
-      <section id="hero" className="relative w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-white px-4">
+      <section
+        id="hero"
+        className="relative w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-white px-4"
+      >
         <img
           src={bg}
           alt="background map"
@@ -123,7 +129,10 @@ export default function Home() {
       <OurPrinciple />
 
       {/* ══════════ Product ══════════ */}
-      <section id="product" className="relative overflow-hidden  py-20 md:py-28 px-6">
+      <section
+        id="product"
+        className="relative overflow-hidden  py-20 md:py-28 px-6"
+      >
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
         <div className="max-w-6xl mx-auto">
@@ -145,13 +154,14 @@ export default function Home() {
           <Solution />
         </div>
       </section>
+      {/* ══════════ OUR TEAM ══════════ */}
+
+      <OurTeam />
 
       {/* ══════════ CONTACT ══════════ */}
       <div id="contact">
         <Contact />
       </div>
-
-
     </>
   );
 }

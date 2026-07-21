@@ -458,3 +458,54 @@ collections:
               - { label: "Logo", name: "logo", widget: "image" }
               - { label: "Color", name: "color", widget: "string", hint: "Hex color code, e.g. #2563EB" }
               - { label: "Use Initials", name: "useInitials", widget: "boolean", default: false, hint: "Show initials instead of logo image" }
+
+  # ==========================================================
+  # 7️⃣ TEAM (team.json)
+  # ==========================================================
+  - name: "team"
+    label: "Our Team"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "public/data/team.json"
+        label: "Team Data"
+        name: "team_json"
+        fields:
+          - label: "Section"
+            name: "section"
+            widget: "object"
+            fields:
+              - label: "Subtitle"
+                name: "subtitle"
+                widget: "object"
+                fields:
+                  - { label: "Bahasa Indonesia", name: "id", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "Bahasa Indonesia", name: "id", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+              - label: "Description"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "Bahasa Indonesia", name: "id", widget: "text" }
+                  - { label: "English", name: "en", widget: "text" }
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - label: "Role"
+                name: "role"
+                widget: "object"
+                fields:
+                  - { label: "Bahasa Indonesia", name: "id", widget: "string" }
+                  - { label: "English", name: "en", widget: "string" }
+              - { label: "Photo", name: "photo", widget: "image" }

@@ -1,0 +1,72 @@
+{
+  "section": {
+    "subtitle": {
+      "id": "Tim Kami",
+      "en": "Our Team"
+    },
+    "title": {
+      "id": "Orang-Orang di Balik Transforme",
+      "en": "The People Behind Transforme"
+    },
+    "description": {
+      "id": "Didukung oleh tim profesional berpengalaman yang berdedikasi menghadirkan solusi terbaik.",
+      "en": "Backed by a team of experienced professionals dedicated to delivering the best solutions."
+    }
+  },
+  "members": [
+    {
+      "id": "member-1",
+      "name": "Dimas Setiya",
+      "role": {
+        "id": "Direktur Utama",
+        "en": "Chief Executive Officer"
+      },
+      "photo": "/images/uploads/team-dimas.jpg"
+    },
+    {
+      "id": "member-2",
+      "name": "Andi Pratama",
+      "role": {
+        "id": "Manajer Produk",
+        "en": "Product Manager"
+      },
+      "photo": "/images/uploads/team-andi.jpg"
+    },
+    {
+      "id": "member-3",
+      "name": "Rina Kusuma",
+      "role": {
+        "id": "Desainer UI/UX",
+        "en": "UI/UX Designer"
+      },
+      "photo": "/images/uploads/team-rina.jpg"
+    },
+    {
+      "id": "member-4",
+      "name": "Budi Santoso",
+      "role": {
+        "id": "Engineer Perangkat Lunak",
+        "en": "Software Engineer"
+      },
+      "photo": "/images/uploads/team-budi.jpg"
+    },
+    {
+      "id": "member-5",
+      "name": "Sari Dewi",
+      "role": {
+        "id": "Manajer Penjualan",
+        "en": "Sales Manager"
+      },
+      "photo": "/images/uploads/team-sari.jpg"
+    },
+    {
+      "id": "member-6",
+      "name": "Hendra Wijaya",
+      "role": {
+        "id": "Spesialis Dukungan Teknis",
+        "en": "Technical Support Specialist"
+      },
+      "photo": "/images/uploads/team-hendra.jpg"
+    }
+  ]
+}

@@ -1,18 +1,7 @@
 {
   "features": [
     {
-      "id": 1,
-      "icon": "Wifi",
       "title_id": "Internet of Things (IoT)",
-      "title_en": "Internet of Things (IoT)",
-      "desc_id": "Solusi IoT terintegrasi untuk sistem keamanan, parkir cerdas, dan sensor alarm yang terhubung secara real-time.",
-      "desc_en": "Integrated IoT solutions for security systems, smart parking, and real-time connected alarm sensors.",
-      "img": "/images/uploads/traffic-incident-detection-algorithms.png",
-      "learn_more_title_id": "Ekosistem IoT untuk Keamanan & Operasional Cerdas",
-      "learn_more_title_en": "IoT Ecosystem for Smart Security & Operations",
-      "learn_more_desc_id": "Kami menghadirkan ekosistem IoT yang komprehensif untuk membantu institusi dan bisnis mengelola keamanan, parkir, dan deteksi ancaman secara otomatis.\n\nSetiap perangkat terhubung dalam jaringan terpadu yang memungkinkan pemantauan real-time, respons insiden cepat, dan laporan otomatis langsung ke tim Anda.\n\nDengan arsitektur yang skalabel dan protokol industri terkini, solusi kami mudah diintegrasikan dengan infrastruktur yang sudah ada.",
-      "learn_more_desc_en": "We deliver a comprehensive IoT ecosystem to help institutions and businesses manage security, parking, and threat detection automatically.\n\nEvery device is connected in a unified network enabling real-time monitoring, rapid incident response, and automated reports delivered directly to your team.\n\nWith a scalable architecture and the latest industry protocols, our solutions integrate seamlessly with your existing infrastructure.",
-      "learn_more_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=60",
       "header_learn_more": [
         {
           "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=900&q=60",
@@ -36,6 +25,16 @@
           "desc_en": "Smart sensor networks for smoke, fire, intrusion, and environmental change detection. IoT-based alarm system with automated response and tiered alert escalation to the relevant teams."
         }
       ],
+      "img": "/images/uploads/traffic-incident-detection-algorithms.png",
+      "learn_more_desc_en": "We deliver a comprehensive IoT ecosystem to help institutions and businesses manage security, parking, and threat detection automatically.\n\nEvery device is connected in a unified network enabling real-time monitoring, rapid incident response, and automated reports delivered directly to your team.\n\nWith a scalable architecture and the latest industry protocols, our solutions integrate seamlessly with your existing infrastructure.",
+      "desc_id": "Solusi IoT terintegrasi untuk sistem keamanan, parkir cerdas, dan sensor alarm yang terhubung secara real-time.",
+      "learn_more_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=60",
+      "title_en": "Internet of Things (IoT)",
+      "learn_more_title_id": "Ekosistem IoT untuk Keamanan & Operasional Cerdas",
+      "desc_en": "Integrated IoT solutions for security systems, smart parking, and real-time connected alarm sensors.",
+      "icon": "Wifi",
+      "learn_more_desc_id": "Kami menghadirkan ekosistem IoT yang komprehensif untuk membantu institusi dan bisnis mengelola keamanan, parkir, dan deteksi ancaman secara otomatis.\n\nSetiap perangkat terhubung dalam jaringan terpadu yang memungkinkan pemantauan real-time, respons insiden cepat, dan laporan otomatis langsung ke tim Anda.\n\nDengan arsitektur yang skalabel dan protokol industri terkini, solusi kami mudah diintegrasikan dengan infrastruktur yang sudah ada.",
+      "id": 1,
       "benefits": [
         {
           "title_id": "Pemantauan Real-Time 24/7",
@@ -74,6 +73,7 @@
           "desc_en": "Add hundreds of new devices without disrupting the existing running network."
         }
       ],
+      "learn_more_title_en": "IoT Ecosystem for Smart Security & Operations",
       "tech_stack": [
         "MQTT",
         "Node.js",
@@ -86,32 +86,14 @@
       ]
     },
     {
-      "id": 2,
-      "icon": "Cpu",
       "title_id": "Artificial Intelligence (AI)",
-      "title_en": "Artificial Intelligence (AI)",
-      "desc_id": "Solusi AI canggih untuk pelacakan objek & kendaraan secara real-time serta analitik perjalanan berbasis kecerdasan buatan.",
-      "desc_en": "Advanced AI solutions for real-time object & vehicle tracking and AI-based journey analytics.",
-      "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=60",
-      "learn_more_title_id": "AI untuk Tracking & Journey Analytics",
-      "learn_more_title_en": "AI for Tracking & Journey Analytics",
-      "learn_more_desc_id": "Kami mengembangkan platform kecerdasan buatan yang mampu melacak pergerakan objek, kendaraan, dan manusia secara real-time dengan akurasi tinggi.\n\nTeknologi AI Journey kami menganalisis pola perjalanan, kepadatan lalu lintas, dan anomali pergerakan untuk membantu pengambilan keputusan operasional yang lebih cepat dan akurat.\n\nDengan deep learning dan computer vision terkini, setiap kamera menjadi sensor cerdas yang menghasilkan insight bernilai tinggi.",
-      "learn_more_desc_en": "We develop artificial intelligence platforms capable of tracking the movement of objects, vehicles, and people in real-time with high accuracy.\n\nOur AI Journey technology analyzes travel patterns, traffic density, and movement anomalies to support faster and more accurate operational decision-making.\n\nWith the latest deep learning and computer vision, every camera becomes a smart sensor generating high-value insights.",
-      "learn_more_image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=60",
       "header_learn_more": [
         {
-          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=60",
+          "image": "/images/uploads/30ee9e50-3dff-483b-926e-1eb29ee3105d.jpg",
           "title_id": "AI Tracking System",
           "title_en": "AI Tracking System",
           "desc_id": "Sistem pelacakan berbasis AI yang mampu mendeteksi dan melacak pergerakan kendaraan, orang, dan objek secara real-time dari feed CCTV. Mendukung multi-kamera dengan re-identification otomatis saat objek berpindah zona.",
           "desc_en": "AI-based tracking system capable of detecting and tracing vehicle, person, and object movements in real-time from CCTV feeds. Supports multi-camera with automatic re-identification as objects move between zones."
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=900&q=60",
-          "title_id": "AI Journey & Analitik Perjalanan",
-          "title_en": "AI Journey & Travel Analytics",
-          "desc_id": "Platform analitik perjalanan yang memetakan rute, pola kepadatan, dan waktu tempuh kendaraan maupun pejalan kaki. Menghasilkan heatmap, origin-destination matrix, dan laporan tren mobilitas untuk perencanaan operasional.",
-          "desc_en": "Travel analytics platform that maps routes, density patterns, and travel times for vehicles and pedestrians. Generates heatmaps, origin-destination matrices, and mobility trend reports for operational planning."
         },
         {
           "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=60",
@@ -121,6 +103,16 @@
           "desc_en": "AI algorithms that automatically detect suspicious behavior, restricted zone violations, abandoned objects, and overcrowding. Early warnings are sent directly to operators before incidents escalate."
         }
       ],
+      "img": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=60",
+      "learn_more_desc_en": "We develop artificial intelligence platforms capable of tracking the movement of objects, vehicles, and people in real-time with high accuracy.\n\nOur AI Journey technology analyzes travel patterns, traffic density, and movement anomalies to support faster and more accurate operational decision-making.\n\nWith the latest deep learning and computer vision, every camera becomes a smart sensor generating high-value insights.",
+      "desc_id": "Solusi AI canggih untuk pelacakan objek & kendaraan secara real-time serta analitik perjalanan berbasis kecerdasan buatan.",
+      "learn_more_image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=60",
+      "title_en": "Artificial Intelligence (AI)",
+      "learn_more_title_id": "AI untuk Tracking & Journey Analytics",
+      "desc_en": "Advanced AI solutions for real-time object & vehicle tracking and AI-based journey analytics.",
+      "icon": "Cpu",
+      "learn_more_desc_id": "Kami mengembangkan platform kecerdasan buatan yang mampu melacak pergerakan objek, kendaraan, dan manusia secara real-time dengan akurasi tinggi.\n\nTeknologi AI Journey kami menganalisis pola perjalanan, kepadatan lalu lintas, dan anomali pergerakan untuk membantu pengambilan keputusan operasional yang lebih cepat dan akurat.\n\nDengan deep learning dan computer vision terkini, setiap kamera menjadi sensor cerdas yang menghasilkan insight bernilai tinggi.",
+      "id": 2,
       "benefits": [
         {
           "title_id": "Akurasi Deteksi Tinggi",
@@ -159,6 +151,7 @@
           "desc_en": "Distributed architecture handles hundreds of simultaneous video streams with stable performance."
         }
       ],
+      "learn_more_title_en": "AI for Tracking & Journey Analytics",
       "tech_stack": [
         "TensorFlow",
         "PyTorch",
@@ -171,18 +164,7 @@
       ]
     },
     {
-      "id": 3,
-      "icon": "Code",
       "title_id": "Software Development",
-      "title_en": "Software Development",
-      "desc_id": "Pengembangan perangkat lunak custom untuk kebutuhan pemerintahan, industri, dan komersial dengan teknologi modern dan arsitektur yang skalabel.",
-      "desc_en": "Custom software development for government, industrial, and commercial needs with modern technology and scalable architecture.",
-      "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=60",
-      "learn_more_title_id": "Solusi Perangkat Lunak untuk Berbagai Industri",
-      "learn_more_title_en": "Software Solutions Across Industries",
-      "learn_more_desc_id": "Kami membangun perangkat lunak custom yang dirancang sesuai kebutuhan spesifik bisnis dan institusi Anda — mulai dari sistem informasi pemerintahan, aplikasi mobile, platform iklan digital, hingga solusi IoT terintegrasi.\n\nSetiap produk dikembangkan dengan standar kualitas tinggi, arsitektur yang maintainable, dan pengalaman pengguna yang intuitif.\n\nTim kami berpengalaman menangani proyek skala nasional dengan kebutuhan keamanan, performa, dan keandalan tinggi.",
-      "learn_more_desc_en": "We build custom software tailored to the specific needs of your business and institution — from government information systems, mobile applications, digital advertising platforms, to integrated IoT solutions.\n\nEvery product is developed to high quality standards, with maintainable architecture and an intuitive user experience.\n\nOur team has extensive experience handling national-scale projects with high security, performance, and reliability requirements.",
-      "learn_more_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=60",
       "header_learn_more": [
         {
           "image": "/images/porto/simka2.png",
@@ -241,6 +223,16 @@
           "desc_en": "An IoT-based Smart TV solution that transforms conventional televisions into integrated smart devices. Supports app-based control, automatic content scheduling, and smart home ecosystem integration."
         }
       ],
+      "img": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=60",
+      "learn_more_desc_en": "We build custom software tailored to the specific needs of your business and institution — from government information systems, mobile applications, digital advertising platforms, to integrated IoT solutions.\n\nEvery product is developed to high quality standards, with maintainable architecture and an intuitive user experience.\n\nOur team has extensive experience handling national-scale projects with high security, performance, and reliability requirements.",
+      "desc_id": "Pengembangan perangkat lunak custom untuk kebutuhan pemerintahan, industri, dan komersial dengan teknologi modern dan arsitektur yang skalabel.",
+      "learn_more_image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=60",
+      "title_en": "Software Development",
+      "learn_more_title_id": "Solusi Perangkat Lunak untuk Berbagai Industri",
+      "desc_en": "Custom software development for government, industrial, and commercial needs with modern technology and scalable architecture.",
+      "icon": "Code",
+      "learn_more_desc_id": "Kami membangun perangkat lunak custom yang dirancang sesuai kebutuhan spesifik bisnis dan institusi Anda — mulai dari sistem informasi pemerintahan, aplikasi mobile, platform iklan digital, hingga solusi IoT terintegrasi.\n\nSetiap produk dikembangkan dengan standar kualitas tinggi, arsitektur yang maintainable, dan pengalaman pengguna yang intuitif.\n\nTim kami berpengalaman menangani proyek skala nasional dengan kebutuhan keamanan, performa, dan keandalan tinggi.",
+      "id": 3,
       "benefits": [
         {
           "title_id": "Solusi Custom Sesuai Kebutuhan",
@@ -279,6 +271,7 @@
           "desc_en": "Integration capability with existing systems via REST API, WebSocket, and various industry-standard protocols."
         }
       ],
+      "learn_more_title_en": "Software Solutions Across Industries",
       "tech_stack": [
         "React",
         "Next.js",

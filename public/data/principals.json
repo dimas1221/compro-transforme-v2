@@ -96,7 +96,7 @@
         "en": "Professional CCTV Solutions"
       },
       "id": "jovision",
-      "image": "/images/uploads/jovision-banner.jpg",
+      "image": "/images/uploads/j.png",
       "description": {
         "id": "Jovision menghadirkan ekosistem CCTV dan keamanan digital yang komprehensif, mulai dari kamera beresolusi tinggi hingga sistem NVR/DVR canggih. Dikenal dengan keandalan, kemudahan instalasi, dan dukungan teknis yang responsif.",
         "en": "Jovision delivers a comprehensive CCTV and digital security ecosystem, from high-resolution cameras to advanced NVR/DVR systems. Known for reliability, ease of installation, and responsive technical support."
@@ -132,7 +132,7 @@
             "id": "Platform P2P dan streaming video yang mengadopsi arsitektur cloud publik dan kemampuan AI. Menyediakan cloud publik untuk produk Jovision, dan dapat diimplementasikan secara privat untuk memberdayakan mitra global.",
             "en": "P2P and video streaming platform adopting public cloud architecture and AI capabilities. It provides public cloud for Jovision products, and can be implemented privately to empower global partners."
           },
-          "image": "/images/uploads/picture4.png"
+          "image": "/images/uploads/screenshot-2026-07-21-171700.png"
         }
       ],
       "stats": [],

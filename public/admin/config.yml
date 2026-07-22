@@ -6,11 +6,9 @@ backend:
   base_url: https://decap-oauth.vercel.app
   auth_endpoint: auth
   client_id: Ov23liITg4x7Eiae4s6x
-
+publish_mode: editorial_workflow
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
-
-
 
 collections:
   # ==========================================================
@@ -280,25 +278,42 @@ collections:
                 summary: "{{fields.slug}} ({{fields.tab}})"
                 fields:
                   - { label: "Slug", name: "slug", widget: "string" }
-                  - { label: "Tab", name: "tab", widget: "string", hint: "Must match one of the tab names above" }
+                  - {
+                      label: "Tab",
+                      name: "tab",
+                      widget: "string",
+                      hint: "Must match one of the tab names above",
+                    }
                   - label: "Title"
                     name: "title"
                     widget: "object"
                     fields:
-                      - { label: "Bahasa Indonesia", name: "id", widget: "string" }
+                      - {
+                          label: "Bahasa Indonesia",
+                          name: "id",
+                          widget: "string",
+                        }
                       - { label: "English", name: "en", widget: "string" }
                   - label: "Short Description"
                     name: "description"
                     widget: "object"
                     fields:
-                      - { label: "Bahasa Indonesia", name: "id", widget: "text" }
+                      - {
+                          label: "Bahasa Indonesia",
+                          name: "id",
+                          widget: "text",
+                        }
                       - { label: "English", name: "en", widget: "text" }
                   - label: "Long Description"
                     name: "description_long"
                     widget: "object"
                     required: false
                     fields:
-                      - { label: "Bahasa Indonesia", name: "id", widget: "text" }
+                      - {
+                          label: "Bahasa Indonesia",
+                          name: "id",
+                          widget: "text",
+                        }
                       - { label: "English", name: "en", widget: "text" }
                   - { label: "Image", name: "image", widget: "image" }
                   - label: "Detail"
@@ -313,11 +328,21 @@ collections:
                           - label: "Bahasa Indonesia"
                             name: "id"
                             widget: "list"
-                            field: { label: "Feature", name: "item", widget: "string" }
+                            field:
+                              {
+                                label: "Feature",
+                                name: "item",
+                                widget: "string",
+                              }
                           - label: "English"
                             name: "en"
                             widget: "list"
-                            field: { label: "Feature", name: "item", widget: "string" }
+                            field:
+                              {
+                                label: "Feature",
+                                name: "item",
+                                widget: "string",
+                              }
 
   # ==========================================================
   # 5️⃣ PRINCIPALS (principals.json)
@@ -396,7 +421,12 @@ collections:
                 required: false
                 summary: "{{fields.value}}"
                 fields:
-                  - { label: "Value", name: "value", widget: "string", hint: "e.g. 400+, ≥10%" }
+                  - {
+                      label: "Value",
+                      name: "value",
+                      widget: "string",
+                      hint: "e.g. 400+, ≥10%",
+                    }
                   - label: "Label"
                     name: "label"
                     widget: "object"
@@ -416,7 +446,12 @@ collections:
                     fields:
                       - { label: "ID", name: "id", widget: "text" }
                       - { label: "EN", name: "en", widget: "text" }
-                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      required: false,
+                    }
               - label: "Highlights"
                 name: "highlights"
                 widget: "object"
@@ -431,7 +466,12 @@ collections:
                     field: { label: "Item", name: "item", widget: "string" }
               - { label: "Banner Image", name: "image", widget: "image" }
               - { label: "Logo", name: "logo", widget: "image" }
-              - { label: "Color (hex)", name: "color", widget: "string", hint: "e.g. #0EA5E9" }
+              - {
+                  label: "Color (hex)",
+                  name: "color",
+                  widget: "string",
+                  hint: "e.g. #0EA5E9",
+                }
 
   # ==========================================================
   # 6️⃣ PARTNERS (partners.json)
@@ -455,8 +495,19 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Full Name", name: "full", widget: "string" }
               - { label: "Logo", name: "logo", widget: "image" }
-              - { label: "Color", name: "color", widget: "string", hint: "Hex color code, e.g. #2563EB" }
-              - { label: "Use Initials", name: "useInitials", widget: "boolean", default: false, hint: "Show initials instead of logo image" }
+              - {
+                  label: "Color",
+                  name: "color",
+                  widget: "string",
+                  hint: "Hex color code, e.g. #2563EB",
+                }
+              - {
+                  label: "Use Initials",
+                  name: "useInitials",
+                  widget: "boolean",
+                  default: false,
+                  hint: "Show initials instead of logo image",
+                }
 
   # ==========================================================
   # 7️⃣ TEAM (team.json)

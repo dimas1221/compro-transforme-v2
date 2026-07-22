@@ -3,7 +3,7 @@ backend:
   repo: dimas1221/compro-transforme-v2
   branch: main
   auth_type: oauth
-  base_url: https://decap-oauth.vercel.app
+  base_url: https://oauth-ncn6ywolx-dimas1221s-projects.vercel.app
   auth_endpoint: auth
   client_id: Ov23liITg4x7Eiae4s6x
 publish_mode: editorial_workflow
